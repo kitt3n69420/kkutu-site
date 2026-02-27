@@ -111,7 +111,7 @@ window.servers = [
         relatedLinks: [
             { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
             { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' },
-        ]``
+        ]
     },
     {
         id: 'kkutun',
@@ -181,3 +181,4 @@ window.recommendedGames = [
         color: '#3175DC'
     }
 ];
+
