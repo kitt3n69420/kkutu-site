@@ -66,11 +66,11 @@ window.servers = [
     {
         id: 'bfkkutu',
         name: 'BF끄투',
-        tags: ['24시간', '우리말샘'],
+        tags: ['24시간'],
         color: '#008cdc',
         textColor: '#ffffff',
         url: 'https://bfkkutu.kr/',
-        description: '새로운 끄투의 시작\n\n매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태에요.',
+        description: '새로운 끄투의 시작\n\n매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태에요. 현재의 BF끄투는 소스코드를 아예 새로 작성한 것이랍니다.',
         relatedLinks: [
             { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' },
         ]
@@ -82,7 +82,7 @@ window.servers = [
         color: '#3E4BD1',
         textColor: '#ffffff',
         url: 'https://mahan.kr/',
-        description: '글자로 놀자! 마한끄투\n\n마한님이 운영 중인 끄투 프리서버에요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 다양한 주제의 단어도 많이 추가되어 있어요.',
+        description: '글자로 놀자! 마한끄투\n\n마한님이 운영 중인 끄투 프리서버에요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.',
         relatedLinks: [
             { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
             { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' },
@@ -111,7 +111,7 @@ window.servers = [
         relatedLinks: [
             { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
             { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' },
-        ]
+        ]``
     },
     {
         id: 'kkutun',
@@ -120,12 +120,11 @@ window.servers = [
         color: '#5D9DF4',
         textColor: '#1a1a1a',
         url: 'https://kkutu-n.xyz',
-        description: '글자로 놀자! 끄투엔\n\n최근에 새로 생긴 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 50개에 달하는 압도적인 양의 특수규칙이 있어요.',
+        description: '글자로 놀자! 끄투엔\n\n최근에 새로 생긴 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.',
         relatedLinks: [
             { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' },
         ]
     },
-
 ];
 
 window.utilities = [
@@ -156,7 +155,7 @@ window.recommendedGames = [
     {
         name: '마이워드',
         url: 'https://myword.store/',
-        description: '2025년에 개발된 끝말잇기 게임이에요. 토스 쿵쿵따를 기반으로 만들어졌어요.',
+        description: '피딮님이 2025년에 개발하신 끝말잇기 게임이에요. 토스 쿵쿵따를 기반으로 만들어졌어요.',
         tags: ['끝말잇기', '온라인'],
         color: '#a2b4a2'
     },
