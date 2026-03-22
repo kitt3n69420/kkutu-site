@@ -17,12 +17,30 @@ window.tagDescriptions = {
 
 window.servers = [
     {
+        id: 'kkutu',
+        name: '끄투 온라인',
+        tags: ['공식', '24시간'],
+        color: '#1ebb55',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2014,
+        endYear: 2017,
+        description: '글자로 놀자, 끄투 온라인!\n\n모든 것이 시작된 쪼리핑님의 원조 끄투에요. 전성기 때는 몇천 명의 사람이 있었지만 운영의 어려움 등으로 끄투가 오픈소스화 되었고, 그래서 지금처럼 여러 프리 서버가 생겼답니다.',
+        relatedLinks: [
+            { name: '샌드박스', url: 'https://cafe.naver.com/sdbx' },
+            { name: '공식 디스코드', url: 'https://discord.com/invite/daldalso-809809541385682964' },
+            { name: '개발자 블로그', url: 'https://m.blog.naver.com/PostList.naver?blogId=dosel1005&tab=1' },
+        ]
+    },
+    {
         id: 'kkutuonline',
         name: '끄투 온라인',
         tags: ['공식', '끄투3', '24시간'],
         color: '#F3D368',
         textColor: '#1a1a1a',
         url: 'https://kkutu.kr',
+        startYear: 2025.5,
+        endYear: null,
         description: '글자로 놀자! 끄투 온라인\n\n원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버에요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.',
         relatedLinks: [
             { name: '공식 라운지', url: 'https://game.naver.com/lounge/kkutu/home' },
@@ -38,6 +56,8 @@ window.servers = [
         color: '#e5456d',
         textColor: '#ffffff',
         url: 'https://kkutu.co.kr',
+        startYear: 2017,
+        endYear: null,
         description: '기상천외한 끝말잇기를 웹게임으로! 끄투코리아\n\n끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 항상 몇백 명대의 접속자를 유지하고 있고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.',
         relatedLinks: [
             { name: '공식 카페', url: 'https://cafe.naver.com/kkutukorea' },
@@ -49,12 +69,14 @@ window.servers = [
         ]
     },
     {
-        id: 'kkutuio',
+        id: 'kkutuiokdh',
         name: '끄투리오',
         tags: ['대형', '24시간', '뜻추가', '우리말샘'],
         color: '#55AA55',
         textColor: '#ffffff',
         url: 'https://kkutu.io/',
+        startYear: 2024,
+        endYear: null,
         description: '글자로 놀자! 끄투리오\n\n끄투코리아 다음으로 유명한 대형 서버에요. 몇십 명대 접속자를 유지하고 있으며, 꾸준히 여러 서버가 합쳐지면서 다양한 기능들과 단어들이 추가되었어요.',
         relatedLinks: [
             { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
@@ -64,12 +86,28 @@ window.servers = [
         ]
     },
     {
+        id: 'bfkkutuold',
+        name: 'BF끄투',
+        tags: ['24시간'],
+        color: '#008cdc',
+        textColor: '#ffffff',
+        url: 'https://bfkkutu.kr/',
+        startYear: 2017,
+        endYear: 2024,
+        description: '새로운 끄투의 시작\n\n매우 다양한 기능을 가지고 있었고, 상당히 인원이 많았던 프리서버였어요. 클랜 시스템 및 내부 대회도 자주 있었어요.',
+        relatedLinks: [
+            { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' },
+        ]
+    },
+    {
         id: 'bfkkutu',
         name: 'BF끄투',
         tags: ['24시간'],
         color: '#008cdc',
         textColor: '#ffffff',
         url: 'https://bfkkutu.kr/',
+        startYear: 2024,
+        endYear: null,
         description: '새로운 끄투의 시작\n\n매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태에요. 현재의 BF끄투는 소스코드를 아예 새로 작성한 것이랍니다.',
         relatedLinks: [
             { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' },
@@ -82,11 +120,25 @@ window.servers = [
         color: '#3E4BD1',
         textColor: '#ffffff',
         url: 'https://mahan.kr/',
+        startYear: 2024,
+        endYear: null,
         description: '글자로 놀자! 마한끄투\n\n마한님이 운영 중인 끄투 프리서버에요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.',
         relatedLinks: [
             { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
             { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' },
         ]
+    },
+    {
+        id: 'chulpaengkkutu',
+        name: '철팽끄투',
+        tags: [],
+        color: '#593ed1',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2023.5,
+        endYear: 2025.5,
+        description: '교통으로 즐기는 철팽끄투!\n\n철팽끄투는 철팽님이 운영하셨던 끄투로, 교통 중심의 단어가 매우 많았어요. 현재는 마한끄투에 통합되었어요.',
+        relatedLinks: []
     },
     {
         id: 'antu',
@@ -95,7 +147,9 @@ window.servers = [
         color: '#8aff8a',
         textColor: '#1a1a1a',
         url: 'https://antu.kro.kr/',
-        description: '글자로 놀자! 개미끄투\n\n아이앤트님이 운영하시는 끄투 프리서버에요. 24시간 운영되고 있어요.',
+        startYear: 2024,
+        endYear: 2026,
+        description: '글자로 놀자! 개미끄투\n\n아이앤트님이 운영하시는 끄투 프리서버였어요. 24시간 운영이었어요.',
         relatedLinks: [
             { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' },
         ]
@@ -107,6 +161,8 @@ window.servers = [
         color: '#52E6F2',
         textColor: '#ffffff',
         url: 'https://legendkkutu.kr/',
+        startYear: 2026,
+        endYear: null,
         description: '글자로 놀자! 레전드끄투\n\n오랫동안 자고 있다가 최근에 다시 운영을 시작한 서버에요. 다양한 단어와 게임모드, 규칙들이 계속 추가되고 있고, 업데이트 주기도 빠르답니다.',
         relatedLinks: [
             { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
@@ -120,24 +176,311 @@ window.servers = [
         color: '#5D9DF4',
         textColor: '#1a1a1a',
         url: 'https://kkutu-n.xyz',
+        startYear: 2025.5,
+        endYear: null,
         description: '글자로 놀자! 끄투엔\n\n최근에 새로 생긴 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.',
         relatedLinks: [
             { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' },
         ]
     },
+    {
+        id: 'delzb',
+        name: 'DE LZB 끄투',
+        tags: ['24시간', '언노운워드'],
+        color: '#ffdd8a',
+        textColor: '#1a1a1a',
+        url: 'https://delzb.app',
+        startYear: 2026,
+        endYear: null,
+        description: '글자로 놀자! DE LDB 끄투\n\n민준님이 운영하시는 끄투 서버에요. 모스부호로 입셕, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.',
+        relatedLinks: [
+            { name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' },
+        ]
+    },
+    {
+        id: 'barokkutu',
+        name: '바로끄투',
+        tags: [],
+        color: '#808080',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2022.5,
+        endYear: 2025,
+        description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버야. 일단 이거 외에 알려진 건 잘 없어.',
+        relatedLinks: []
+    },
+    {
+        id: 'pinkkkutu',
+        name: '분홍끄투',
+        tags: ['24시간', '언노운워드'],
+        color: '#ffb6d9',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2020,
+        endYear: 2024.5,
+        description: '분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버에요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutusite',
+        name: '끄투닷사이트',
+        tags: [],
+        color: '#7840e8',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2021.5,
+        endYear: 2023.5,
+        description: '이 사이트도 원래 끄투 프리서버의 주소였다는 사실, 아시나요? lkke님이 운영하시던 끄투 서버였고, 리턴, 랜덤턴, 랜덤미션 등의 규칙이 있었답니다.',
+        relatedLinks: []
+    },
+    {
+        id: 'zepkkutu',
+        name: 'ZEP 끄투',
+        tags: [],
+        color: '#5555ff',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2023.5,
+        endYear: 2024,
+        description: 'ZEP오목(현 오목랜드)에서 이용할 수 있던 끄투 서버에요. 2023년 여름에서 2024년까지 서비스했어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutucom',
+        name: '끄투닷컴',
+        tags: [],
+        color: '#ff5555',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2017,
+        endYear: 2021.5,
+        description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutudotplus',
+        name: '끄투닷플러스',
+        tags: [],
+        color: '#55ff55',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2021,
+        endYear: 2024,
+        description: '도토리님이 2021년부터 2024년경까지 운영하신 끄투 사이트에요. \'도토리 디자인\'이 만들어진 끄투에요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutuclub_kiwi',
+        name: '끄투클럽',
+        tags: [],
+        color: '#ffff55',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2021,
+        endYear: 2021.5,
+        description: 'kiwi님이 2021년 초부터 2022년 전까지 운영하신 끄투클럽 서버에요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutuclub_rainbow',
+        name: '끄투클럽',
+        tags: [],
+        color: '#ffff55',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2021.5,
+        endYear: 2022,
+        description: 'rainbow1017님이 2021년 말부터 2022년 초까지 운영하신 서버에요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutuclub_gremi',
+        name: '끄투클럽',
+        tags: [],
+        color: '#ffff55',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2022.5,
+        endYear: 2024,
+        description: 'G.remi님이 2022년 8월부터 2024년 전까지 운영하신 서버에요.',
+        relatedLinks: []
+    },
+    {
+        id: 'worldkkutu',
+        name: '월드끄투',
+        tags: [],
+        color: '#aaaaaa',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2024,
+        endYear: 2025,
+        description: '고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.',
+        relatedLinks: [
+            { name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' },
+            { name: '공식 디스코드', url: 'https://discord.com/invite/QZcZQacTnv' }
+        ]
+    },
+    {
+        id: 'pluskkutu',
+        name: '플러스끄투',
+        tags: ['24시간'],
+        color: '#600bb4',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2023.5,
+        endYear: 2025.5,
+        description: '모든 것이 플러스, 플러스끄투!\n\n모렘미님이 운영하신 끄투 프리서버에요. 2023년 11월경 오픈 베타를 거쳐 2024년 2월 23일에 정식 출시되었어요. 다른 끄투와 전혀 다른, 세련된 UI와 시스템을 가지고 있었으며, 2025년 5월 6일에 서비스 종료되어 끄투리오와 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'hatyonline',
+        name: '해티 온라인',
+        tags: [],
+        color: '#ff9999',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2017.5,
+        endYear: 2017.5,
+        description: '2017년 7월경 오픈한 서버로, 2017년 11월에 끄투닷넷으로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutudotnet_2017',
+        name: '끄투닷넷 (2017)',
+        tags: [],
+        color: '#99ccff',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2017.5,
+        endYear: 2019,
+        description: '2017년 11월에 오픈한 끄투 프리 서버에요. 해티 온라인이 이곳으로 통합되었으며 이후 알파끄투로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'lightkkutu',
+        name: '라이트끄투',
+        tags: [],
+        color: '#ffff99',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2017.5,
+        endYear: 2019,
+        description: '2017년 9월에 오픈한 서버로, 2019년에 끄투닷넷과 함께 알파끄투로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'garukkutu',
+        name: '가루끄투',
+        tags: [],
+        color: '#f0f0f0',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2018,
+        endYear: 2020,
+        description: '2018년에 오픈한 서버로, 이후 2020년 끄투닷넷으로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'morikkutu',
+        name: '모리끄투',
+        tags: [],
+        color: '#ccffcc',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2018,
+        endYear: 2020,
+        description: '2018년에 오픈한 서버로, 이후 2020년 끄투닷넷으로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'alphakkutu',
+        name: '알파끄투',
+        tags: [],
+        color: '#ffcc99',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2019,
+        endYear: 2020,
+        description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버에요. 이후 2020년에 김도훈님이 운영하는 끄투닷넷으로 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutudotnet_2020',
+        name: '끄투닷넷',
+        tags: [],
+        color: '#3366cc',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2020,
+        endYear: 2021.5,
+        description: '내 작은 글자 놀이터, 끄투닷넷!\n\n김도훈님이 2020년에 오픈한 끄투닷넷 서버에요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'pumpkinpiekkutu',
+        name: '호박파이 끄투',
+        tags: [],
+        color: '#ffb366',
+        textColor: '#1a1a1a',
+        url: '#',
+        startYear: 2017,
+        endYear: 2017.5,
+        description: '호박파이님이 2017년 2월 20일에 오픈한 서버로, 2017년 10월 16일 끄투리오에 통합되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutukorea_old1',
+        name: '끄투한국',
+        tags: [],
+        color: '#ff6666',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2017,
+        endYear: 2018,
+        description: '호류님이 2017년 2월 19일에 오픈한 서버에요. 이 서버는 같은 해 11월, 다른 버전의 끄투한국으로 이어졌어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'kkutukorea_old2',
+        name: '끄투한국',
+        tags: [],
+        color: '#ff6666',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2017.5,
+        endYear: 2019.5,
+        description: '호류님이 이전의 끄투한국과 호박파이 끄투리오를 통합하여 2017년 11월 17일에 오픈한 서버에요. 이후 2019년 9월 8일 끄투리오로 이름이 다시 변경되었어요.',
+        relatedLinks: []
+    },
+    {
+        id: 'projectkkutu',
+        name: '프로젝트 끄투',
+        tags: ['언노운워드'],
+        color: '#9933ff',
+        textColor: '#ffffff',
+        url: '#',
+        startYear: 2017.5,
+        endYear: 2021.5,
+        description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버에요.',
+        relatedLinks: []
+    }
 ];
 
 window.utilities = [
     {
         name: '끄투 프리서버 목록',
         url: 'https://free.kkutu.kr',
+        startYear: 2017,
+        endYear: null,
         description: '쪼리핑님이 제작하신 프리서버 목록이에요. 끄투 3의 출시로 인해 2024년 이후로 업데이트가 멈췄어요.',
         tags: ['정보'],
         color: '#2641A3'
     },
     {
-        name: '끄글',
+        name: '끝말잇기 엔진',
         url: 'https://engine.ikki.app/?rule=%EA%B5%AC%EC%97%9C%EB%A3%B0',
+        startYear: 2025,
+        endYear: null,
         description: '단어들을 분석해서 끝말잇기에 어떤 단어가 유리한지를 알려주는 유용한 사이트에요.',
         tags: ['유틸리티', '검색'],
         color: '#0DA2E7'
@@ -145,6 +488,8 @@ window.utilities = [
     {
         name: '끄투박물관',
         url: 'https://free.kkutu.kr/museum',
+        startYear: 2017,
+        endYear: null,
         description: '끄투 2의 역사를 볼 수 있는 박물관이에요.',
         tags: ['정보'],
         color: '#00AF92'
@@ -153,8 +498,19 @@ window.utilities = [
 
 window.recommendedGames = [
     {
+        name: '이끼',
+        url: 'https://ikki.app',
+        startYear: 2025.5,
+        endYear: null,
+        description: '1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
+        tags: ['끝말잇기', '온라인'],
+        color: '#4be693'
+    },
+    {
         name: '마이워드',
         url: 'https://myword.store/',
+        startYear: 2025.5,
+        endYear: null,
         description: '피딮님이 2025년에 개발하신 끝말잇기 게임이에요. 토스 쿵쿵따를 기반으로 만들어졌어요.',
         tags: ['끝말잇기', '온라인'],
         color: '#a2b4a2'
@@ -162,6 +518,8 @@ window.recommendedGames = [
     {
         name: '토스 쿵쿵따',
         url: 'https://discord.com/invite/UFnmw3U',
+        startYear: 2015,
+        endYear: null,
         description: '캔디바 쿵쿵따를 모티브로 제작된 끝말잇기 게임이에요. P2P 방식이라서 하마치 등으로 직접 연결해야 해요.',
         tags: ['끝말잇기', 'P2P'],
         color: '#ba60fa'
@@ -169,6 +527,8 @@ window.recommendedGames = [
     {
         name: '파워 쿵쿵따',
         url: 'https://game2.netmarble.net/kkoongda/',
+        startYear: 2007,
+        endYear: null,
         description: '넷마블에서 2002년부터 서비스 중인 장수 쿵쿵따 게임이에요.',
         tags: ['끝말잇기', '온라인'],
         color: '#4ad6e5'
@@ -176,6 +536,8 @@ window.recommendedGames = [
     {
         name: '자바!',
         url: 'https://sorry.daldal.so/java',
+        startYear: 2021,
+        endYear: null,
         description: '노래의 가사에 맞춰서 키보드를 누르는 리듬 게임이에요.',
         tags: ['리듬', '온라인'],
         color: '#3175DC'

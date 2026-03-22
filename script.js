@@ -248,6 +248,13 @@ const detailView = document.getElementById('detailView');
 const detailCard = document.getElementById('detailCard');
 const themeToggle = document.getElementById('themeToggle');
 
+// Time Machine Elements
+const timeMachineBtn = document.getElementById('timeMachineBtn');
+const timeMachinePopup = document.getElementById('timeMachinePopup');
+const timeMachineSlider = document.getElementById('timeMachineSlider');
+const timeMachineDisplay = document.getElementById('timeMachineDisplay');
+const timeMachinePopupDisplay = document.getElementById('timeMachinePopupDisplay');
+
 // Detail Elements
 const detailTitle = document.getElementById('detailTitle');
 const detailApps = document.getElementById('detailTags');
@@ -273,14 +280,118 @@ themeToggle.addEventListener('click', () => {
 });
 
 function updateThemeButton(theme) {
-    themeToggle.textContent = theme === 'dark' ? '라이트 모드' : '다크 모드';
+    const icon = theme === 'dark' ? '☀️' : '🌙';
+    const text = theme === 'dark' ? '라이트 모드' : '다크 모드';
+    themeToggle.innerHTML = `<span class="theme-icon">${icon}</span><span class="theme-text">${text}</span>`;
 }
+
+// ========== Time Machine Logic ==========
+function initTimeMachine() {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth() + 1; // 1 to 12
+    let currentMax = currentYear;
+    if (currentMonth >= 7) {
+        currentMax += 0.5;
+    }
+
+    timeMachineSlider.max = currentMax;
+    timeMachineSlider.value = currentMax;
+
+    function formatTimeValue(val) {
+        const num = parseFloat(val);
+        if (num === currentMax) return '타임머신';
+        const year = Math.floor(num);
+        const shortYear = year.toString().slice(-2);
+        const half = num % 1 === 0 ? '전반' : '후반';
+        return `${shortYear}년 ${half}`;
+    }
+
+    function updateTimeMachineDisplay() {
+        const val = timeMachineSlider.value;
+        const formatted = formatTimeValue(val);
+        timeMachineDisplay.textContent = formatted;
+        timeMachinePopupDisplay.textContent = formatted;
+
+        if (parseFloat(val) < currentMax) {
+            timeMachineBtn.classList.add('time-active');
+            document.body.classList.add('old-time-filter');
+        } else {
+            timeMachineBtn.classList.remove('time-active');
+            document.body.classList.remove('old-time-filter');
+        }
+    }
+
+    function updateTimeMachineCards(isInit = false) {
+        const val = timeMachineSlider.value;
+        const timeValue = parseFloat(val);
+        const allItems = document.querySelectorAll('.card, .utility-card');
+        allItems.forEach(item => {
+            const startStr = item.dataset.start;
+            const endStr = item.dataset.end;
+            const start = startStr && startStr !== 'null' ? parseFloat(startStr) : -Infinity;
+            const end = endStr && endStr !== 'null' ? parseFloat(endStr) : Infinity;
+
+            const shouldShow = (timeValue >= start && timeValue < end);
+            const isShown = item.style.display !== 'none' && !item.classList.contains('animating-out');
+
+            if (shouldShow && !isShown) {
+                item.style.display = '';
+                if (!isInit) {
+                    item.classList.remove('animating-out');
+                    item.classList.add('animating-in');
+                    item.onanimationend = (event) => {
+                        if (event.animationName === 'cardShow') {
+                            item.classList.remove('animating-in');
+                        }
+                    };
+                }
+            } else if (!shouldShow && isShown) {
+                if (isInit) {
+                    item.style.display = 'none';
+                } else {
+                    item.classList.remove('animating-in');
+                    item.classList.add('animating-out');
+                    item.onanimationend = (event) => {
+                        if (event.animationName === 'cardHide') {
+                            item.style.display = 'none';
+                            item.classList.remove('animating-out');
+                        }
+                    };
+                }
+            }
+        });
+    }
+
+    // Initial UI update
+    updateTimeMachineDisplay();
+    updateTimeMachineCards(true);
+
+    timeMachineBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        timeMachinePopup.classList.toggle('active');
+    });
+
+    timeMachinePopup.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent closing when interacting with slider
+    });
+
+    document.addEventListener('click', () => {
+        timeMachinePopup.classList.remove('active');
+    });
+
+    timeMachineSlider.addEventListener('input', updateTimeMachineDisplay);
+    timeMachineSlider.addEventListener('change', () => updateTimeMachineCards(false));
+}
+// ========== End Time Machine Logic ==========
 
 // Render Grid
 servers.forEach(server => {
     const card = document.createElement('div');
     card.className = 'card';
     card.dataset.id = server.id;
+    card.dataset.start = server.startYear;
+    card.dataset.end = server.endYear;
 
     // OKLCH로 정규화된 그라데이션 색상 적용
     const { color1, color2 } = getGradientColors(server.color);
@@ -314,6 +425,8 @@ utilities.forEach(util => {
     a.className = 'utility-card';
     a.href = util.url;
     a.target = "_blank"; // Open in new tab
+    a.dataset.start = util.startYear;
+    a.dataset.end = util.endYear;
 
     // OKLCH로 정규화된 그라데이션 색상 적용
     if (util.color) {
@@ -362,6 +475,8 @@ games.forEach(game => {
     a.className = 'utility-card';
     a.href = game.url;
     a.target = "_blank"; // Open in new tab
+    a.dataset.start = game.startYear;
+    a.dataset.end = game.endYear;
 
     // OKLCH로 정규화된 그라데이션 색상 적용
     if (game.color) {
@@ -408,8 +523,15 @@ function openDetail(server, sourceCard) {
     // Populate Content
     detailTitle.textContent = server.name;
     detailDesc.textContent = server.description;
-    connectBtn.href = server.url;
-    connectBtn.target = "_blank"; // Open in new tab
+    if (server.url === '#') {
+        connectBtn.href = 'javascript:void(0)';
+        connectBtn.removeAttribute('target');
+        connectBtn.classList.add('disabled');
+    } else {
+        connectBtn.href = server.url;
+        connectBtn.target = "_blank"; // Open in new tab
+        connectBtn.classList.remove('disabled');
+    }
 
     // Clear and populate tags
     detailApps.innerHTML = '';
@@ -578,3 +700,6 @@ categoryTabs.forEach(tab => {
 // Restore saved category or default
 const savedCategory = localStorage.getItem('selected-category') || '끄투 서버';
 switchView(savedCategory);
+
+// Initialize Time Machine after cards have been rendered
+initTimeMachine();

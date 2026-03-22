@@ -19,7 +19,21 @@
 <body>
     <div class="site-header">
         <h1 class="site-title"><span class="accent-text">끄투</span>.사이트</h1>
-        <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+        <div class="header-controls">
+            <div class="time-machine-wrapper">
+                <button class="time-machine-btn" id="timeMachineBtn">
+                    <span class="tm-icon">⏳</span>
+                    <span id="timeMachineDisplay">2026년 전반기</span>
+                </button>
+                <div class="time-machine-popup" id="timeMachinePopup">
+                    <div class="tm-popup-title" id="timeMachinePopupDisplay">2026년 전반기</div>
+                    <input type="range" id="timeMachineSlider" min="2016.5" step="0.5">
+                    <div class="tm-popup-notice">자료가 부족해서 일부 서버는 정보가 잘못되었거나 빠져있을 수 있어요.<br>이런 정보를 발견하면 디스코드에 제보해주세요!
+                    </div>
+                </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+        </div>
     </div>
 
     <!-- Category Tabs -->
@@ -64,8 +78,12 @@
         </div>
     </div>
 
+    <div class="contact-section">
+        <a href="https://discord.com/invite/aEAVmrtU4w" target="_blank" class="contact-btn">서버 추가/수정 문의</a>
+    </div>
+
     <footer>
-        <p>서버 추가 문의: kitt3n69420@gmail.com / Discord @f_catus<br>&copy; 2026 끄투닷사이트, 냐옹이 제작, 모든 권리 보유.</p>
+        <p>&copy; 2026 끄투닷사이트, 냐옹이 제작, 모든 권리 보유.</p>
     </footer>
 
     <div class="detail-view" id="detailView">
