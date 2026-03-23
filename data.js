@@ -306,7 +306,7 @@ const serversData = [
     {
         name: '이름없는끄투', color: '#00ffff', textColor: '#1a1a1a',
         instances: [
-            { id: 'namelesskkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2018, operator: '정현수', description: '정현수님이 운영했던 서버에요.', relatedLinks: [] }
+            { id: 'namelesskkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2020, operator: '정현수', description: '정현수님이 운영했던 서버에요.', relatedLinks: [] }
         ]
     },
 ];
