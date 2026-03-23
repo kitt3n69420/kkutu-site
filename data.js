@@ -29,7 +29,7 @@ const serversData = [
                 ]
             },
             {
-                id: 'kkutuonline', tags: ['공식', '끄투3', '24시간'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
+                id: 'kkutuonline', color: '#F3D368', tags: ['공식', '끄투3', '24시간'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
                 description: '글자로 놀자! 끄투 온라인\n\n원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버에요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.',
                 relatedLinks: [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/kkutu/home' },
@@ -95,10 +95,10 @@ const serversData = [
         ]
     },
     {
-        name: '끄투한국', color: '#ff6666', textColor: '#ffffff',
+        name: '끄투한국', color: '#ff0000', textColor: '#ffffff',
         instances: [
             { id: 'kkutukorea_old1', tags: ['24시간'], url: '#', startYear: 2017, endYear: 2018, operator: '호류', description: '호류님이 2017년 2월 19일에 오픈한 서버에요. 이 서버는 같은 해 11월, 다른 버전의 끄투한국으로 이어졌어요.', relatedLinks: [] },
-            { id: 'kkutukorea_old2', tags: ['24시간'], url: '#', startYear: 2017.5, endYear: 2019.5, operator: '호류', description: '호류님이 이전의 끄투한국과 호박파이 끄투리오를 통합하여 2017년 11월 17일에 오픈한 서버에요. 이후 2019년 9월 8일 끄투리오로 이름이 다시 변경되었어요.', relatedLinks: [] }
+            { id: 'kkutukorea_old2', tags: ['24시간'], url: '#', startYear: 2018, endYear: 2019.5, operator: '호류', description: '호류님이 이전의 끄투한국과 호박파이 끄투리오를 통합하여 2017년 11월 17일에 오픈한 서버에요. 이후 2019년 9월 8일 끄투리오로 이름이 다시 변경되었어요.', relatedLinks: [] }
         ]
     },
     {
@@ -108,14 +108,14 @@ const serversData = [
         ]
     },
     {
-        name: '끄투닷넷', color: '#99ccff', textColor: '#1a1a1a',
+        name: '끄투닷넷', color: '#3366cc', textColor: '#1a1a1a',
         instances: [
             {
-                id: 'kkutudotnet_2017', name: '끄투닷넷 (2017)', tags: [], url: '#', startYear: 2017.5, endYear: 2019,
-                description: '2017년 11월에 오픈한 끄투닷넷 서버에요. 해티 온라인이 이곳으로 통합되었으며 이후 알파끄투로 통합되었어요.', relatedLinks: []
+                id: 'kkutudotnet_2017', name: '끄투닷넷 (2017)', tags: [], url: '#', startYear: 2017.9, endYear: 2019,
+                description: '2017년 11월에 오픈한 끄투닷넷 서버에요. 해티 온라인에서 명칭을 변경한 것이며, 이후 알파끄투로 통합되었어요.', relatedLinks: []
             },
             {
-                id: 'kkutudotnet_2020', color: '#3366cc', textColor: '#ffffff', tags: [], url: '#', startYear: 2020, endYear: 2021.5, operator: '김도훈',
+                id: 'kkutudotnet_2020', textColor: '#ffffff', tags: [], url: '#', startYear: 2020, endYear: 2021.5, operator: '김도훈',
                 description: '내 작은 글자 놀이터, 끄투닷넷!\n\n김도훈님이 2020년에 오픈한 끄투닷넷 서버에요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.', relatedLinks: []
             }
         ]
@@ -124,7 +124,7 @@ const serversData = [
         name: 'BF끄투', color: '#008cdc', textColor: '#ffffff',
         instances: [
             {
-                id: 'bfkkutuold', tags: ['24시간'], url: 'https://bfkkutu.kr/', startYear: 2017, endYear: 2024,
+                id: 'bfkkutuold', tags: ['24시간'], url: '#', startYear: 2018, endYear: 2024,
                 description: '새로운 끄투의 시작\n\n매우 다양한 기능을 가지고 있었고, 상당히 인원이 많았던 프리서버였어요. 클랜 시스템 및 내부 대회도 자주 있었어요.',
                 relatedLinks: [{ name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' }]
             },
@@ -141,31 +141,31 @@ const serversData = [
             { id: 'skykkutu_watts011', name: '스카이끄투', tags: [], url: '#', startYear: 2021.2, endYear: 2021.3, operator: 'watts011', description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버에요.', relatedLinks: [] },
             { id: 'kkutuclub_watts011', tags: [], url: '#', startYear: 2021.6, endYear: 2023.5, operator: 'watts011', description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버에요.', relatedLinks: [] },
             { id: 'kkutube_watts011', name: '끄튜브', tags: [], url: '#', startYear: 2023.6, endYear: 2024.2, operator: 'watts011', description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.', relatedLinks: [] },
-            { id: 'kkutus_watts011', name: '끄투어스', tags: [], url: '#', startYear: 2026, endYear: null, operator: 'watts011', description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다.', relatedLinks: [] },
+            { id: 'kkutus_watts011', name: '끄투어스', tags: [], url: '#', startYear: 2026.5, endYear: null, operator: 'watts011', description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다.', relatedLinks: [] },
         ]
     },
     {
         name: '해티 온라인', color: '#ff9999', textColor: '#1a1a1a',
         instances: [
-            { id: 'hatyonline', tags: [], url: '#', startYear: 2017.5, endYear: 2017.5, description: '2017년 7월경 오픈한 서버로, 2017년 11월에 끄투닷넷으로 통합되었어요.', relatedLinks: [] }
+            { id: 'hatyonline', tags: [], url: '#', startYear: 2017.5, endYear: 2017.9, description: '2017년 7월경 오픈한 서버로, 2017년 11월에 끄투닷넷으로 명칭을 변경했어요.', relatedLinks: [] }
         ]
     },
     {
         name: '라이트끄투', color: '#ffff99', textColor: '#1a1a1a',
         instances: [
-            { id: 'lightkkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2019, description: '2017년 9월에 오픈한 서버로, 2019년에 끄투닷넷과 함께 알파끄투로 통합되었어요.', relatedLinks: [] }
+            { id: 'lightkkutu', tags: [], url: '#', startYear: 2017.7, endYear: 2019, operator: '성호준', description: '성호준님이 개발 및 운영하셨으며, 2017년 9월에 오픈한 서버로, 2019년에 끄투닷넷과 함께 알파끄투로 통합되었어요.', relatedLinks: [] }
         ]
     },
     {
         name: '가루끄투', color: '#f0f0f0', textColor: '#1a1a1a',
         instances: [
-            { id: 'garukkutu', tags: [], url: '#', startYear: 2018, endYear: 2020, description: '2018년에 오픈한 서버로, 이후 2020년 끄투닷넷으로 통합되었어요.', relatedLinks: [] }
+            { id: 'garukkutu', tags: [], url: '#', startYear: 2018, endYear: 2020, operator: '씽이 외', description: '2018년에 오픈한 서버로, 이후 2020년 끄투닷넷으로 통합되었어요.', relatedLinks: [] }
         ]
     },
     {
         name: '모리끄투', color: '#ccffcc', textColor: '#1a1a1a',
         instances: [
-            { id: 'morikkutu', tags: [], url: '#', startYear: 2018, endYear: 2020, description: '2018년에 오픈한 서버로, 이후 2020년 끄투닷넷으로 통합되었어요.', relatedLinks: [] }
+            { id: 'morikkutu', tags: [], url: '#', startYear: 2018, endYear: 2020, operator: '볕뉘', description: '볕뉘님이 개발 및 운영하신 2018년에 오픈한 서버로, 끄투에 그림퀴즈 모드 PR을 올린 서버이기도 해요. 이후 2020년 끄투닷넷으로 통합되었어요.', relatedLinks: [] }
         ]
     },
     {
@@ -195,6 +195,7 @@ const serversData = [
     {
         name: '레전드끄투', color: '#52E6F2', textColor: '#ffffff',
         instances: [
+            { id: 'legendkkutu_old', tags: [], url: '#', startYear: 2021.6, endYear: 2022.5, operator: '정희정', description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버에요.', relatedLinks: [] },
             { id: 'legendkkutu', tags: ['뜻추가', '언노운워드'], url: 'https://legendkkutu.kr/', startYear: 2026, endYear: null, operator: '정희정', description: '글자로 놀자! 레전드끄투\n\n오랫동안 자고 있다가 최근에 다시 운영을 시작한 서버에요. 다양한 단어와 게임모드, 규칙들이 계속 추가되고 있고, 업데이트 주기도 빠르답니다.', relatedLinks: [{ name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' }, { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }] }
         ]
     },
@@ -211,9 +212,10 @@ const serversData = [
         ]
     },
     {
-        name: '바로끄투', color: '#808080', textColor: '#ffffff',
+        name: '바로끄투 (구. 랜덤스튜디오 끄투)', color: '#808080', textColor: '#ffffff',
         instances: [
-            { id: 'barokkutu', tags: [], url: '#', startYear: 2022.5, endYear: 2025, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버야. 일단 이거 외에 알려진 건 잘 없어.', relatedLinks: [] }
+            { id: 'randomstudio', name: '랜덤스튜디오 끄투', tags: [], url: '#', startYear: 2021, endYear: 2022, operator: '제 2의 끄투', description: '제 2의 끄투님이 운영하셨던 서버로, 2021년경에 존재했어요. 이후 바로끄투로 이어졌어요.', relatedLinks: [] },
+            { id: 'barokkutu', name: '바로끄투', tags: [], url: '#', startYear: 2022, endYear: 2025, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버에요.', relatedLinks: [] }
         ]
     },
     {
@@ -243,7 +245,7 @@ const serversData = [
     {
         name: '끄투닷컴', color: '#ff5555', textColor: '#ffffff',
         instances: [
-            { id: 'kkutucom', tags: [], url: '#', startYear: 2017, endYear: 2021.5, operator: 'SkyLightHQ', description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.', relatedLinks: [] }
+            { id: 'kkutucom', tags: ['24시간'], url: '#', startYear: 2017, endYear: 2021.5, operator: 'SkyLightHQ', description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.', relatedLinks: [] }
         ]
     },
     {
@@ -263,7 +265,50 @@ const serversData = [
         instances: [
             { id: 'pluskkutu', tags: ['24시간'], url: '#', startYear: 2023.5, endYear: 2025.5, operator: '모렘미', description: '모든 것이 플러스, 플러스끄투!\n\n모렘미님이 운영하신 끄투 프리서버에요. 2023년 11월경 오픈 베타를 거쳐 2024년 2월 23일에 정식 출시되었어요. 다른 끄투와 전혀 다른, 세련된 UI와 시스템을 가지고 있었으며, 2025년 5월 6일에 서비스 종료되어 끄투리오와 통합되었어요.', relatedLinks: [] }
         ]
-    }
+    },
+
+    {
+        name: '쯔투온라인', color: '#ffcc00', textColor: '#1a1a1a',
+        instances: [
+            { id: 'zztuonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '카투', color: '#999999', textColor: '#ffffff',
+        instances: [
+            { id: 'kkatu', tags: [], url: '#', startYear: 2017, endYear: 2017.5, operator: 'dalca', description: 'dalca님이 개발 및 운영했던 서버로, 2017년 전반에 서비스가 종료되었어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '비트유끄투', color: '#ffb3ba', textColor: '#1a1a1a',
+        instances: [
+            { id: 'bitukkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2020, operator: 'Minesna', description: 'Minesna님이 개발 및 운영했던 서버로, 2017년 후반에 오픈해서 2020년 전반까지 운영되었어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: 'KT on IIDX', color: '#baffc9', textColor: '#1a1a1a',
+        instances: [
+            { id: 'ktoniidx', tags: [], url: '#', startYear: 2017, endYear: 2017.5, operator: 'geonu', description: 'geonu님이 운영하셨던 서버로, 2017년 3월 7일에 서비스가 종료되었어요. 다른 서버와는 다른 고퀄리티의 사운드를 가지고 있었어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '멘트온라인', color: '#bae1ff', textColor: '#1a1a1a',
+        instances: [
+            { id: 'mentonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018.5, description: '2017년 6월 15일에 오픈한 프리서버에요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '투데이끄투', color: '#ffffaa', textColor: '#1a1a1a',
+        instances: [
+            { id: 'todaykkutu', tags: [], url: '#', startYear: 2018, endYear: 2020, operator: '무언가', description: '무언가님이 운영했던 서버에요. 레벨업이 빡센 대신 경험치를 많이 줬었어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '이름없는끄투', color: '#00ffff', textColor: '#1a1a1a',
+        instances: [
+            { id: 'namelesskkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2018, operator: '정현수', description: '정현수님이 운영했던 서버에요.', relatedLinks: [] }
+        ]
+    },
 ];
 
 window.servers = [];
