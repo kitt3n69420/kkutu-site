@@ -41,23 +41,6 @@ const serversData = [
         ]
     },
     {
-        name: '끄투코리아', color: '#e5456d', textColor: '#ffffff',
-        instances: [
-            {
-                id: 'kkutukorea', tags: ['대형', '24시간', '뜻추가'], url: 'https://kkutu.co.kr', startYear: 2017, endYear: null,
-                description: '기상천외한 끝말잇기를 웹게임으로! 끄투코리아\n\n끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 항상 몇백 명대의 접속자를 유지하고 있고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.',
-                relatedLinks: [
-                    { name: '공식 카페', url: 'https://cafe.naver.com/kkutukorea' },
-                    { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/JP8SNa7' },
-                    { name: '끄코위키', url: 'https://kkukowiki.kr/w/%EB%8C%80%EB%AC%B8' },
-                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' },
-                    { name: '끄코 유틸리티', url: 'https://kkuko-utils.vercel.app/' }
-                ]
-            }
-        ]
-    },
-    {
         name: '끄투리오', color: '#55AA55', textColor: '#ffffff',
         instances: [
             {
@@ -84,6 +67,23 @@ const serversData = [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/kkutuio-395143193114705920' },
                     { name: '단어사전', url: 'https://kkutu.io/wordsheet' },
                     { name: '리오위키', url: 'https://kkutu.wiki/w/%EB%8C%80%EB%AC%B8' }
+                ]
+            }
+        ]
+    },
+    {
+        name: '끄투코리아', color: '#e5456d', textColor: '#ffffff',
+        instances: [
+            {
+                id: 'kkutukorea', tags: ['대형', '24시간', '뜻추가'], url: 'https://kkutu.co.kr', startYear: 2017, endYear: null,
+                description: '기상천외한 끝말잇기를 웹게임으로! 끄투코리아\n\n끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 항상 몇백 명대의 접속자를 유지하고 있고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.',
+                relatedLinks: [
+                    { name: '공식 카페', url: 'https://cafe.naver.com/kkutukorea' },
+                    { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/JP8SNa7' },
+                    { name: '끄코위키', url: 'https://kkukowiki.kr/w/%EB%8C%80%EB%AC%B8' },
+                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' },
+                    { name: '끄코 유틸리티', url: 'https://kkuko-utils.vercel.app/' }
                 ]
             }
         ]
@@ -221,7 +221,7 @@ const serversData = [
     {
         name: '분홍끄투', color: '#ffb6d9', textColor: '#1a1a1a',
         instances: [
-            { id: 'pinkkkutu', tags: ['24시간', '언노운워드'], url: '#', startYear: 2020, endYear: 2024.5, operator: '분홍꽃', description: '분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버에요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.', relatedLinks: [] }
+            { id: 'pinkkkutu', tags: ['24시간', '언노운워드'], url: '#', startYear: 2020, endYear: 2024.5, operator: '분홍꽃', description: '오늘도 즐거운 분홍끄투!\n\n분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버에요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.', relatedLinks: [] }
         ]
     },
     {
@@ -245,7 +245,7 @@ const serversData = [
     {
         name: '끄투닷컴', color: '#ff5555', textColor: '#ffffff',
         instances: [
-            { id: 'kkutucom', tags: ['24시간'], url: '#', startYear: 2017, endYear: 2021.5, operator: 'SkyLightHQ', description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.', relatedLinks: [] }
+            { id: 'kkutucom', tags: ['24시간'], url: '#', startYear: 2017, endYear: 2021.5, operator: 'SkyLightHQ', description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.', relatedLinks: [{ name: '공식 디스코드', url: 'https://discord.gg/gDgWvGM' }] }
         ]
     },
     {
@@ -401,3 +401,9 @@ window.recommendedGames = [
         color: '#3175DC'
     }
 ];
+
+window.announcement = {
+    message: '아직 타임머신 기능엔 부족한 부분이 많아요. 잘못되거나 빠진 정보가 있거나 끄투 서버 아카이브가 있다면 제보해주세요!',
+    link: 'https://discord.gg/zn2xC57Ftz', // 링크가 필요한 경우. 필요 없으면 빈 문자열('')
+    visible: true
+};

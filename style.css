@@ -47,6 +47,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    position: relative;
     background-image:
         radial-gradient(ellipse at top, var(--accent-glow) 0%, transparent 50%),
         radial-gradient(ellipse at bottom right, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
@@ -54,11 +55,11 @@ body {
 
 body::after {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.1);
     /* Weak grayscale/neutral screen overlay */
     pointer-events: none;
@@ -98,6 +99,53 @@ body.old-time-filter::after {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+/* Site Announcement */
+.site-announcement {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--accent-glow);
+    animation: fadeIn 0.4s ease forwards;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-announcement a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: opacity 0.2s;
+}
+
+.site-announcement a:hover {
+    opacity: 0.8;
+}
+
+.site-announcement .close-announcement {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: auto;
+    transition: color 0.2s;
+}
+
+.site-announcement .close-announcement:hover {
+    color: #ffffff;
 }
 
 .time-machine-wrapper {
