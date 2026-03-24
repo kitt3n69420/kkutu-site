@@ -387,7 +387,7 @@ window.recommendedGames = [
         url: 'https://game2.netmarble.net/kkoongda/',
         startYear: 2007,
         endYear: null,
-        description: '넷마블에서 2002년부터 서비스 중인 장수 쿵쿵따 게임이에요.',
+        description: '넷마블에서 2002년부터 서비스 중인 장수 쿵쿵따 게임이에요. 공포의 쿵쿵따 룰을 기반으로 만들어졌어요.',
         tags: ['끝말잇기', '온라인'],
         color: '#4ad6e5'
     },
@@ -403,7 +403,7 @@ window.recommendedGames = [
 ];
 
 window.announcement = {
-    message: '아직 타임머신 기능엔 부족한 부분이 많아요. 잘못되거나 빠진 정보가 있거나 끄투 서버 아카이브가 있다면 제보해주세요!',
+    message: '아직 타임머신 기능엔 부족한 부분이 많아요. 잘못되거나 빠진 정보가 있다면 제보해주세요!',
     link: 'https://discord.gg/zn2xC57Ftz', // 링크가 필요한 경우. 필요 없으면 빈 문자열('')
     visible: true
 };
