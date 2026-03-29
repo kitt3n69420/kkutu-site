@@ -235,8 +235,8 @@ const serversData = [
         name: '끄투블루', color: '#0070c0', textColor: '#ffffff',
         instances: [
             {
-                id: 'kkutublue', tags: ['24시간'], url: 'https://copy-bid-676628.framer.app/', startYear: 2020.65, endYear: 2022.43, operator: '문창영',
-                description: '글자로 놀자! 끄투블루\n\n끄투블루는 2020년 8월 29일 서비스를 시작한 끄투 프리 서버에요. 게임물관리위원회에서 전체이용가 등급 판정을 받았던 정식 심의 서버이기도 하답니다. 2022년 6월 6일에 아쉽게도 서비스를 종료했어요. 지금은 메인페이지는 연결되지만 접속이 안돼요.',
+                id: 'kkutublue', tags: ['24시간'], url: 'https://copy-bid-676628.framer.app/', startYear: 2020.5, endYear: 2023.5, operator: '문창영',
+                description: '글자로 놀자! 끄투블루\n\n끄투블루는 2020년 8월 23일 서비스를 시작한 끄투 프리 서버에요. 게임물관리위원회에서 전체이용가 등급 판정을 받았던 정식 심의 서버이기도 하답니다. 2023년 6월 3일에 아쉽게도 서비스를 종료했어요. 지금은 메인페이지는 연결되지만 접속이 안돼요.',
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.gg/Twnrnhf' },
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/channel/UCz0G1bvJ_0PAkFl0uN50DkA' },
@@ -247,7 +247,7 @@ const serversData = [
     {
         name: '트꾸', color: '#efff00', textColor: '#1a1a1a',
         instances: [
-            { id: 'tukku', tags: [], url: '#', startYear: 2021, endYear: 2021.5, operator: '키뮤', description: '키뮤님이 만드신 끄투 프리서버로, 독특한 디자인과 컨텐츠, 다양한 단어가 있었던 서버에요. 2021년 전반기에 서버가 생겼지만 같은 해 10월부터 서비를 연 기록이 없어요..', relatedLinks: [] }
+            { id: 'tukku', tags: [], url: '#', startYear: 2021, endYear: 2021.5, operator: '키뮤', description: '끄투에서 한 걸음 더 나아가면 트꾸!\n\n키뮤님이 만드신 끄투 프리서버로, 독특한 디자인과 컨텐츠, 다양한 단어가 있었던 서버에요. 2021년 전반기에 서버가 생겼지만 같은 해 10월부터 서비를 연 기록이 없어요..', relatedLinks: [] }
         ]
     },
     {
@@ -269,15 +269,16 @@ const serversData = [
         ]
     },
     {
-        name: '끄투닷플러스', color: '#55ff55', textColor: '#1a1a1a',
+        name: '도토리끄투', color: '#55ff55', textColor: '#1a1a1a',
         instances: [
-            { id: 'kkutudotplus', tags: [], url: '#', startYear: 2021, endYear: 2024, operator: '도토리', description: '도토리님이 2021년부터 2024년경까지 운영하신 끄투 사이트에요. \'도토리 디자인\'이 만들어진 끄투에요.', relatedLinks: [] }
+            { id: 'dokku', tags: ['24시간'], url: '#', startYear: 2020.5, endYear: 2021, operator: '도토리', description: '도토리님이 2020년부터 운영하신 끄투 서버에요. 도토리 디자인을 사용해서 디자인이 원조 끄투와 상당히 다르며, 원신이나 블루 아카이브 같은 게임 관련 주제의 단어가 매우 많았던 것이 특징이에요.', relatedLinks: [] },
+            { id: 'kkutudotplus', name: '끄투닷플러스', tags: [], url: '#', startYear: 2021, endYear: 2024, operator: '도토리', description: '글자에 즐거움을 더하다, 끄투닷플러스\n\n도토리님이 도토리끄투에 이어 2021년부터 2024년까지 운영하신 사이트에요. \'도토리 디자인\'이 확립된 끄투 서버기도 해요.', relatedLinks: [] }
         ]
     },
     {
         name: '월드끄투', color: '#aaaaaa', textColor: '#1a1a1a',
         instances: [
-            { id: 'worldkkutu', tags: [], url: '#', startYear: 2024, endYear: 2025, operator: '고구마', description: '고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' }, { name: '공식 디스코드', url: 'https://discord.com/invite/QZcZQacTnv' }] }
+            { id: 'worldkkutu', tags: [], url: '#', startYear: 2024, endYear: 2025, operator: '고구마', description: '세상의 끄투, 월드끄투!\n\n고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' }, { name: '공식 디스코드', url: 'https://discord.com/invite/QZcZQacTnv' }] }
         ]
     },
     {
@@ -286,11 +287,17 @@ const serversData = [
             { id: 'pluskkutu', tags: ['24시간'], url: '#', startYear: 2023.5, endYear: 2025.5, operator: '모렘미', description: '모든 것이 플러스, 플러스끄투!\n\n모렘미님이 운영하신 끄투 프리서버에요. 2023년 11월경 오픈 베타를 거쳐 2024년 2월 23일에 정식 출시되었어요. 다른 끄투와 전혀 다른, 세련된 UI와 시스템을 가지고 있었으며, 2025년 5월 6일에 서비스 종료되어 끄투리오와 통합되었어요.', relatedLinks: [] }
         ]
     },
+    {
+        name: '북유럽끄투', color: '#A2D2FF', textColor: '#1a1a1a',
+        instances: [
+            { id: 'nekkutu', tags: [], url: '#', startYear: 2024, endYear: 2024.5, operator: 'AHE', description: 'AHE님이 운영하셨던 끄투 프리서버에요. 2023년 12월 30일에 오픈했었으며 2024년 7월 1일에 서비스를 종료했어요.', relatedLinks: [] }
+        ]
+    },
 
     {
         name: '쯔투온라인', color: '#e4c99aff', textColor: '#1a1a1a',
         instances: [
-            { id: 'zztuonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
+            { id: 'jjutuonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
         ]
     },
     {
