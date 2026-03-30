@@ -177,6 +177,7 @@ const serversData = [
     {
         name: '마한끄투', color: '#3E4BD1', textColor: '#ffffff',
         instances: [
+            { id: 'oldmahankkutu', tags: [], url: '#', startYear: 2023, endYear: 2023.5, operator: '마한', description: '글자로 놀자! 마한끄투\n\n마한님이 운영하셨던 끄투 프리서버에요. 23년 상반기에 운영을 시작해서 같은 해 하반기에 운영을 종료했다가, 다시 24년부터 운영을 시작했어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' }, { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }] },
             { id: 'mahankkutu', tags: ['24시간', '언노운워드'], url: 'https://mahan.kr/', startYear: 2024, endYear: null, operator: '마한', description: '글자로 놀자! 마한끄투\n\n마한님이 운영 중인 끄투 프리서버에요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' }, { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }] }
         ]
     },
