@@ -29,7 +29,7 @@ const serversData = [
                 ]
             },
             {
-                id: 'kkutuonline', color: '#F3D368', tags: ['공식', '끄투3', '24시간'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
+                id: 'kkutuonline', color: '#F3D368', tags: ['공식', '끄투3', '24시간', '언노운워드'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
                 description: '글자로 놀자! 끄투 온라인\n\n원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버에요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.',
                 relatedLinks: [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/kkutu/home' },
@@ -209,7 +209,7 @@ const serversData = [
     {
         name: 'DE LZB 끄투', color: '#ffdd8a', textColor: '#1a1a1a',
         instances: [
-            { id: 'delzb', tags: ['24시간', '언노운워드'], url: 'https://delzb.app', startYear: 2026, endYear: null, operator: '민준', description: '글자로 놀자! DE LZB 끄투\n\n민준님이 운영하시는 끄투 서버에요. 모스부호로 입셕, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }] }
+            { id: 'delzb', tags: ['24시간', '언노운워드'], url: 'https://delzb.app', startYear: 2026, endYear: null, operator: 'minjun1177', description: '글자로 놀자! DE LZB 끄투\n\nminjun1177님이 운영하시는 끄투 서버에요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }] }
         ]
     },
     {
