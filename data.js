@@ -294,6 +294,18 @@ const serversData = [
             { id: 'nekkutu', tags: [], url: '#', startYear: 2024, endYear: 2024.5, operator: 'AHE', description: 'AHE님이 운영하셨던 끄투 프리서버에요. 2023년 12월 30일에 오픈했었으며 2024년 7월 1일에 서비스를 종료했어요.', relatedLinks: [] }
         ]
     },
+    {
+        name: '음악끄투', color: '#a7e0ff', textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'music_kkutu', tags: [], url: '#', startYear: 2021.5, endYear: 2024, operator: '성재현',
+                description: '음악과 글자로 놀자, 음악끄투!\n\n성재현님이 운영하셨던 프리서버에요. 루크님도 서버 운영에 참여하셨어요. 2021년 후반기에 서비스를 시작해서 2024년 전반기에 서비스를 종료했어요.',
+                relatedLinks: [
+                    { name: '카재 게임즈(읽기전용)', url: 'https://discord.com/invite/GTU5mEpwRG' }
+                ]
+            }
+        ]
+    },
 
     {
         name: '쯔투온라인', color: '#e4c99aff', textColor: '#1a1a1a',
