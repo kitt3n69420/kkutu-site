@@ -841,34 +841,26 @@ initTimeMachine();
 
 // Initialize Site Announcement
 if (window.announcement && window.announcement.visible) {
-    const closedAnnouncements = JSON.parse(localStorage.getItem('closedAnnouncements') || '[]');
-    // Use message as ID
-    const annId = window.announcement.message;
+    const annDiv = document.createElement('div');
+    annDiv.className = 'site-announcement';
 
-    if (!closedAnnouncements.includes(annId)) {
-        const annDiv = document.createElement('div');
-        annDiv.className = 'site-announcement';
-
-        let contentHtml = `<span>${window.announcement.message}</span>`;
-        if (window.announcement.link) {
-            contentHtml = `<span>${window.announcement.message} <a href="${window.announcement.link}" target="_blank">바로가기</a></span>`;
-        }
-
-        annDiv.innerHTML = contentHtml + `<button class="close-announcement" aria-label="닫기" title="다시 보지 않기">&times;</button>`;
-
-        // Insert after site header
-        const header = document.querySelector('.site-header');
-        header.parentNode.insertBefore(annDiv, header.nextSibling);
-
-        // Close event
-        annDiv.querySelector('.close-announcement').addEventListener('click', () => {
-            annDiv.style.transition = 'opacity 0.3s ease';
-            annDiv.style.opacity = '0';
-            setTimeout(() => {
-                annDiv.remove();
-            }, 300);
-            closedAnnouncements.push(annId);
-            localStorage.setItem('closedAnnouncements', JSON.stringify(closedAnnouncements));
-        });
+    let contentHtml = `<span>${window.announcement.message}</span>`;
+    if (window.announcement.link) {
+        contentHtml = `<span>${window.announcement.message} <a href="${window.announcement.link}" target="_blank">바로가기</a></span>`;
     }
+
+    annDiv.innerHTML = contentHtml + `<button class="close-announcement" aria-label="닫기" title="닫기">&times;</button>`;
+
+    // Insert after site header
+    const header = document.querySelector('.site-header');
+    header.parentNode.insertBefore(annDiv, header.nextSibling);
+
+    // Close event
+    annDiv.querySelector('.close-announcement').addEventListener('click', () => {
+        annDiv.style.transition = 'opacity 0.3s ease';
+        annDiv.style.opacity = '0';
+        setTimeout(() => {
+            annDiv.remove();
+        }, 300);
+    });
 }
