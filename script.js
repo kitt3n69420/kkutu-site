@@ -452,7 +452,7 @@ servers.forEach(server => {
                 clearTimeout(timeoutId);
                 if (data && data.list) {
                     const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
-                    playerCount.textContent = typeof data.max === 'number' ? `${total}명 / ${data.max}명` : `${total}명`;
+                    playerCount.textContent = `${total}명`;
                     window.activeServers.push(server);
                 } else {
                     playerCount.textContent = '알 수 없음';
