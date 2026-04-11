@@ -286,82 +286,84 @@ function updateThemeButton(theme) {
 }
 
 // ========== Time Machine Logic ==========
+let currentMaxYear = 2026;
+
+function updateTimeMachineDisplay() {
+    const val = timeMachineSlider.value;
+    const num = parseFloat(val);
+    
+    let formatted = '타임머신';
+    if (num < currentMaxYear) {
+        const year = Math.floor(num);
+        const shortYear = year.toString().slice(-2);
+        const half = num % 1 === 0 ? '전반' : '후반';
+        formatted = `${shortYear}년 ${half}`;
+    }
+    
+    timeMachineDisplay.textContent = formatted;
+    timeMachinePopupDisplay.textContent = formatted;
+
+    if (num < currentMaxYear) {
+        timeMachineBtn.classList.add('time-active');
+        document.body.classList.add('old-time-filter');
+    } else {
+        timeMachineBtn.classList.remove('time-active');
+        document.body.classList.remove('old-time-filter');
+    }
+}
+
+function updateTimeMachineCards(isInit = false) {
+    const val = timeMachineSlider.value;
+    const timeValue = parseFloat(val);
+    const allItems = document.querySelectorAll('.card, .utility-card');
+    allItems.forEach(item => {
+        const startStr = item.dataset.start;
+        const endStr = item.dataset.end;
+        const start = startStr && startStr !== 'null' ? parseFloat(startStr) : -Infinity;
+        const end = endStr && endStr !== 'null' ? parseFloat(endStr) : Infinity;
+
+        const shouldShow = (timeValue >= start && timeValue < end);
+        const isShown = item.style.display !== 'none' && !item.classList.contains('animating-out');
+
+        if (shouldShow && !isShown) {
+            item.style.display = '';
+            if (!isInit) {
+                item.classList.remove('animating-out');
+                item.classList.add('animating-in');
+                item.onanimationend = (event) => {
+                    if (event.animationName === 'cardShow') {
+                        item.classList.remove('animating-in');
+                    }
+                };
+            }
+        } else if (!shouldShow && isShown) {
+            if (isInit) {
+                item.style.display = 'none';
+            } else {
+                item.classList.remove('animating-in');
+                item.classList.add('animating-out');
+                item.onanimationend = (event) => {
+                    if (event.animationName === 'cardHide') {
+                        item.style.display = 'none';
+                        item.classList.remove('animating-out');
+                    }
+                };
+            }
+        }
+    });
+}
+
 function initTimeMachine() {
     const now = new Date();
     const currentYear = now.getFullYear();
     const currentMonth = now.getMonth() + 1; // 1 to 12
-    let currentMax = currentYear;
+    currentMaxYear = currentYear;
     if (currentMonth >= 7) {
-        currentMax += 0.5;
+        currentMaxYear += 0.5;
     }
 
-    timeMachineSlider.max = currentMax;
-    timeMachineSlider.value = currentMax;
-
-    function formatTimeValue(val) {
-        const num = parseFloat(val);
-        if (num === currentMax) return '타임머신';
-        const year = Math.floor(num);
-        const shortYear = year.toString().slice(-2);
-        const half = num % 1 === 0 ? '전반' : '후반';
-        return `${shortYear}년 ${half}`;
-    }
-
-    function updateTimeMachineDisplay() {
-        const val = timeMachineSlider.value;
-        const formatted = formatTimeValue(val);
-        timeMachineDisplay.textContent = formatted;
-        timeMachinePopupDisplay.textContent = formatted;
-
-        if (parseFloat(val) < currentMax) {
-            timeMachineBtn.classList.add('time-active');
-            document.body.classList.add('old-time-filter');
-        } else {
-            timeMachineBtn.classList.remove('time-active');
-            document.body.classList.remove('old-time-filter');
-        }
-    }
-
-    function updateTimeMachineCards(isInit = false) {
-        const val = timeMachineSlider.value;
-        const timeValue = parseFloat(val);
-        const allItems = document.querySelectorAll('.card, .utility-card');
-        allItems.forEach(item => {
-            const startStr = item.dataset.start;
-            const endStr = item.dataset.end;
-            const start = startStr && startStr !== 'null' ? parseFloat(startStr) : -Infinity;
-            const end = endStr && endStr !== 'null' ? parseFloat(endStr) : Infinity;
-
-            const shouldShow = (timeValue >= start && timeValue < end);
-            const isShown = item.style.display !== 'none' && !item.classList.contains('animating-out');
-
-            if (shouldShow && !isShown) {
-                item.style.display = '';
-                if (!isInit) {
-                    item.classList.remove('animating-out');
-                    item.classList.add('animating-in');
-                    item.onanimationend = (event) => {
-                        if (event.animationName === 'cardShow') {
-                            item.classList.remove('animating-in');
-                        }
-                    };
-                }
-            } else if (!shouldShow && isShown) {
-                if (isInit) {
-                    item.style.display = 'none';
-                } else {
-                    item.classList.remove('animating-in');
-                    item.classList.add('animating-out');
-                    item.onanimationend = (event) => {
-                        if (event.animationName === 'cardHide') {
-                            item.style.display = 'none';
-                            item.classList.remove('animating-out');
-                        }
-                    };
-                }
-            }
-        });
-    }
+    timeMachineSlider.max = currentMaxYear;
+    timeMachineSlider.value = currentMaxYear;
 
     // Initial UI update
     updateTimeMachineDisplay();
@@ -388,82 +390,142 @@ function initTimeMachine() {
 // State for valid servers for random join
 window.activeServers = [];
 
-// Render Grid
-servers.forEach(server => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.dataset.id = server.id;
-    card.dataset.start = server.startYear;
-    card.dataset.end = server.endYear;
+// Store player counts globally to persist across re-renders
+const serverPlayerCounts = {};
 
-    // OKLCH로 정규화된 그라데이션 색상 적용
-    const { color1, color2 } = getGradientColors(server.color);
-    card.style.setProperty('--card-accent-1', color1);
-    card.style.setProperty('--card-accent-2', color2);
+function renderServers(sortType = 'default') {
+    // Clear existing grid
+    grid.innerHTML = '';
+    
+    // Copy the servers array to avoid mutating the original source
+    let sortedServers = [...servers];
+    
+    // Apply sorting
+    if (sortType === 'players') {
+        sortedServers.sort((a, b) => {
+            const countA = serverPlayerCounts[a.id] || -1;
+            const countB = serverPlayerCounts[b.id] || -1;
+            return countB - countA; // Descending
+        });
+    } else if (sortType === 'name') {
+        sortedServers.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+    } else if (sortType === 'random') {
+        sortedServers.sort(() => Math.random() - 0.5);
+    }
+    // 'default' uses the original order in data.js
 
-    const header = document.createElement('div');
-    header.className = 'card-header';
+    sortedServers.forEach(server => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.dataset.id = server.id;
+        card.dataset.start = server.startYear;
+        card.dataset.end = server.endYear;
 
-    const title = document.createElement('div');
-    title.className = 'card-title';
-    title.textContent = server.name;
+        // OKLCH로 정규화된 그라데이션 색상 적용
+        const { color1, color2 } = getGradientColors(server.color);
+        card.style.setProperty('--card-accent-1', color1);
+        card.style.setProperty('--card-accent-2', color2);
 
-    const playerCount = document.createElement('div');
-    playerCount.className = 'player-count';
-    playerCount.textContent = '확인 중...';
+        const header = document.createElement('div');
+        header.className = 'card-header';
 
-    header.appendChild(title);
-    header.appendChild(playerCount);
+        const title = document.createElement('div');
+        title.className = 'card-title';
+        title.textContent = server.name;
 
-    const tags = document.createElement('div');
-    tags.className = 'card-tags';
-    server.tags.forEach(tag => {
-        tags.appendChild(createTag(tag));
+        const playerCount = document.createElement('div');
+        playerCount.className = 'player-count';
+        
+        // Initial text based on current knowledge
+        const storedCount = serverPlayerCounts[server.id];
+        if (server.url === '#') {
+            playerCount.textContent = '이용 불가';
+        } else if (storedCount !== undefined) {
+            if (storedCount === -1) playerCount.textContent = '알 수 없음';
+            else playerCount.textContent = `${storedCount}명`;
+        } else {
+            playerCount.textContent = '확인 중...';
+        }
+
+        header.appendChild(title);
+        header.appendChild(playerCount);
+
+        const tags = document.createElement('div');
+        tags.className = 'card-tags';
+        server.tags.forEach(tag => {
+            tags.appendChild(createTag(tag));
+        });
+
+        card.appendChild(header);
+        card.appendChild(tags);
+
+        card.addEventListener('click', () => openDetail(server, card));
+
+        grid.appendChild(card);
+
+        // Fetch player count if not already fetched
+        if (server.url !== '#' && serverPlayerCounts[server.id] === undefined) {
+            if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
+                serverPlayerCounts[server.id] = -1;
+                playerCount.textContent = '알 수 없음';
+            } else {
+                const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
+                    ? new URL('/o/servers', server.url).href
+                    : new URL('/servers', server.url).href;
+
+                const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
+
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                fetch(fetchUrl, { signal: controller.signal })
+                    .then(res => {
+                        if (!res.ok) throw new Error('Network error');
+                        return res.json();
+                    })
+                    .then(data => {
+                        clearTimeout(timeoutId);
+                        if (data && data.list) {
+                            const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
+                            serverPlayerCounts[server.id] = total;
+                            playerCount.textContent = `${total}명`;
+                            if (!window.activeServers.includes(server)) {
+                                window.activeServers.push(server);
+                            }
+                            
+                            // If currently sorting by players, we might want to re-sort
+                            // But doing it for every single fetch might be too much.
+                            // We'll let the user manually refresh or trigger sort again.
+                        } else {
+                            serverPlayerCounts[server.id] = -1;
+                            playerCount.textContent = '알 수 없음';
+                        }
+                    })
+                    .catch(err => {
+                        clearTimeout(timeoutId);
+                        serverPlayerCounts[server.id] = -1;
+                        playerCount.textContent = '알 수 없음';
+                    });
+            }
+        }
     });
 
-    card.appendChild(header);
-    card.appendChild(tags);
-
-    card.addEventListener('click', () => openDetail(server, card));
-
-    grid.appendChild(card);
-
-    // Fetch player count
-    if (server.url === '#') {
-        playerCount.textContent = '이용 불가';
-    } else if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
-        playerCount.textContent = '알 수 없음';
-    } else {
-        const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
-            ? new URL('/o/servers', server.url).href 
-            : new URL('/servers', server.url).href;
-        
-        const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
-
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 5000);
-
-        fetch(fetchUrl, { signal: controller.signal })
-            .then(res => {
-                if (!res.ok) throw new Error('Network error');
-                return res.json();
-            })
-            .then(data => {
-                clearTimeout(timeoutId);
-                if (data && data.list) {
-                    const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
-                    playerCount.textContent = `${total}명`;
-                    window.activeServers.push(server);
-                } else {
-                    playerCount.textContent = '알 수 없음';
-                }
-            })
-            .catch(err => {
-                clearTimeout(timeoutId);
-                playerCount.textContent = '알 수 없음';
-            });
+    // Re-initialize Time Machine visibility for new cards
+    if (typeof updateTimeMachineCards === 'function') {
+        updateTimeMachineCards(true);
     }
-});
+}
+
+// Initial render
+renderServers();
+
+// Sorting Event Listener
+const serverSort = document.getElementById('serverSort');
+if (serverSort) {
+    serverSort.addEventListener('change', (e) => {
+        renderServers(e.target.value);
+    });
+}
 
 // Random Server Join
 const randomServerBtn = document.getElementById('randomServerBtn');
@@ -775,14 +837,14 @@ if (window.announcement && window.announcement.visible) {
     if (!closedAnnouncements.includes(annId)) {
         const annDiv = document.createElement('div');
         annDiv.className = 'site-announcement';
-        
+
         let contentHtml = `<span>${window.announcement.message}</span>`;
         if (window.announcement.link) {
             contentHtml = `<span>${window.announcement.message} <a href="${window.announcement.link}" target="_blank">바로가기</a></span>`;
         }
-        
+
         annDiv.innerHTML = contentHtml + `<button class="close-announcement" aria-label="닫기" title="다시 보지 않기">&times;</button>`;
-        
+
         // Insert after site header
         const header = document.querySelector('.site-header');
         header.parentNode.insertBefore(annDiv, header.nextSibling);

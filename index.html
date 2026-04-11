@@ -50,8 +50,19 @@
         <div class="view-section active" id="servers-view">
             <section class="server-section">
                 <div class="server-list-header">
+                    <div class="header-spacer"></div>
                     <h2>끄투 서버 목록</h2>
-                    <button id="randomServerBtn" class="random-server-btn">아무 서버나 들어가기</button>
+                    <div class="server-list-controls">
+                        <div class="server-sort-wrapper">
+                            <select id="serverSort" class="server-sort-select">
+                                <option value="default">기본</option>
+                                <option value="players">인원순</option>
+                                <option value="name">가나다순</option>
+                                <option value="random">랜덤</option>
+                            </select>
+                        </div>
+                        <button id="randomServerBtn" class="random-server-btn">아무 서버나 들어가기</button>
+                    </div>
                 </div>
                 <div class="grid-container" id="grid">
                     <!-- Cards will be injected here -->

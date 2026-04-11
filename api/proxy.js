@@ -29,7 +29,7 @@ export default async function handler(req) {
         }
 
         const data = await response.text();
-        
+
         return new Response(data, {
             status: 200,
             headers: {
