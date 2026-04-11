@@ -389,10 +389,11 @@ h1 {
 }
 
 .player-count {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     white-space: nowrap;
-    padding-top: 4px;
+    padding-top: 6px;
+    font-weight: 400;
 }
 
 @media (max-width: 600px) {
