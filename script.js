@@ -385,6 +385,9 @@ function initTimeMachine() {
 }
 // ========== End Time Machine Logic ==========
 
+// State for valid servers for random join
+window.activeServers = [];
+
 // Render Grid
 servers.forEach(server => {
     const card = document.createElement('div');
@@ -398,9 +401,19 @@ servers.forEach(server => {
     card.style.setProperty('--card-accent-1', color1);
     card.style.setProperty('--card-accent-2', color2);
 
+    const header = document.createElement('div');
+    header.className = 'card-header';
+
     const title = document.createElement('div');
     title.className = 'card-title';
     title.textContent = server.name;
+
+    const playerCount = document.createElement('div');
+    playerCount.className = 'player-count';
+    playerCount.textContent = '확인 중...';
+
+    header.appendChild(title);
+    header.appendChild(playerCount);
 
     const tags = document.createElement('div');
     tags.className = 'card-tags';
@@ -408,13 +421,60 @@ servers.forEach(server => {
         tags.appendChild(createTag(tag));
     });
 
-    card.appendChild(title);
+    card.appendChild(header);
     card.appendChild(tags);
 
     card.addEventListener('click', () => openDetail(server, card));
 
     grid.appendChild(card);
+
+    // Fetch player count
+    if (server.url === '#') {
+        playerCount.textContent = '이용 불가';
+    } else if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
+        playerCount.textContent = '알 수 없음';
+    } else {
+        const fetchUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
+            ? new URL('/o/servers', server.url).href 
+            : new URL('/servers', server.url).href;
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+        fetch(fetchUrl, { signal: controller.signal })
+            .then(res => {
+                if (!res.ok) throw new Error('Network error');
+                return res.json();
+            })
+            .then(data => {
+                clearTimeout(timeoutId);
+                if (data && data.list) {
+                    const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
+                    playerCount.textContent = typeof data.max === 'number' ? `${total}명 / ${data.max}명` : `${total}명`;
+                    window.activeServers.push(server);
+                } else {
+                    playerCount.textContent = '알 수 없음';
+                }
+            })
+            .catch(err => {
+                clearTimeout(timeoutId);
+                playerCount.textContent = '알 수 없음';
+            });
+    }
 });
+
+// Random Server Join
+const randomServerBtn = document.getElementById('randomServerBtn');
+if (randomServerBtn) {
+    randomServerBtn.addEventListener('click', () => {
+        if (window.activeServers.length > 0) {
+            const randomServer = window.activeServers[Math.floor(Math.random() * window.activeServers.length)];
+            window.open(randomServer.url, '_blank');
+        } else {
+            alert('현재 접속 가능한 서버가 없습니다.');
+        }
+    });
+}
 
 // Utility Rendering
 const utilityGrid = document.getElementById('utilityGrid');

@@ -374,10 +374,32 @@ h1 {
     z-index: 1;
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
 .card-title {
     font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 0;
+}
+
+.player-count {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .card-header {
+        flex-direction: column;
+        gap: 4px;
+    }
 }
 
 .card-tags {
@@ -622,10 +644,38 @@ h1 {
     width: 100%;
 }
 
+.server-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .server-section h2 {
     font-size: 1.5rem;
-    margin-bottom: 12px;
-    text-align: center;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.random-server-btn {
+    padding: 8px 16px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.random-server-btn:hover {
+    background-color: var(--bg-card-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Utility Section - CSS 트랜지션 */

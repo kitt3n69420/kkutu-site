@@ -76,7 +76,7 @@ const serversData = [
         instances: [
             {
                 id: 'kkutukorea', tags: ['대형', '24시간', '뜻추가'], url: 'https://kkutu.co.kr', startYear: 2017, endYear: null,
-                description: '기상천외한 끝말잇기를 웹게임으로! 끄투코리아\n\n끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 항상 몇백 명대의 접속자를 유지하고 있고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.',
+                description: '기상천외한 끝말잇기를 웹게임으로! 끄투코리아\n\n끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 끄투하러 가자고 하면 거의 항상 끄투코리아를 하자는 뜻이고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.',
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutukorea' },
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
