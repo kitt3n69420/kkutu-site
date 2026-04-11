@@ -162,6 +162,13 @@ function getGradientColors(hexColor) {
     return { color1, color2 };
 }
 
+function getHueFromHex(hex) {
+    const rgb = hexToRgb(hex);
+    const oklab = rgbToOklab(rgb.r, rgb.g, rgb.b);
+    const oklch = oklabToOklch(oklab.L, oklab.a, oklab.b);
+    return oklch.h;
+}
+
 // ========== End Color Normalization ==========
 
 const tagDescriptions = window.tagDescriptions || {};
@@ -403,9 +410,13 @@ function renderServers(sortType = 'default') {
     // Apply sorting
     if (sortType === 'players') {
         sortedServers.sort((a, b) => {
-            const countA = serverPlayerCounts[a.id] || -1;
-            const countB = serverPlayerCounts[b.id] || -1;
+            const countA = (serverPlayerCounts[a.id] !== undefined) ? serverPlayerCounts[a.id] : -1;
+            const countB = (serverPlayerCounts[b.id] !== undefined) ? serverPlayerCounts[b.id] : -1;
             return countB - countA; // Descending
+        });
+    } else if (sortType === 'hue') {
+        sortedServers.sort((a, b) => {
+            return getHueFromHex(a.color) - getHueFromHex(b.color);
         });
     } else if (sortType === 'name') {
         sortedServers.sort((a, b) => a.name.localeCompare(b.name, 'ko'));

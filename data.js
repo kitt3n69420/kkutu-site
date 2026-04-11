@@ -326,7 +326,7 @@ const serversData = [
         ]
     },
     {
-        name: '비트유끄투', color: '#ffb3ba', textColor: '#1a1a1a',
+        name: '비트유끄투', color: '#007bffff', textColor: '#1a1a1a',
         instances: [
             { id: 'bitukkutu', tags: [], url: '#', startYear: 2017.5, endYear: 2020, operator: 'Minesna', description: 'Minesna님이 개발 및 운영했던 서버로, 2017년 후반에 오픈해서 2020년 전반까지 운영되었어요.', relatedLinks: [] }
         ]
