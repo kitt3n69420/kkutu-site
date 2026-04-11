@@ -285,7 +285,7 @@ const serversData = [
     {
         name: '월드끄투', color: '#aaaaaa', textColor: '#1a1a1a',
         instances: [
-            { id: 'worldkkutu', tags: [], url: '#', startYear: 2024, endYear: 2025, operator: '고구마', description: '세상의 끄투, 월드끄투!\n\n고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' }, { name: '공식 디스코드', url: 'https://discord.com/invite/QZcZQacTnv' }] }
+            { id: 'worldkkutu', tags: [], url: '#', startYear: 2024, endYear: 2025, operator: '고구마', description: '세상의 끄투, 월드끄투!\n\n고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.', relatedLinks: [{ name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' }, { name: '공식 유튜브', url: 'https://www.youtube.com/watch?v=cvYzv-6rCTc' }, { name: '공식 디스코드', url: 'https://discord.com/invite/DyyUVnnHTH' }] }
         ]
     },
     {
