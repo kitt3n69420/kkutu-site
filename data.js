@@ -221,6 +221,12 @@ const serversData = [
         ]
     },
     {
+        name: '차끄투', color: '#F323E9', textColor: '#ffffff',
+        instances: [
+            { id: 'chankkutu', tags: [], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차', description: '차님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
+        ]
+    },
+    {
         name: '분홍끄투', color: '#ffb6d9', textColor: '#1a1a1a',
         instances: [
             { id: 'pinkkkutu', tags: ['24시간', '언노운워드'], url: '#', startYear: 2020, endYear: 2024.5, operator: '분홍꽃', description: '오늘도 즐거운 분홍끄투!\n\n분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버에요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.', relatedLinks: [] }
@@ -308,7 +314,7 @@ const serversData = [
     },
 
     {
-        name: '쯔투온라인', color: '#e4c99aff', textColor: '#1a1a1a',
+        name: '쯔투온라인', color: '#e4c99a', textColor: '#1a1a1a',
         instances: [
             { id: 'jjutuonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
         ]
