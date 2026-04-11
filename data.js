@@ -408,7 +408,7 @@ window.recommendedGames = [
         endYear: null,
         description: '1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
         tags: ['끝말잇기', '온라인'],
-        color: '#4be693'
+        color: '#7d9b4b'
     },
     {
         name: '마이워드',
