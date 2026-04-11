@@ -29,7 +29,7 @@ const serversData = [
                 ]
             },
             {
-                id: 'kkutuonline', color: '#F3D368', tags: ['공식', '끄투3', '24시간', '언노운워드'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
+                id: 'kkutuonline', color: '#F3D368', tags: ['공식', '끄투3', '24시간'], url: 'https://kkutu.kr', startYear: 2025.5, endYear: null, operator: '쪼리핑',
                 description: '글자로 놀자! 끄투 온라인\n\n원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버에요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.',
                 relatedLinks: [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/kkutu/home' },
