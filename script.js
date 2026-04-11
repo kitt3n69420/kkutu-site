@@ -419,7 +419,7 @@ function renderServers(sortType = 'default') {
             return getHueFromHex(a.color) - getHueFromHex(b.color);
         });
     } else if (sortType === 'name') {
-        sortedServers.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+        sortedServers.sort((a, b) => a.name > b.name ? 1 : -1);
     } else if (sortType === 'random') {
         sortedServers.sort(() => Math.random() - 0.5);
     }
