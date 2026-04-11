@@ -841,26 +841,32 @@ initTimeMachine();
 
 // Initialize Site Announcement
 if (window.announcement && window.announcement.visible) {
-    const annDiv = document.createElement('div');
-    annDiv.className = 'site-announcement';
+    const annId = 'announcement_closed';
+    const isClosed = sessionStorage.getItem(annId);
 
-    let contentHtml = `<span>${window.announcement.message}</span>`;
-    if (window.announcement.link) {
-        contentHtml = `<span>${window.announcement.message} <a href="${window.announcement.link}" target="_blank">바로가기</a></span>`;
+    if (!isClosed) {
+        const annDiv = document.createElement('div');
+        annDiv.className = 'site-announcement';
+
+        let contentHtml = `<span>${window.announcement.message}</span>`;
+        if (window.announcement.link) {
+            contentHtml = `<span>${window.announcement.message} <a href="${window.announcement.link}" target="_blank">바로가기</a></span>`;
+        }
+
+        annDiv.innerHTML = contentHtml + `<button class="close-announcement" aria-label="닫기" title="닫기">&times;</button>`;
+
+        // Insert after site header
+        const header = document.querySelector('.site-header');
+        header.parentNode.insertBefore(annDiv, header.nextSibling);
+
+        // Close event
+        annDiv.querySelector('.close-announcement').addEventListener('click', () => {
+            annDiv.style.transition = 'opacity 0.3s ease';
+            annDiv.style.opacity = '0';
+            setTimeout(() => {
+                annDiv.remove();
+            }, 300);
+            sessionStorage.setItem(annId, 'true');
+        });
     }
-
-    annDiv.innerHTML = contentHtml + `<button class="close-announcement" aria-label="닫기" title="닫기">&times;</button>`;
-
-    // Insert after site header
-    const header = document.querySelector('.site-header');
-    header.parentNode.insertBefore(annDiv, header.nextSibling);
-
-    // Close event
-    annDiv.querySelector('.close-announcement').addEventListener('click', () => {
-        annDiv.style.transition = 'opacity 0.3s ease';
-        annDiv.style.opacity = '0';
-        setTimeout(() => {
-            annDiv.remove();
-        }, 300);
-    });
 }
