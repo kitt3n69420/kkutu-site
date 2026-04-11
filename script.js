@@ -434,9 +434,11 @@ servers.forEach(server => {
     } else if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
         playerCount.textContent = '알 수 없음';
     } else {
-        const fetchUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
+        const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
             ? new URL('/o/servers', server.url).href 
             : new URL('/servers', server.url).href;
+        
+        const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
 
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000);
