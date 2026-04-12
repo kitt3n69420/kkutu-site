@@ -222,12 +222,14 @@ const serversData = [
             { id: 'barokkutunew', name: '바로끄투', tags: [], url: 'http://barokkutu.kro.kr/', startYear: 2026, endYear: null, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하는 프리서버에요. 최근에 다시 문을 열었고, 일반 끄투와 디자인이 조금 달라요.', relatedLinks: [] }
         ]
     },
+    /*
     {
         name: '차누끄투', color: '#F323E9', textColor: '#ffffff',
         instances: [
             { id: 'chankkutu', tags: [], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차', description: '차님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
         ]
     },
+    */
     {
         name: '분홍끄투', color: '#ffb6d9', textColor: '#1a1a1a',
         instances: [
