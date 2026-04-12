@@ -1073,7 +1073,20 @@ footer {
     }
 
     .server-sort-wrapper {
-        display: none;
+        display: flex;
+    }
+
+    .server-sort-select {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        padding-right: 28px;
+        background-position: calc(100% - 8px) center;
+    }
+
+    .random-server-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 }
 

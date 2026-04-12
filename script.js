@@ -546,6 +546,13 @@ if (serverSort) {
         localStorage.setItem('server-sort', sortType);
         renderServers(sortType);
     });
+
+    // 랜덤 정렬의 경우 이미 선택된 상태에서 다시 클릭해도 순서가 바뀌도록 보완
+    serverSort.addEventListener('click', () => {
+        if (serverSort.value === 'random') {
+            renderServers('random');
+        }
+    });
 }
 
 // Random Server Join
