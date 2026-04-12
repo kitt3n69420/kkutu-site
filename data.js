@@ -7,6 +7,7 @@ window.tagDescriptions = {
     '우리말샘': '우리말샘 단어를 지원하는 서버입니다.',
     '언노운워드': '사전에 없는 단어만 사용하는 언노운 워드 규칙을 지원하는 서버입니다.',
     '정보': '끄투 관련 정보를 제공하는 사이트입니다.',
+    '개발': '끄투 개발 및 서버 운영과 관련된 정보를 제공하는 사이트입니다.',
     '유틸리티': '끄투 플레이에 도움을 주는 도구입니다.',
     '검색': '단어 검색 기능을 제공하는 사이트입니다.',
     '끝말잇기': '끝말잇기 기반 게임입니다.',
@@ -141,7 +142,7 @@ const serversData = [
             { id: 'skykkutu_watts011', name: '스카이끄투', tags: [], url: '#', startYear: 2021.2, endYear: 2021.3, operator: 'watts011', description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버에요.', relatedLinks: [] },
             { id: 'kkutuclub_watts011', tags: [], url: '#', startYear: 2021.6, endYear: 2023.5, operator: 'watts011', description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버에요.', relatedLinks: [] },
             { id: 'kkutube_watts011', name: '끄튜브', tags: [], url: '#', startYear: 2023.6, endYear: 2024.2, operator: 'watts011', description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.', relatedLinks: [] },
-            { id: 'kkutus_watts011', name: '끄투어스', tags: [], url: '#', startYear: 2026.5, endYear: null, operator: 'watts011', description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다.', relatedLinks: [] },
+            { id: 'kkutus_watts011', name: '끄투어스', tags: [], url: '#', startYear: 9999, endYear: null, operator: 'watts011', description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다.', relatedLinks: [] },
         ]
     },
     {
@@ -190,13 +191,14 @@ const serversData = [
     {
         name: '개미끄투', color: '#8aff8a', textColor: '#1a1a1a',
         instances: [
-            { id: 'antu', tags: ['24시간'], url: 'https://antu.kro.kr/', startYear: 2024, endYear: 2026, operator: '아이앤트', description: '글자로 놀자! 개미끄투\n\n아이앤트님이 운영하시는 끄투 프리서버였어요. 24시간 운영이었어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }] }
+            { id: 'antu_old', tags: ['24시간'], url: '#', startYear: 2024, endYear: 2026, operator: '아이앤트', description: '글자로 놀자! 개미끄투\n\n아이앤트님이 운영하시는 끄투 프리서버였어요. 24시간 운영이었어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }] },
+            { id: 'antu', tags: ['24시간'], url: 'https://antu.kro.kr/', startYear: 9999, endYear: null, operator: '아이앤트', description: '글자로 놀자! 개미끄투\n\n아이앤트님이 운영하시는 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }] }
         ]
     },
     {
         name: '레전드끄투', color: '#52E6F2', textColor: '#ffffff',
         instances: [
-            { id: 'legendkkutu_old', tags: [], url: '#', startYear: 2021.6, endYear: 2022.5, operator: '정희정', description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버에요.', relatedLinks: [] },
+            { id: 'legendkkutu_old', tags: [], url: '#', startYear: 2021.5, endYear: 2022.5, operator: '정희정', description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버에요.', relatedLinks: [] },
             { id: 'legendkkutu', tags: ['뜻추가', '언노운워드'], url: 'https://legendkkutu.kr/', startYear: 2026, endYear: null, operator: '정희정', description: '글자로 놀자! 레전드끄투\n\n오랫동안 자고 있다가 최근에 다시 운영을 시작한 서버에요. 다양한 단어와 게임모드, 규칙들이 계속 추가되고 있고, 업데이트 주기도 빠르답니다.', relatedLinks: [{ name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' }, { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }] }
         ]
     },
@@ -397,6 +399,15 @@ window.utilities = [
         description: '끄투 2의 역사를 볼 수 있는 박물관이에요.',
         tags: ['정보'],
         color: '#00AF92'
+    },
+    {
+        name: '끄투 매뉴얼',
+        url: 'https://github.com/lshqqytiger/KKuTuManual/tree/main',
+        startYear: 2022,
+        endYear: null,
+        description: '베프님이 쓰신 끄투 서버 구축 및 운영에 필요한 가이드를 제공하는 메뉴얼입니다.',
+        tags: ['정보', '개발'],
+        color: '#008cdc'
     }
 ];
 
