@@ -531,14 +531,20 @@ function renderServers(sortType = 'default') {
     }
 }
 
-// Initial render
-renderServers();
+// Sorting UI element
+const serverSort = document.getElementById('serverSort');
+
+// Initial render with saved sort preference
+const savedSort = localStorage.getItem('server-sort') || 'default';
+if (serverSort) serverSort.value = savedSort;
+renderServers(savedSort);
 
 // Sorting Event Listener
-const serverSort = document.getElementById('serverSort');
 if (serverSort) {
     serverSort.addEventListener('change', (e) => {
-        renderServers(e.target.value);
+        const sortType = e.target.value;
+        localStorage.setItem('server-sort', sortType);
+        renderServers(sortType);
     });
 }
 
