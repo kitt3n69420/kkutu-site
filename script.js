@@ -479,6 +479,10 @@ function renderServers(sortType = 'default') {
             if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
                 serverPlayerCounts[server.id] = -1;
                 playerCount.textContent = '알 수 없음';
+                // 끄투 온라인은 인원이 알 수 없음이어도 접속 가능하므로 후보에 추가
+                if (!window.activeServers.includes(server)) {
+                    window.activeServers.push(server);
+                }
             } else {
                 const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
                     ? new URL('/o/servers', server.url).href
@@ -542,8 +546,18 @@ if (serverSort) {
 const randomServerBtn = document.getElementById('randomServerBtn');
 if (randomServerBtn) {
     randomServerBtn.addEventListener('click', () => {
-        if (window.activeServers.length > 0) {
-            const randomServer = window.activeServers[Math.floor(Math.random() * window.activeServers.length)];
+        // 현재 타임머신 설정 값 확인
+        const timeValue = parseFloat(timeMachineSlider.value);
+        
+        // 접속 가능한 서버 중 현재 시간대에 활성화된 서버만 필터링
+        const candidates = window.activeServers.filter(server => {
+            const start = server.startYear && server.startYear !== 'null' ? parseFloat(server.startYear) : -Infinity;
+            const end = server.endYear && server.endYear !== 'null' ? parseFloat(server.endYear) : Infinity;
+            return timeValue >= start && timeValue < end;
+        });
+
+        if (candidates.length > 0) {
+            const randomServer = candidates[Math.floor(Math.random() * candidates.length)];
             window.open(randomServer.url, '_blank');
         } else {
             alert('현재 접속 가능한 서버가 없습니다.');
