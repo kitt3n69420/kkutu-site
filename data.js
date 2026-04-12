@@ -223,7 +223,7 @@ const serversData = [
         ]
     },
     {
-        name: 'ChanKKuTu(이름 미정)', color: '#F323E9', textColor: '#ffffff',
+        name: '차누끄투', color: '#F323E9', textColor: '#ffffff',
         instances: [
             { id: 'chankkutu', tags: [], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차', description: '차님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
         ]
