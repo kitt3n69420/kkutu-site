@@ -1088,6 +1088,19 @@ footer {
         font-size: 0.85rem;
         white-space: nowrap;
     }
+
+    /* 모바일 타임머신 팝업 중앙 정렬 */
+    .time-machine-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+        width: 280px;
+        max-width: 85vw;
+        margin: 0;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
 }
 
 /* Time Machine Old Filter */
