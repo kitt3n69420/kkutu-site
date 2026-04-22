@@ -139,9 +139,10 @@ const serversData = [
     {
         name: '끄투클럽', color: '#ffff55', textColor: '#1a1a1a',
         instances: [
-            { id: 'skykkutu_watts011', name: '스카이끄투', tags: [], url: '#', startYear: 2021.2, endYear: 2021.3, operator: 'watts011', description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버에요.', relatedLinks: [] },
+            { id: 'skykkutu_watts011', name: '스카이끄투', tags: [], color: '#91edff', url: '#', startYear: 2021, endYear: 2021.5, operator: 'watts011', description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버에요.', relatedLinks: [] },
             { id: 'kkutuclub_watts011', tags: [], url: '#', startYear: 2021.6, endYear: 2023.5, operator: 'watts011', description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버에요.', relatedLinks: [] },
-            { id: 'kkutube_watts011', name: '끄튜브', tags: [], url: '#', startYear: 2023.6, endYear: 2024.2, operator: 'watts011', description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.', relatedLinks: [] },
+            { id: 'wordkkutu_junesapbol', name: '단어끄투', tags: [], color: '#fffed7', url: '#', startYear: 2022.5, endYear: 2024.5, operator: '준삽', description: '끄투클럽의 후속작이 되는 서버로, 준삽님이 운영하셨어요. 2022년 후반부터 2024년 전반까지 운영되었어요. 2024년 후반부터는 서버를 열지 않았다가, 12쯤 중요 파일이 손상되어 복구 불능 상태가 되었어요.', relatedLinks: [] },
+            { id: 'kkutube_watts011', name: '끄튜브', tags: [], url: '#', startYear: 2023.5, endYear: 2024.5, operator: 'watts011', description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.', relatedLinks: [] },
             { id: 'kkutus_watts011', name: '끄투어스', tags: [], url: '#', startYear: 9999, endYear: null, operator: 'watts011', description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다.', relatedLinks: [] },
         ]
     },
