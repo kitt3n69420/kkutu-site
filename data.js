@@ -62,7 +62,7 @@ const serversData = [
             },
             {
                 id: 'kkutuiokdh', tags: ['대형', '24시간', '뜻추가', '우리말샘'], url: 'https://kkutu.io/', startYear: 2024, endYear: null, operator: '김도훈',
-                description: '글자로 놀자! 끄투리오\n\n끄투코리아 다음으로 유명한 대형 서버에요. 몇십 명대 접속자를 유지하고 있으며, 꾸준히 여러 서버가 합쳐지면서 다양한 기능들과 단어들이 추가되었어요.',
+                description: '글자로 놀자! 끄투리오\n\n끄투코리아 다음으로 유명한 대형 서버에요. 몇십 명대 접속자를 유지하고 있지만, 현재 서버 대표의 무기한 잠적으로 인해 운영이 매우 어려워진 상황이에요.',
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/kkutuio-395143193114705920' },
@@ -224,9 +224,15 @@ const serversData = [
         ]
     },
     {
-        name: '차누끄투', color: '#F323E9', textColor: '#ffffff',
+        name: '차누끄투', color: '#f3d423', textColor: '#ffffff',
         instances: [
-            { id: 'chankkutu', tags: [], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차', description: '차님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
+            { id: 'chankkutu', tags: ["24시간", "뜻추가", "우리말샘"], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차누', description: '차누님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
+        ]
+    },
+    {
+        name: '티에프끄투', color: '#23dbf3', textColor: '#ffffff',
+        instances: [
+            { id: 'tfkkutu', tags: [], url: 'http://tfkkutu.kro.kr/', startYear: 2026, endYear: null, operator: '티에프지이', description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.', relatedLinks: [] }
         ]
     },
     {
@@ -315,7 +321,6 @@ const serversData = [
             }
         ]
     },
-
     {
         name: '쯔투온라인', color: '#e4c99a', textColor: '#1a1a1a',
         instances: [
