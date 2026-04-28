@@ -229,12 +229,14 @@ const serversData = [
             { id: 'chankkutu', tags: ["24시간", "뜻추가", "우리말샘"], url: 'http://chankkutu.kro.kr/', startYear: 2026, endYear: null, operator: '차누', description: '차누님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.', relatedLinks: [] }
         ]
     },
+    /*
     {
         name: '티에프끄투', color: '#23dbf3', textColor: '#ffffff',
         instances: [
             { id: 'tfkkutu', tags: [], url: 'http://tfkkutu.kro.kr/', startYear: 2026, endYear: null, operator: '티에프지이', description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.', relatedLinks: [] }
         ]
     },
+    */
     {
         name: '분홍끄투', color: '#ffb6d9', textColor: '#1a1a1a',
         instances: [
