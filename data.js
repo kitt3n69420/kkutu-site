@@ -212,7 +212,7 @@ const serversData = [
     {
         name: 'DE LZB 끄투', color: '#ffdd8a', textColor: '#1a1a1a',
         instances: [
-            { id: 'delzb', tags: ['24시간', '언노운워드'], url: 'https://delzb.app', startYear: 2026, endYear: null, operator: 'minjun1177', description: '글자로 놀자! DE LZB 끄투\n\nminjun1177님이 운영하시는 끄투 서버에요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }] }
+            { id: 'delzb', tags: ['24시간', '언노운워드', '뜻추가', '우리말샘'], url: 'https://delzb.app', startYear: 2026, endYear: null, operator: 'minjun1177', description: '글자로 놀자! DE LZB 끄투\n\nminjun1177님이 운영하시는 끄투 서버에요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.', relatedLinks: [{ name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }] }
         ]
     },
     {
