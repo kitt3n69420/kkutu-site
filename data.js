@@ -232,7 +232,7 @@ const serversData = [
     {
         name: '티에프끄투', color: '#23dbf3', textColor: '#ffffff',
         instances: [
-            { id: 'tfkkutu', tags: [], url: 'http://tfkkutu.kro.kr/', startYear: 2026, endYear: null, operator: '티에프지이', description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.', relatedLinks: [] }
+            { id: 'tfkkutu', tags: ["뜻추가", "우리말샘"], url: 'http://tfkkutu.kro.kr/', startYear: 2026, endYear: null, operator: '티에프지이', description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.', relatedLinks: [] }
         ]
     },
     {
