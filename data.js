@@ -220,7 +220,7 @@ const serversData = [
         instances: [
             { id: 'randomstudio', name: '랜덤스튜디오 끄투', tags: [], url: '#', startYear: 2021, endYear: 2022, operator: '제 2의 끄투', description: '제 2의 끄투님이 운영하셨던 서버로, 2021년경에 존재했어요. 이후 바로끄투로 이어졌어요.', relatedLinks: [] },
             { id: 'barokkutu', name: '바로끄투', tags: [], url: '#', startYear: 2022, endYear: 2025, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버에요.', relatedLinks: [] },
-            { id: 'barokkutunew', name: '바로끄투', tags: [], url: 'http://barokkutu.kro.kr/', startYear: 2026, endYear: null, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하는 프리서버에요. 최근에 다시 문을 열었고, 일반 끄투와 디자인이 조금 달라요.', relatedLinks: [] }
+            { id: 'barokkutunew', name: '바로끄투', tags: [], url: 'http://admin.barokkutu.kro.kr/', startYear: 2026, endYear: null, operator: '제 2의 끄투', description: '"제 2의 끄투"라는 분이 운영하는 프리서버에요. 최근에 다시 문을 열었고, 일반 끄투와 디자인이 조금 달라요.', relatedLinks: [] }
         ]
     },
     {
