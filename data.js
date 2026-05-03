@@ -324,7 +324,7 @@ const serversData = [
     {
         name: '쯔투온라인', color: '#e4c99a', textColor: '#1a1a1a',
         instances: [
-            { id: 'jjutuonline', tags: [], url: '#', startYear: 2017.5, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
+            { id: 'jjutuonline', tags: [], url: '#', startYear: 2017, endYear: 2018, description: '마치 약을 거하게 빤 듯한 서버였어요. 2017년 후반에 서비스가 종료되었어요.', relatedLinks: [] }
         ]
     },
     {
