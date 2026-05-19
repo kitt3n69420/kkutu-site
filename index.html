@@ -17,89 +17,96 @@
 </head>
 
 <body>
-    <div class="site-header">
-        <h1 class="site-title"><span class="accent-text">끄투</span>.사이트</h1>
-        <div class="header-controls">
-            <div class="time-machine-wrapper">
+    <div id="app-wrapper">
+        <div class="site-header">
+            <h1 class="site-title"><span class="accent-text">끄투</span>.사이트</h1>
+            <div class="header-controls">
                 <button class="time-machine-btn" id="timeMachineBtn">
                     <span class="tm-icon">⏳</span>
                     <span id="timeMachineDisplay">2026년 전반기</span>
                 </button>
-                <div class="time-machine-popup" id="timeMachinePopup">
-                    <div class="tm-popup-title" id="timeMachinePopupDisplay">2026년 전반기</div>
-                    <input type="range" id="timeMachineSlider" min="2016.5" step="0.5">
-                    <div class="tm-popup-notice">자료가 부족해서 일부 서버는 정보가 잘못되었거나 빠져있을 수 있어요.<br>이런 정보를 발견하면 디스코드에 제보해주세요!
-                    </div>
-                </div>
+                <button class="theme-toggle" id="themeToggle">Dark Mode</button>
             </div>
-            <button class="theme-toggle" id="themeToggle">Dark Mode</button>
         </div>
-    </div>
 
-    <!-- Category Tabs -->
-    <div class="category-tabs">
-        <button class="category-tab active" data-category="끄투 서버">끄투 서버</button>
-        <button class="category-tab tab-desktop-only" data-category="유틸리티 및 게임">유틸리티 및 게임</button>
-        <button class="category-tab tab-mobile-only" data-category="유틸리티">유틸리티</button>
-        <button class="category-tab tab-mobile-only" data-category="추천 게임">추천 게임</button>
-    </div>
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="끄투 서버">끄투 서버</button>
+            <button class="category-tab tab-desktop-only" data-category="유틸리티 및 게임">유틸리티 및 게임</button>
+            <button class="category-tab tab-mobile-only" data-category="유틸리티">유틸리티</button>
+            <button class="category-tab tab-mobile-only" data-category="추천 게임">추천 게임</button>
+        </div>
 
-    <!-- Main Content Container -->
-    <div class="content-container">
-        <!-- Servers View -->
-        <div class="view-section active" id="servers-view">
-            <section class="server-section">
-                <div class="server-list-header">
-                    <div class="header-spacer"></div>
-                    <h2>끄투 서버 목록</h2>
-                    <div class="server-list-controls">
-                        <div class="server-sort-wrapper">
-                            <select id="serverSort" class="server-sort-select">
-                                <option value="default">기본</option>
-                                <option value="players">인원순</option>
-                                <option value="hue">무지개순</option>
-                                <option value="name">가나다순</option>
-                                <option value="random">랜덤</option>
-                            </select>
+        <!-- Main Content Container -->
+        <div class="content-container">
+            <!-- Servers View -->
+            <div class="view-section active" id="servers-view">
+                <section class="server-section">
+                    <div class="server-list-header">
+                        <div class="header-spacer"></div>
+                        <h2>끄투 서버 목록</h2>
+                        <div class="server-list-controls">
+                            <div class="server-sort-wrapper">
+                                <select id="serverSort" class="server-sort-select">
+                                    <option value="default">기본</option>
+                                    <option value="players">인원순</option>
+                                    <option value="hue">무지개순</option>
+                                    <option value="name">가나다순</option>
+                                    <option value="random">랜덤</option>
+                                </select>
+                            </div>
+                            <button id="randomServerBtn" class="random-server-btn">아무 서버나 들어가기</button>
                         </div>
-                        <button id="randomServerBtn" class="random-server-btn">아무 서버나 들어가기</button>
                     </div>
-                </div>
-                <div class="grid-container" id="grid">
-                    <!-- Cards will be injected here -->
-                </div>
-            </section>
-        </div>
-
-        <!-- Extras View (Utilities + Games) -->
-        <div class="view-section" id="extras-view">
-            <div id="extras-container">
-                <!-- Utility Section -->
-                <section class="utility-section" data-section="utility">
-                    <h2>유틸리티 사이트</h2>
-                    <div class="utility-grid" id="utilityGrid">
-                        <!-- Utility items injected here -->
-                    </div>
-                </section>
-
-                <!-- Recommended Games Section -->
-                <section class="utility-section" data-section="games">
-                    <h2>추천 게임</h2>
-                    <div class="utility-grid" id="gameGrid">
-                        <!-- Game items injected here -->
+                    <div class="grid-container" id="grid">
+                        <!-- Cards will be injected here -->
                     </div>
                 </section>
             </div>
+
+            <!-- Extras View (Utilities + Games) -->
+            <div class="view-section" id="extras-view">
+                <div id="extras-container">
+                    <!-- Utility Section -->
+                    <section class="utility-section" data-section="utility">
+                        <h2>유틸리티 사이트</h2>
+                        <div class="utility-grid" id="utilityGrid">
+                            <!-- Utility items injected here -->
+                        </div>
+                    </section>
+
+                    <!-- Recommended Games Section -->
+                    <section class="utility-section" data-section="games">
+                        <h2>추천 게임</h2>
+                        <div class="utility-grid" id="gameGrid">
+                            <!-- Game items injected here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <a href="https://discord.gg/zn2xC57Ftz" target="_blank" class="contact-btn">서버 추가/수정 문의</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 끄투닷사이트, 야옹이 제작, 모든 권리 보유.</p>
+            <p class="ai-notice">이 사이트는 생성형 인공지능을 사용하여 제작되었습니다.<br>사용 목적: 개발의 편의 및 신규 기능의 용이한 도입<br>사용한 도구: Google
+                Antigravity</p>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div class="time-machine-modal" id="timeMachineModal">
+        <div class="modal-overlay" id="timeMachineOverlay"></div>
+        <div class="time-machine-popup" id="timeMachinePopup">
+            <div class="tm-popup-title" id="timeMachinePopupDisplay">2026년 전반기</div>
+            <input type="range" id="timeMachineSlider" min="2016.5" step="0.5">
+            <div class="tm-popup-notice">자료가 부족해서 일부 서버는 정보가 잘못되었거나 빠져있을 수 있어요.<br>이런 정보를 발견하면 디스코드에 제보해주세요!
+            </div>
         </div>
     </div>
-
-    <div class="contact-section">
-        <a href="https://discord.gg/zn2xC57Ftz" target="_blank" class="contact-btn">서버 추가/수정 문의</a>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 끄투닷사이트, 야옹이 제작, 모든 권리 보유.</p>
-    </footer>
 
     <div class="detail-view" id="detailView">
         <div class="detail-overlay"></div>
@@ -120,7 +127,13 @@
         </div>
     </div>
 
-    <script src="data.js"></script>
+    <!-- Data files -->
+    <script src="data/tags.js"></script>
+    <script src="data/servers.js"></script>
+    <script src="data/utilities.js"></script>
+    <script src="data/recommended.js"></script>
+    <script src="data/announcement.js"></script>
+
     <script src="script.js"></script>
 </body>
 

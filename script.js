@@ -376,9 +376,11 @@ function initTimeMachine() {
     updateTimeMachineDisplay();
     updateTimeMachineCards(true);
 
+    const timeMachineModal = document.getElementById('timeMachineModal');
+
     timeMachineBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        timeMachinePopup.classList.toggle('active');
+        timeMachineModal.classList.toggle('active');
     });
 
     timeMachinePopup.addEventListener('click', (e) => {
@@ -386,7 +388,7 @@ function initTimeMachine() {
     });
 
     document.addEventListener('click', () => {
-        timeMachinePopup.classList.remove('active');
+        timeMachineModal.classList.remove('active');
     });
 
     timeMachineSlider.addEventListener('input', updateTimeMachineDisplay);
@@ -449,7 +451,8 @@ function renderServers(sortType = 'default') {
         
         // Initial text based on current knowledge
         const storedCount = serverPlayerCounts[server.id];
-        if (server.url === '#') {
+        const hasValidUrl = server.url !== '#' || (server.url2 && server.url2 !== '#');
+        if (!hasValidUrl) {
             playerCount.textContent = '이용 불가';
         } else if (storedCount !== undefined) {
             if (storedCount === -1) playerCount.textContent = '알 수 없음';
@@ -475,7 +478,7 @@ function renderServers(sortType = 'default') {
         grid.appendChild(card);
 
         // Fetch player count if not already fetched
-        if (server.url !== '#' && serverPlayerCounts[server.id] === undefined) {
+        if (hasValidUrl && serverPlayerCounts[server.id] === undefined) {
             if (server.name === '끄투 온라인' || server.id === 'kkutuonline' || server.id === 'kkutu') {
                 serverPlayerCounts[server.id] = -1;
                 playerCount.textContent = '알 수 없음';
@@ -484,43 +487,64 @@ function renderServers(sortType = 'default') {
                     window.activeServers.push(server);
                 }
             } else {
-                const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
-                    ? new URL('/o/servers', server.url).href
-                    : new URL('/servers', server.url).href;
-
-                const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
-
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 5000);
-
-                fetch(fetchUrl, { signal: controller.signal })
-                    .then(res => {
-                        if (!res.ok) throw new Error('Network error');
-                        return res.json();
-                    })
-                    .then(data => {
-                        clearTimeout(timeoutId);
-                        if (data && data.list) {
-                            const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
-                            serverPlayerCounts[server.id] = total;
-                            playerCount.textContent = `${total}명`;
-                            if (!window.activeServers.includes(server)) {
-                                window.activeServers.push(server);
-                            }
-                            
-                            // If currently sorting by players, we might want to re-sort
-                            // But doing it for every single fetch might be too much.
-                            // We'll let the user manually refresh or trigger sort again.
+                const checkUrl = (urlToCheck, isSecondary = false) => {
+                    if (urlToCheck === '#') {
+                        if (!isSecondary && server.url2 && server.url2 !== '#') {
+                            checkUrl(server.url2, true);
                         } else {
                             serverPlayerCounts[server.id] = -1;
                             playerCount.textContent = '알 수 없음';
                         }
-                    })
-                    .catch(err => {
-                        clearTimeout(timeoutId);
-                        serverPlayerCounts[server.id] = -1;
-                        playerCount.textContent = '알 수 없음';
-                    });
+                        return;
+                    }
+
+                    const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
+                        ? new URL('/o/servers', urlToCheck).href
+                        : new URL('/servers', urlToCheck).href;
+
+                    const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
+
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                    fetch(fetchUrl, { signal: controller.signal })
+                        .then(res => {
+                            if (!res.ok) throw new Error('Network error');
+                            return res.json();
+                        })
+                        .then(data => {
+                            clearTimeout(timeoutId);
+                            if (data && data.list) {
+                                const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
+                                serverPlayerCounts[server.id] = total;
+                                playerCount.textContent = `${total}명`;
+                                if (!window.activeServers.includes(server)) {
+                                    window.activeServers.push(server);
+                                }
+                                if (isSecondary) {
+                                    server.activeUrl = urlToCheck;
+                                }
+                            } else {
+                                if (!isSecondary && server.url2 && server.url2 !== '#') {
+                                    checkUrl(server.url2, true);
+                                } else {
+                                    serverPlayerCounts[server.id] = -1;
+                                    playerCount.textContent = '알 수 없음';
+                                }
+                            }
+                        })
+                        .catch(err => {
+                            clearTimeout(timeoutId);
+                            if (!isSecondary && server.url2 && server.url2 !== '#') {
+                                checkUrl(server.url2, true);
+                            } else {
+                                serverPlayerCounts[server.id] = -1;
+                                playerCount.textContent = '알 수 없음';
+                            }
+                        });
+                };
+
+                checkUrl(server.url);
             }
         }
     });
@@ -685,12 +709,14 @@ function openDetail(server, sourceCard) {
     // Populate Content
     detailTitle.textContent = server.name;
     detailDesc.textContent = server.description;
-    if (server.url === '#') {
+    
+    const targetHref = server.activeUrl || (server.url !== '#' ? server.url : server.url2) || '#';
+    if (targetHref === '#') {
         connectBtn.href = 'javascript:void(0)';
         connectBtn.removeAttribute('target');
         connectBtn.classList.add('disabled');
     } else {
-        connectBtn.href = server.url;
+        connectBtn.href = targetHref;
         connectBtn.target = "_blank"; // Open in new tab
         connectBtn.classList.remove('disabled');
     }
