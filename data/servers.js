@@ -1073,7 +1073,7 @@ const serversData = [
                     '우리말샘'
                 ],
                 url: 'https://delzb.app',
-                url2: '#',
+                url2: 'https://kkutu.delzb.app/',
                 startYear: 2026,
                 endYear: null,
                 operator: 'minjun1177',
