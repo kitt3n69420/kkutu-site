@@ -743,9 +743,9 @@ const serversData = [
                 url: 'http://admin.barokkutu.kro.kr/',
                 url2: 'http://barokkutu.kro.kr/',
                 startYear: 2026,
-                endYear: null,
+                endYear: 2026,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영하는 프리서버에요. 최근에 다시 문을 열었고, 일반 끄투와 디자인이 조금 달라요.',
+                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 다시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
                 relatedLinks: []
             }
         ]
