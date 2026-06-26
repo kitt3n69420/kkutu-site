@@ -1075,11 +1075,11 @@ const serversData = [
                 url: 'https://delzb.app',
                 url2: 'https://kkutu.delzb.app/',
                 startYear: 2026,
-                endYear: null,
+                endYear: 2026,
                 operator: 'minjun1177',
                 description: `글자로 놀자! DE LZB 끄투
 
-minjun1177님이 운영하시는 끄투 서버에요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있고, 24시간 운영되고 있어요.`,
+minjun1177님이 운영하시는 끄투 서버였요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있었고, 24시간 운영이었어요. 현재는 서버 점검 중이에요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }
                 ]
@@ -1101,9 +1101,9 @@ minjun1177님이 운영하시는 끄투 서버에요. 모스부호로 입력, �
                 url: 'http://chankkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026,
-                endYear: null,
+                endYear: 2026,
                 operator: '차누',
-                description: '차누님이 운영을 시작한 서버에요. 다른 끄투와 달리 모던한 색들을 사용하고 있어요.',
+                description: '차누님이 운영을 시작했던 서버에요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
                 relatedLinks: []
             }
         ]
