@@ -808,7 +808,8 @@ const serversData = [
                 id: 'legendkkutu',
                 tags: [
                     '뜻추가',
-                    '언노운워드'
+                    '언노운워드',
+                    '우리말샘'
                 ],
                 url: 'https://legendkkutu.kr/',
                 url2: '#',
