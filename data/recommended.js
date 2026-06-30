@@ -13,7 +13,7 @@ window.recommendedGames = [
         url: 'https://ikki.app',
         startYear: 2025.5,
         endYear: null,
-        description: '싱그럼님이 제작신 1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
+        description: '싱그럼님이 제작하신 1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
         tags: ['끝말잇기', '온라인'],
         color: '#7d9b4b'
     },
