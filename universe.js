@@ -339,29 +339,38 @@ window.UniverseView = (function () {
 
     // ---- Camera ----
 
+    function focusedTargetY(planet) {
+        if (state.W <= 600) {
+            // 모바일: 행성을 위에서 60% 위치에 (화면 중앙보다 10% 아래)
+            return planet.cy - state.H * 0.1 / state.cam.targetZoom;
+        }
+        // 데스크톱: 화면 정중앙
+        return planet.cy;
+    }
+
     function updateCamera(dt) {
         if (state.focusedPlanet) {
             state.cam.targetX = state.focusedPlanet.cx;
-            state.cam.targetY = state.focusedPlanet.cy;
+            state.cam.targetY = focusedTargetY(state.focusedPlanet);
         }
         const factor = 1 - Math.pow(0.90, dt / 16.67);
         state.cam.x += (state.cam.targetX - state.cam.x) * factor;
         state.cam.y += (state.cam.targetY - state.cam.y) * factor;
         state.cam.zoom += (state.cam.targetZoom - state.cam.zoom) * factor;
-        clampCamera();
+        if (!state.focusedPlanet) clampCamera();
         updateActiveUniverse();
     }
 
     function focusPlanet(planet) {
         state.focusedPlanet = planet;
         state.cam.targetX = planet.cx;
-        state.cam.targetY = planet.cy;
         const maxSatR = planet.satellites.reduce(function (m, s) {
             return Math.max(m, s.orbitRadius);
         }, planet.radius * 4);
         const desiredWorld = maxSatR * 2.6;
         const rawZoom = (state.baseSize * 0.38) / Math.max(desiredWorld, 1);
         state.cam.targetZoom = Math.min(Math.max(rawZoom, 1.5), 8);
+        state.cam.targetY = focusedTargetY(planet);
         showServerInfo(planet);
     }
 
