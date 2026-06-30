@@ -745,7 +745,7 @@ const serversData = [
                 startYear: 2026,
                 endYear: 2026.5,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 잠신 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
+                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 잠시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
                 relatedLinks: []
             }
         ]
