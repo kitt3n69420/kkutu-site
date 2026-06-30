@@ -1076,7 +1076,7 @@ const serversData = [
                 url: 'https://delzb.app',
                 url2: 'https://kkutu.delzb.app/',
                 startYear: 2026,
-                endYear: 2026,
+                endYear: 2026.5,
                 operator: 'minjun1177',
                 description: `글자로 놀자! DE LZB 끄투
 
