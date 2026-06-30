@@ -294,23 +294,26 @@ function updateThemeButton(theme) {
 
 // ========== Time Machine Logic ==========
 let currentMaxYear = 2026;
+let somedayValue;
 
 function updateTimeMachineDisplay() {
     const val = timeMachineSlider.value;
     const num = parseFloat(val);
-    
+
     let formatted = '타임머신';
-    if (num < currentMaxYear) {
+    if (num >= somedayValue) {
+        formatted = '언젠가';
+    } else if (num < currentMaxYear) {
         const year = Math.floor(num);
         const shortYear = year.toString().slice(-2);
         const half = num % 1 === 0 ? '전반' : '후반';
         formatted = `${shortYear}년 ${half}`;
     }
-    
+
     timeMachineDisplay.textContent = formatted;
     timeMachinePopupDisplay.textContent = formatted;
 
-    if (num < currentMaxYear) {
+    if (num < currentMaxYear || num >= somedayValue) {
         timeMachineBtn.classList.add('time-active');
         document.body.classList.add('old-time-filter');
     } else {
@@ -322,6 +325,7 @@ function updateTimeMachineDisplay() {
 function updateTimeMachineCards(isInit = false) {
     const val = timeMachineSlider.value;
     const timeValue = parseFloat(val);
+    const isSomedayMode = timeValue >= somedayValue;
     const allItems = document.querySelectorAll('.card, .utility-card');
     allItems.forEach(item => {
         const startStr = item.dataset.start;
@@ -329,7 +333,8 @@ function updateTimeMachineCards(isInit = false) {
         const start = startStr && startStr !== 'null' ? parseFloat(startStr) : -Infinity;
         const end = endStr && endStr !== 'null' ? parseFloat(endStr) : Infinity;
 
-        const shouldShow = (timeValue >= start && timeValue < end);
+        const effectiveTime = isSomedayMode ? 9999 : timeValue;
+        const shouldShow = (effectiveTime >= start && effectiveTime < end);
         const isShown = item.style.display !== 'none' && !item.classList.contains('animating-out');
 
         if (shouldShow && !isShown) {
@@ -369,7 +374,8 @@ function initTimeMachine() {
         currentMaxYear += 0.5;
     }
 
-    timeMachineSlider.max = currentMaxYear;
+    somedayValue = currentMaxYear + 0.5;
+    timeMachineSlider.max = somedayValue;
     timeMachineSlider.value = currentMaxYear;
 
     // Initial UI update

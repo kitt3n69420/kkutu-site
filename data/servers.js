@@ -702,7 +702,7 @@ const serversData = [
                 startYear: 9999,
                 endYear: null,
                 operator: 'watts011',
-                description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중입니다. \n다회료는 빨리 끄투어스를 열어라!',
+                description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중이지반 학업으로 인해 개발이 늦어지고 있어요.',
                 relatedLinks: []
             }
         ]
@@ -743,9 +743,9 @@ const serversData = [
                 url: 'http://admin.barokkutu.kro.kr/',
                 url2: 'http://barokkutu.kro.kr/',
                 startYear: 2026,
-                endYear: 2026,
+                endYear: 2026.5,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 다시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
+                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 잠신 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
                 relatedLinks: []
             }
         ]
@@ -1053,7 +1053,7 @@ const serversData = [
                 endYear: null,
                 description: `글자로 놀자! 끄투엔
 
-최근에 새로 생긴 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
+소형 프리서버 들 중 꽤나 유명한 편인 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' }
                 ]
@@ -1080,7 +1080,7 @@ const serversData = [
                 operator: 'minjun1177',
                 description: `글자로 놀자! DE LZB 끄투
 
-minjun1177님이 운영하시는 끄투 서버였요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있었고, 24시간 운영이었어요. 현재는 서버 점검 중이에요.`,
+minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있었고, 24시간 운영이었어요. 현재는 서버 점검 중이에요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }
                 ]
@@ -1102,9 +1102,24 @@ minjun1177님이 운영하시는 끄투 서버였요. 모스부호로 입력, �
                 url: 'http://chankkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026,
-                endYear: 2026,
+                endYear: 2026.5,
                 operator: '차누',
                 description: '차누님이 운영을 시작했던 서버에요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
+                relatedLinks: []
+            },
+             {
+                id: 'chankkutunew',
+                tags: [
+                    '24시간',
+                    '뜻추가',
+                    '우리말샘'
+                ],
+                url: 'http://chankkutu.kro.kr/',
+                url2: '#',
+                startYear: 9999,
+                endYear: null,
+                operator: '차누',
+                description: '차누님이 이전의 서버가 종료된 이후 새로 운영을 시작한 서버에요.',
                 relatedLinks: []
             }
         ]
