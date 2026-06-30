@@ -306,7 +306,7 @@ const serversData = [
     },
     {
         name: '비트유끄투',
-        color: '#007bffff',
+        color: '#007bff',
         textColor: '#1a1a1a',
         instances: [
             {

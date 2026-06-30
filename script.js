@@ -404,7 +404,10 @@ function initTimeMachine() {
     });
 
     timeMachineSlider.addEventListener('input', updateTimeMachineDisplay);
-    timeMachineSlider.addEventListener('change', () => updateTimeMachineCards(false));
+    timeMachineSlider.addEventListener('change', () => {
+        updateTimeMachineCards(false);
+        if (window.UniverseView && window.UniverseView.isOpen()) window.UniverseView.refresh();
+    });
 }
 // ========== End Time Machine Logic ==========
 
@@ -903,6 +906,16 @@ switchView(savedCategory);
 
 // Initialize Time Machine after cards have been rendered
 initTimeMachine();
+
+// Universe button (toggles open/close)
+const universeBtnEl = document.getElementById('universeBtn');
+if (universeBtnEl) {
+    universeBtnEl.addEventListener('click', () => {
+        if (!window.UniverseView) return;
+        if (window.UniverseView.isOpen()) window.UniverseView.close();
+        else window.UniverseView.open();
+    });
+}
 
 // Initialize Site Announcement
 if (window.announcement && window.announcement.visible) {

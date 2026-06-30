@@ -20,13 +20,6 @@
     <div id="app-wrapper">
         <div class="site-header">
             <h1 class="site-title"><span class="accent-text">끄투</span>.사이트</h1>
-            <div class="header-controls">
-                <button class="time-machine-btn" id="timeMachineBtn">
-                    <span class="tm-icon">⏳</span>
-                    <span id="timeMachineDisplay">2026년 전반기</span>
-                </button>
-                <button class="theme-toggle" id="themeToggle">Dark Mode</button>
-            </div>
         </div>
 
         <!-- Category Tabs -->
@@ -92,6 +85,7 @@
 
         <footer>
             <p>&copy; 2026 끄투닷사이트, 야옹이 제작, 모든 권리 보유.</p>
+            <p class="trademark-notice">끄투 및 관련 로고·이미지는 달달소 또는 그 계열사의 상표입니다. 이 사이트는 달달소와 관련이 없는 비공식 팬 사이트입니다.</p>
             <p class="ai-notice">이 사이트는 생성형 인공지능을 사용하여 제작되었습니다.<br>사용 목적: 개발의 편의 및 신규 기능의 용이한 도입<br>사용한 도구: Google
                 Antigravity</p>
         </footer>
@@ -127,14 +121,62 @@
         </div>
     </div>
 
+    <!-- Always-visible floating controls (must be before scripts) -->
+    <div class="floating-header-controls">
+        <button class="universe-btn" id="universeBtn">
+            <span class="universe-icon">🚀</span>
+            <span class="universe-text">유니버스</span>
+        </button>
+        <button class="time-machine-btn" id="timeMachineBtn">
+            <span class="tm-icon">⏳</span>
+            <span class="tm-text" id="timeMachineDisplay">2026년 전반기</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+    </div>
+
     <!-- Data files -->
     <script src="data/tags.js"></script>
     <script src="data/servers.js"></script>
     <script src="data/utilities.js"></script>
     <script src="data/recommended.js"></script>
+    <script src="data/universe2.js"></script>
     <script src="data/announcement.js"></script>
 
     <script src="script.js"></script>
+
+    <!-- Universe Overlay -->
+    <div class="universe-overlay" id="universeOverlay">
+        <canvas id="universeCanvas"></canvas>
+        <div class="universe-logo" id="universeLogo">
+            <span class="universe-logo-accent">끄투</span>.사이트
+        </div>
+        <div class="universe-server-info" id="universeServerInfo">
+            <div class="usi-name" id="usiName"></div>
+            <div class="usi-tags" id="usiTags"></div>
+            <div class="usi-desc" id="usiDesc"></div>
+            <a class="usi-btn" id="usiBtn" href="#" target="_blank">접속하기</a>
+        </div>
+        <!-- Desktop navigation arrows -->
+        <button class="universe-nav-arrow universe-nav-right" id="universeNavRight" aria-label="Blue Universe로 이동">&#10095;</button>
+        <button class="universe-nav-arrow universe-nav-left" id="universeNavLeft" aria-label="끄투 Universe로 이동">&#10094;</button>
+        <!-- Mobile universe position indicator -->
+        <div class="universe-dots" id="universeDots">
+            <span class="universe-dot active" data-universe="1"></span>
+            <span class="universe-dot" data-universe="2"></span>
+        </div>
+        <div class="universe-hint">탭/클릭으로 행성 선택 &nbsp;·&nbsp; 드래그로 이동 &nbsp;·&nbsp; ESC로 닫기</div>
+        <div class="universe-pan-hint" id="universePanHint">
+            <div class="upan-arrows">
+                <span class="upan-up">↑</span>
+                <span class="upan-left">←</span>
+                <span class="upan-right">→</span>
+                <span class="upan-down">↓</span>
+            </div>
+            <div class="upan-text">터치로 이동할 수 있어요</div>
+        </div>
+    </div>
+
+    <script src="universe.js"></script>
 </body>
 
 </html>
