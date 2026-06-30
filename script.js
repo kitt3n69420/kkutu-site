@@ -313,12 +313,18 @@ function updateTimeMachineDisplay() {
     timeMachineDisplay.textContent = formatted;
     timeMachinePopupDisplay.textContent = formatted;
 
-    if (num < currentMaxYear || num >= somedayValue) {
+    if (num >= somedayValue) {
+        timeMachineBtn.classList.add('time-active');
+        document.body.classList.add('someday-filter');
+        document.body.classList.remove('old-time-filter');
+    } else if (num < currentMaxYear) {
         timeMachineBtn.classList.add('time-active');
         document.body.classList.add('old-time-filter');
+        document.body.classList.remove('someday-filter');
     } else {
         timeMachineBtn.classList.remove('time-active');
         document.body.classList.remove('old-time-filter');
+        document.body.classList.remove('someday-filter');
     }
 }
 

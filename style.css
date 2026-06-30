@@ -1145,6 +1145,16 @@ body.old-time-filter #app-wrapper {
     filter: grayscale(0.5) contrast(0.85);
 }
 
+/* Time Machine Someday Filter */
+body.someday-filter #app-wrapper {
+    filter: hue-rotate(200deg) saturate(0.6) brightness(0.9);
+}
+
+body.someday-filter #app-wrapper::after {
+    opacity: 1;
+    background: rgba(80, 130, 255, 0.08);
+}
+
 /* Time Machine Item Animations */
 @keyframes cardShow {
     0% {

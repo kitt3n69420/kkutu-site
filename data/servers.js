@@ -985,7 +985,7 @@ const serversData = [
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
-아이앤트님이 운영하시는 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.`,
+아이앤트님이 운영하시려고 중비 중인 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }
                 ]
@@ -1119,7 +1119,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 9999,
                 endYear: null,
                 operator: '차누',
-                description: '차누님이 이전의 서버가 종료된 이후 새로 운영을 시작한 서버에요.',
+                description: '차누님이 이전의 서버가 종료된 이후 새로 운영을 시작하려고 준비 중인 서버에요.',
                 relatedLinks: []
             }
         ]
