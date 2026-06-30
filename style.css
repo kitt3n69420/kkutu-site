@@ -1147,7 +1147,7 @@ body.old-time-filter #app-wrapper {
 
 /* Time Machine Someday Filter */
 body.someday-filter #app-wrapper {
-    filter: hue-rotate(200deg) saturate(0.6) brightness(0.9);
+   saturate(1.1) brightness(1.2);
 }
 
 body.someday-filter #app-wrapper::after {
