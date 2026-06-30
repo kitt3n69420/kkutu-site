@@ -4,7 +4,7 @@ window.recommendedGames = [
         url: 'https://malkkori.com/',
         startYear: 2026,
         endYear: null,
-        description: 'Antifreeze님이 만드신 온라인 끝말잇기 게임이에요. 1대 1로 상대와 대결할 수 있고, 끝말잇기·앞말잇기·가온뎃말잇기 룰을 선택할 수 있어요. 관전 기능으로 훈수나 응원도 할 수 있어요.',
+        description: 'Antifreeze님이 만드신 온라인 1대 1 끝말잇기 게임이에요. 끝말잇기·앞말잇기·가온뎃말잇기 룰을 선택할 수 있고 관전 중 훈수나 응원도 할 수 있어요.',
         tags: ['끝말잇기', '온라인'],
         color: '#d9ff00'
     },
@@ -13,7 +13,7 @@ window.recommendedGames = [
         url: 'https://ikki.app',
         startYear: 2025.5,
         endYear: null,
-        description: '1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
+        description: '싱그럼님이 제작신 1대 1에 특화된 끝말잇기 게임이에요. 구엜룰, 넶룰 등 지원하는 룰이 많고, 끝말잇기 엔진도 여기서 서비스해요.',
         tags: ['끝말잇기', '온라인'],
         color: '#7d9b4b'
     },
@@ -24,7 +24,7 @@ window.recommendedGames = [
         endYear: null,
         description: '피딮님이 2025년에 개발하신 끝말잇기 게임이에요. 토스 쿵쿵따를 기반으로 만들어졌어요.',
         tags: ['끝말잇기', '온라인'],
-        color: '#a2b4a2'
+        color: '#4400ff'
     },
     {
         name: '토스 쿵쿵따',
