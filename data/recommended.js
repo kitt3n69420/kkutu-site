@@ -1,5 +1,14 @@
 window.recommendedGames = [
     {
+        name: '말꼬리',
+        url: 'https://malkkori.com/',
+        startYear: 2026,
+        endYear: null,
+        description: 'Antifreeze님이 만드신 온라인 끝말잇기 게임이에요. 1대 1로 상대와 대결할 수 있고, 끝말잇기·앞말잇기·가온뎃말잇기 룰을 선택할 수 있어요. 관전 기능으로 훈수나 응원도 할 수 있어요.',
+        tags: ['끝말잇기', '온라인'],
+        color: '#d9ff00'
+    },
+    {
         name: '이끼',
         url: 'https://ikki.app',
         startYear: 2025.5,
