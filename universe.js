@@ -88,7 +88,7 @@ window.UniverseView = (function () {
             const satDir = j % 2 === 0 ? 1 : -1;
             return {
                 link: link,
-                orbitRadius: state.baseSize * 0.056 * (j + 2.2),
+                orbitRadius: state.baseSize * 0.044 * (j + 2.0),
                 angle: (j * 2.094 + planetIdx * 1.047) % (Math.PI * 2),
                 speed: 0.00045 / (j * 0.5 + 1) * speedMult * satDir,
                 color: lightenHexForCanvas(hexColor, 0.28),
@@ -99,9 +99,16 @@ window.UniverseView = (function () {
     function makePlanet1(item, index, orbitRadius, existingAngles, existingAlphas) {
         const hexColor = item.inst.color || item.group.color || '#888888';
         const instId = item.inst.id;
-        const playerCount = (typeof serverPlayerCounts !== 'undefined' && serverPlayerCounts[instId] != null)
-            ? Math.max(0, serverPlayerCounts[instId])
-            : 0;
+        let playerCount;
+        if (instId === 'kkutuonline' && typeof serverPlayerCounts !== 'undefined') {
+            const korea = serverPlayerCounts['kkutukorea'] != null ? Math.max(0, serverPlayerCounts['kkutukorea']) : 0;
+            const rio = serverPlayerCounts['kkutuiokdh'] != null ? Math.max(0, serverPlayerCounts['kkutuiokdh']) : 0;
+            playerCount = (korea + rio) / 2;
+        } else {
+            playerCount = (typeof serverPlayerCounts !== 'undefined' && serverPlayerCounts[instId] != null)
+                ? Math.max(0, serverPlayerCounts[instId])
+                : 0;
+        }
 
         const rawSize = Math.log10(playerCount + 1) + 2;
         const radiusPx = rawSize * state.baseSize * 0.016;
@@ -632,7 +639,7 @@ window.UniverseView = (function () {
         planet.satellites.forEach(function (s) {
             const sx = planet.cx + Math.cos(s.angle) * s.orbitRadius;
             const sy = planet.cy + Math.sin(s.angle) * s.orbitRadius;
-            const sr = Math.max(3, planet.radius * 0.38);
+            const sr = Math.max(3, state.baseSize * 0.012);
 
             const glowR = sr * 2.2;
             const glow = ctx.createRadialGradient(sx, sy, sr * 0.2, sx, sy, glowR);
@@ -688,7 +695,7 @@ window.UniverseView = (function () {
 
                 if (sx < -80 || sx > state.W + 80 || sy < -60 || sy > state.H + 60) return;
 
-                const sr = Math.max(3, state.focusedPlanet.radius * 0.38) * state.cam.zoom;
+                const sr = Math.max(3, state.baseSize * 0.012) * state.cam.zoom;
                 ctx.shadowColor = 'rgba(0,0,0,0.85)';
                 ctx.shadowBlur = 4;
                 ctx.fillStyle = 'rgba(210,210,255,0.92)';
