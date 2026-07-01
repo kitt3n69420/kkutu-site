@@ -474,6 +474,45 @@ h1 {
     gap: 6px;
 }
 
+/* 이벤트 중인 카드 강조 */
+.card.event-active {
+    box-shadow: 0 0 0 2px var(--card-accent-1), 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: event-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes event-pulse {
+    0%, 100% { box-shadow: 0 0 0 2px var(--card-accent-1), 0 4px 6px rgba(0, 0, 0, 0.2); }
+    50%       { box-shadow: 0 0 14px 5px var(--card-accent-1), 0 8px 16px rgba(0, 0, 0, 0.3); }
+}
+
+/* 카드 우하단 배지 */
+.event-badge {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    background: var(--card-accent-1);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 2;
+    transition: opacity 0.2s;
+}
+.event-badge:hover { opacity: 0.8; }
+
+/* 상세 패널 이벤트 공지 버튼: 관련 사이트 버튼과 같은 줄(맨 윗줄 전체)을 차지 */
+.related-btn.event-announcement-btn {
+    grid-column: 1 / -1;
+    color: var(--card-accent-1, var(--accent-primary));
+    font-weight: 800;
+}
+.related-btn.event-announcement-btn:hover {
+    color: var(--card-accent-1, var(--accent-primary));
+}
+
 .tag {
     font-size: 0.8rem;
     padding: 5px 12px;

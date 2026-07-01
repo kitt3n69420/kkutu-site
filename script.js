@@ -1,5 +1,24 @@
 const servers = window.servers;
 
+// ========== Event Helpers ==========
+
+function getActiveEvent(serverId) {
+    const events = window.events && window.events[serverId];
+    if (!events) return null;
+    // 배열이 아닌 단일 이벤트 객체(구 형식)도 지원
+    const eventList = Array.isArray(events) ? events : [events];
+    // ISO 날짜 문자열(YYYY-MM-DD)을 UTC가 아닌 로컬 시간 기준으로 파싱
+    const parseLocal = str => { const [y, m, d] = str.split('-').map(Number); return new Date(y, m - 1, d); };
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return eventList.find(event => {
+        const start = parseLocal(event.startDate);
+        const end = parseLocal(event.endDate);
+        end.setHours(23, 59, 59, 999);
+        return today >= start && today <= end;
+    }) || null;
+}
+
 // ========== OKLCH Color Normalization ==========
 // HEX -> RGB -> Linear RGB -> XYZ -> OKLAB -> OKLCH 변환 후 정규화
 
@@ -442,6 +461,13 @@ function renderServers(sortType = 'default') {
     }
     // 'default' uses the original order in data.js
 
+    // 이벤트 진행 중인 서버를 정렬 결과와 관계없이 맨 앞으로
+    sortedServers.sort((a, b) => {
+        const aEvent = getActiveEvent(a.id) ? 1 : 0;
+        const bEvent = getActiveEvent(b.id) ? 1 : 0;
+        return bEvent - aEvent;
+    });
+
     sortedServers.forEach(server => {
         const card = document.createElement('div');
         card.className = 'card';
@@ -487,6 +513,18 @@ function renderServers(sortType = 'default') {
 
         card.appendChild(header);
         card.appendChild(tags);
+
+        const activeEvent = getActiveEvent(server.id);
+        if (activeEvent) {
+            card.classList.add('event-active');
+            const badge = document.createElement('a');
+            badge.className = 'event-badge';
+            badge.textContent = activeEvent.title || '이벤트 중';
+            badge.href = activeEvent.link;
+            badge.target = '_blank';
+            badge.addEventListener('click', e => e.stopPropagation());
+            card.appendChild(badge);
+        }
 
         card.addEventListener('click', () => openDetail(server, card));
 
@@ -742,8 +780,21 @@ function openDetail(server, sourceCard) {
         detailApps.appendChild(createTag(tag));
     });
 
-    // Populate Related Links (Sub-utilities)
+    // Populate Related Links (Sub-utilities) + Event announcement button
     detailRelatedLinks.innerHTML = '';
+
+    // 이벤트 공지 버튼: 관련 사이트 버튼과 같은 그리드의 맨 윗줄을 통째로 차지
+    const activeDetailEvent = getActiveEvent(server.id);
+    if (activeDetailEvent) {
+        const eventBtn = document.createElement('a');
+        eventBtn.id = 'detail-event-btn';
+        eventBtn.className = 'related-btn event-announcement-btn';
+        eventBtn.href = activeDetailEvent.link;
+        eventBtn.target = '_blank';
+        eventBtn.textContent = `🎉 ${activeDetailEvent.title || '이벤트 공지 보기'}`;
+        detailRelatedLinks.appendChild(eventBtn);
+    }
+
     if (server.relatedLinks && server.relatedLinks.length > 0) {
         server.relatedLinks.forEach(link => {
             const a = document.createElement('a');
