@@ -702,7 +702,7 @@ const serversData = [
                 startYear: 9999,
                 endYear: null,
                 operator: 'watts011',
-                description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중이지반 학업으로 인해 개발이 늦어지고 있어요.',
+                description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중이지만 학업으로 인해 개발이 늦어지고 있어요.',
                 relatedLinks: []
             }
         ]
@@ -985,7 +985,7 @@ const serversData = [
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
-아이앤트님이 운영하시려고 중비 중인 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.`,
+아이앤트님이 운영하시려고 준비 중인 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }
                 ]
