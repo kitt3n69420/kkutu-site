@@ -669,19 +669,6 @@ const serversData = [
                 relatedLinks: []
             },
             {
-                id: 'wordkkutu_junesapbol',
-                name: '단어끄투',
-                tags: [],
-                color: '#fffed7',
-                url: '#',
-                url2: '#',
-                startYear: 2022.5,
-                endYear: 2024.5,
-                operator: '준삽',
-                description: '끄투클럽의 후속작이 되는 서버로, 준삽님이 운영하셨어요. 2022년 후반부터 2024년 전반까지 운영되었어요. 2024년 후반부터는 서버를 열지 않았다가, 12쯤 중요 파일이 손상되어 복구 불능 상태가 되었어요.',
-                relatedLinks: []
-            },
-            {
                 id: 'kkutube_watts011',
                 name: '끄튜브',
                 tags: [],
