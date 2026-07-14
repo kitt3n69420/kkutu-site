@@ -30,7 +30,7 @@ window.events = {
             title: '끄투엔 여름 이벤트',
             startDate: '2026-07-15',
             endDate:   '2026-08-31',
-            link: 'https://kkutu-n.xyz/event/summer.html'
+            link: 'https://kkutu-n.xyz/event/events_26summer.html'
         }
     ],
 };
