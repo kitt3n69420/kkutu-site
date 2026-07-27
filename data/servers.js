@@ -801,11 +801,11 @@ const serversData = [
                 url: 'https://legendkkutu.kr/',
                 url2: '#',
                 startYear: 2026,
-                endYear: null,
+                endYear: 2026.5,
                 operator: '정희정',
                 description: `글자로 놀자! 레전드끄투
 
-오랫동안 자고 있다가 최근에 다시 운영을 시작한 서버에요. 다양한 단어와 게임모드, 규칙들이 계속 추가되고 있고, 업데이트 주기도 빠르답니다.`,
+오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버에요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었어요..`,
                 relatedLinks: [
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
                     { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }
