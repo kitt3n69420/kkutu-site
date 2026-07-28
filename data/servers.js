@@ -805,7 +805,7 @@ const serversData = [
                 operator: '정희정',
                 description: `글자로 놀자! 레전드끄투
 
-오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버에요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었어요..`,
+오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버에요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었지만, 컴퓨터 초기화 중 데이터베이스가 소실되어서 복구 불능 상태가 되었어요.`,
                 relatedLinks: [
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
                     { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }
@@ -1067,7 +1067,7 @@ const serversData = [
                 operator: 'minjun1177',
                 description: `글자로 놀자! DE LZB 끄투
 
-minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있었고, 24시간 운영이었어요. 현재는 서버 점검 중이에요.`,
+minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력, 포네틱 입력 등 아마추어 무선 관련 규칙들이 있었고, 24시간 운영이었어요. 현재는 서버 도메인만 있고, 서버는 운영하지 않고 있어요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://daldal.so/w/minjun/delzbkkutu' }
                 ]
