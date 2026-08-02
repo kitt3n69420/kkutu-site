@@ -967,12 +967,12 @@ const serversData = [
                 ],
                 url: 'https://antu.kro.kr/',
                 url2: '#',
-                startYear: 9999,
+                startYear: 2026.5,
                 endYear: null,
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
-아이앤트님이 운영하시려고 준비 중인 끄투 프리서버에요. 지금 개편 중으로, 오픈 준비 중이에요.`,
+아이앤트님이 운영하시려고 준비 중인 끄투 프리서버에요. 이전 서버에서 개편 후 재오픈되었어요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }
                 ]
