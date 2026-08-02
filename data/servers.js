@@ -972,7 +972,7 @@ const serversData = [
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
-아이앤트님이 운영하시려고 준비 중인 끄투 프리서버에요. 이전 서버에서 개편 후 재오픈되었어요.`,
+아이앤트님이 운영 중이신 끄투 프리서버에요. 이전 서버에서 개편 후 재오픈되었어요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }
                 ]
