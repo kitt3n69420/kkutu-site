@@ -963,7 +963,6 @@ const serversData = [
             {
                 id: 'antu',
                 tags: [
-                    '24시간'
                 ],
                 url: 'https://antu.kro.kr/',
                 url2: '#',
@@ -1082,9 +1081,6 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
             {
                 id: 'chankkutu',
                 tags: [
-                    '24시간',
-                    '뜻추가',
-                    '우리말샘'
                 ],
                 url: 'http://chankkutu.kro.kr/',
                 url2: '#',
@@ -1106,7 +1102,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: null,
                 operator: '차누',
-                description: '차누님이 이전의 서버가 랜섬웨어로 인해 종료된 이후 새로 운영을 시작하신 서버에요. 이전 차누끄투랑 모습은 거의 똑같아요.',
+                description: '차누님이 이전의 서버가 랜섬웨어로 인해 종료된 이후 새로 운영을 시작하신 서버에요. 레전드끄투 기반으로 만든 서버에요.',
                 relatedLinks: []
             }
         ]
