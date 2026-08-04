@@ -680,6 +680,7 @@ const serversData = [
                 description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.',
                 relatedLinks: []
             },
+            /*
             {
                 id: 'kkutus_watts011',
                 name: '끄투어스',
@@ -692,6 +693,7 @@ const serversData = [
                 description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중이지만 학업으로 인해 개발이 늦어지고 있어요.',
                 relatedLinks: []
             }
+            */
         ]
     },
     {
