@@ -965,6 +965,7 @@ const serversData = [
             {
                 id: 'antu',
                 tags: [
+                    '24시간'
                 ],
                 url: 'https://antu.kro.kr/',
                 url2: '#',
