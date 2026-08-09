@@ -1041,7 +1041,7 @@ const serversData = [
                 endYear: null,
                 description: `글자로 놀자! 끄투엔
 
-소형 프리서버 들 중 꽤나 유명한 편인 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
+야옹이님이 운영하시는 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' }
                 ]
@@ -1126,6 +1126,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: '티에프지이',
                 description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
+                relatedLinks: []
+            }
+        ]
+    },
+    {
+        name: '지우개끄투',
+        color: '#0033cc',
+        textColor: '#ffffff',
+        instances: [
+            {
+                id: 'eraserkkutu',
+                tags: [],
+                url: 'http://eraserkkutu.kro.kr/',
+                url2: '#',
+                startYear: 2026.5,
+                endYear: null,
+                operator: '지우개',
+                description: '지우개님이 운영 중인 끄투 프리서버에요. 최근에 운영을 시작했어요.',
                 relatedLinks: []
             }
         ]
