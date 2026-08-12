@@ -19,7 +19,7 @@ window.recommendedGames = [
     },
     {
         name: '마이워드',
-        url: 'https://myword.store/',
+        url: 'https://myword.kro.kr/',
         startYear: 2025.5,
         endYear: null,
         description: '피딮님이 2025년에 개발하신 끝말잇기 게임이에요. 토스 쿵쿵따를 기반으로 만들어졌어요.',
