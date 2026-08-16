@@ -142,8 +142,8 @@ const serversData = [
                 endYear: null,
                 operator: '김도훈',
                 description: `글자로 놀자! 끄투리오
-
-끄투코리아 다음으로 유명한 대형 서버에요. 몇십 명대 접속자를 유지하고 있지만, 현재 서버 대표의 무기한 잠적으로 인해 운영이 매우 어려워진 상황이에요.`,
+                    김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버에요. 끄투코리아와 다르게 손님들이 접속 가능해서 학생들이 많이 들어오는 편이에요.
+`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/kkutuio-395143193114705920' },
