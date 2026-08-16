@@ -17,7 +17,7 @@ const serversData = [
                 operator: '쪼리핑',
                 description: `글자로 놀자, 끄투 온라인!
 
-모든 것이 시작된 쪼리핑님의 원조 끄투에요. 전성기 때는 몇천 명의 사람이 있었지만 운영의 어려움 등으로 끄투가 오픈소스화 되었고, 그래서 지금처럼 여러 프리 서버가 생겼답니다.`,
+모든 것이 시작된 쪼리핑님의 원조 끄투예요. 전성기 때는 몇천 명의 사람이 있었지만 운영의 어려움 등으로 끄투가 오픈소스화 되었고, 그래서 지금처럼 여러 프리 서버가 생겼답니다.`,
                 relatedLinks: [
                     { name: '샌드박스', url: 'https://cafe.naver.com/sdbx' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/daldalso-809809541385682964' },
@@ -39,7 +39,7 @@ const serversData = [
                 operator: '쪼리핑',
                 description: `글자로 놀자! 끄투 온라인
 
-원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버에요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.`,
+원조 끄투 개발자, 쪼리핑님이 직접 개발하신 새로운 버전의 끄투 공식 서버예요. 이전 버전인 끄투 2와는 시스템적으로 많이 달라요.`,
                 relatedLinks: [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/kkutu/home' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/daldalso-809809541385682964' },
@@ -64,7 +64,7 @@ const serversData = [
                 startYear: 2017,
                 endYear: 2021.5,
                 operator: 'SkyLightHQ',
-                description: 'SkyLightHQ님이 운영했던 끄투 프리서버에요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.',
+                description: 'SkyLightHQ님이 운영했던 끄투 프리서버예요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.',
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.gg/gDgWvGM' }
                 ]
@@ -86,7 +86,7 @@ const serversData = [
                 startYear: 2017,
                 endYear: 2017.5,
                 operator: '이진성',
-                description: '이진성님이 2017년 2월 16일에 오픈한 초창기 끄투리오 서버에요.',
+                description: '이진성님이 2017년 2월 16일에 오픈한 초창기 끄투리오 서버예요.',
                 relatedLinks: []
             },
             {
@@ -99,7 +99,7 @@ const serversData = [
                 startYear: 2017.5,
                 endYear: 2017.5,
                 operator: '호박파이',
-                description: '호박파이님이 2017년 10월 16일에 오픈한 끄투리오 서버에요. 이후 끄투한국(호류 운영)과 합쳐졌어요.',
+                description: '호박파이님이 2017년 10월 16일에 오픈한 끄투리오 서버예요. 이후 끄투한국(호류 운영)과 합쳐졌어요.',
                 relatedLinks: []
             },
             {
@@ -112,7 +112,7 @@ const serversData = [
                 startYear: 2019.5,
                 endYear: 2021,
                 operator: '호류',
-                description: '호류님이 끄투한국을 끄투리오로 이름을 바꾸어 2019년 9월 8일에 오픈한 서버에요. 2021년 김도훈님의 끄투리오로 통합되었어요.',
+                description: '호류님이 끄투한국을 끄투리오로 이름을 바꾸어 2019년 9월 8일에 오픈한 서버예요. 2021년 김도훈님의 끄투리오로 통합되었어요.',
                 relatedLinks: []
             },
             {
@@ -125,7 +125,7 @@ const serversData = [
                 startYear: 2021,
                 endYear: 2024,
                 operator: '김도훈',
-                description: '김도훈님이 2021년 4월 24일에 다양한 서버들(끄투닷넷, 프로젝트 끄투 등)을 통합하여 오픈한 끄투리오 서버에요.',
+                description: '김도훈님이 2021년 4월 24일에 다양한 서버들(끄투닷넷, 프로젝트 끄투 등)을 통합하여 오픈한 끄투리오 서버예요.',
                 relatedLinks: []
             },
             {
@@ -142,7 +142,7 @@ const serversData = [
                 endYear: null,
                 operator: '김도훈',
                 description: `글자로 놀자! 끄투리오
-                    김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버에요. 끄투코리아와 다르게 손님들이 접속 가능해서 학생들이 많이 들어오는 편이에요.
+                    김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버예요. 끄투코리아와 다르게 손님들이 접속 가능해서 학생들이 많이 들어오는 편이에요.
 `,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
@@ -171,7 +171,7 @@ const serversData = [
                 endYear: null,
                 description: `기상천외한 끝말잇기를 웹게임으로! 끄투코리아
 
-끄투코리아는 명실상부 가장 유명한 끄투 프리서버에요. 끄투하러 가자고 하면 거의 항상 끄투코리아를 하자는 뜻이고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버에요.`,
+끄투코리아는 명실상부 가장 유명한 끄투 프리서버예요. 끄투하러 가자고 하면 거의 항상 끄투코리아를 하자는 뜻이고, 스트리머들이 끄투를 한다고 하면 거의 이곳을 찾을 만큼 인지도 1위 서버예요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutukorea' },
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
@@ -198,7 +198,7 @@ const serversData = [
                 startYear: 2017,
                 endYear: 2018,
                 operator: '호류',
-                description: '호류님이 2017년 2월 19일에 오픈한 서버에요. 이 서버는 같은 해 11월, 다른 버전의 끄투한국으로 이어졌어요.',
+                description: '호류님이 2017년 2월 19일에 오픈한 서버예요. 이 서버는 같은 해 11월, 다른 버전의 끄투한국으로 이어졌어요.',
                 relatedLinks: []
             },
             {
@@ -211,7 +211,7 @@ const serversData = [
                 startYear: 2018,
                 endYear: 2019.5,
                 operator: '호류',
-                description: '호류님이 이전의 끄투한국과 호박파이 끄투리오를 통합하여 2017년 11월 17일에 오픈한 서버에요. 이후 2019년 9월 8일 끄투리오로 이름이 다시 변경되었어요.',
+                description: '호류님이 이전의 끄투한국과 호박파이 끄투리오를 통합하여 2017년 11월 17일에 오픈한 서버예요. 이후 2019년 9월 8일 끄투리오로 이름이 다시 변경되었어요.',
                 relatedLinks: []
             }
         ]
@@ -299,7 +299,7 @@ const serversData = [
                 url2: '#',
                 startYear: 2017.5,
                 endYear: 2018.5,
-                description: '2017년 6월 15일에 오픈한 프리서버에요.',
+                description: '2017년 6월 15일에 오픈한 프리서버예요.',
                 relatedLinks: []
             }
         ]
@@ -335,7 +335,7 @@ const serversData = [
                 startYear: 2017.5,
                 endYear: 2020,
                 operator: '정현수',
-                description: '정현수님이 운영했던 서버에요.',
+                description: '정현수님이 운영했던 서버예요.',
                 relatedLinks: []
             }
         ]
@@ -355,7 +355,7 @@ const serversData = [
                 startYear: 2017.5,
                 endYear: 2021.5,
                 operator: '코코냐',
-                description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버에요.',
+                description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버예요.',
                 relatedLinks: []
             }
         ]
@@ -408,7 +408,7 @@ const serversData = [
                 url2: '#',
                 startYear: 2017.9,
                 endYear: 2019,
-                description: '2017년 11월에 오픈한 끄투닷넷 서버에요. 해티 온라인에서 명칭을 변경한 것이며, 이후 알파끄투로 통합되었어요.',
+                description: '2017년 11월에 오픈한 끄투닷넷 서버예요. 해티 온라인에서 명칭을 변경한 것이며, 이후 알파끄투로 통합되었어요.',
                 relatedLinks: []
             },
             {
@@ -422,7 +422,7 @@ const serversData = [
                 operator: '김도훈',
                 description: `내 작은 글자 놀이터, 끄투닷넷!
 
-김도훈님이 2020년에 오픈한 끄투닷넷 서버에요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.`,
+김도훈님이 2020년에 오픈한 끄투닷넷 서버예요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.`,
                 relatedLinks: []
             }
         ]
@@ -440,7 +440,7 @@ const serversData = [
                 startYear: 2018,
                 endYear: 2020,
                 operator: '씽이 외',
-                description: '2018년에 오픈한 서버로, 다양한 주제가 있었던 서버에요. 이후 2020년 끄투닷넷으로 통합되었어요.',
+                description: '2018년에 오픈한 서버로, 다양한 주제가 있었던 서버예요. 이후 2020년 끄투닷넷으로 통합되었어요.',
                 relatedLinks: []
             }
         ]
@@ -476,7 +476,7 @@ const serversData = [
                 startYear: 2018,
                 endYear: 2020,
                 operator: '무언가',
-                description: '무언가님이 운영했던 서버에요. 레벨업이 빡센 대신 경험치를 많이 줬었어요.',
+                description: '무언가님이 운영했던 서버예요. 레벨업이 빡센 대신 경험치를 많이 줬었어요.',
                 relatedLinks: []
             }
         ]
@@ -513,7 +513,7 @@ const serversData = [
                 endYear: null,
                 description: `새로운 끄투의 시작
 
-매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태에요. 현재의 BF끄투는 소스코드를 아예 새로 작성한 것이랍니다.`,
+매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태예요. 현재의 BF끄투는 소스코드를 아예 새로 작성한 것이랍니다.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' }
                 ]
@@ -532,7 +532,7 @@ const serversData = [
                 url2: '#',
                 startYear: 2019,
                 endYear: 2020,
-                description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버에요. 이후 2020년에 김도훈님이 운영하는 끄투닷넷으로 통합되었어요.',
+                description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버예요. 이후 2020년에 김도훈님이 운영하는 끄투닷넷으로 통합되었어요.',
                 relatedLinks: []
             }
         ]
@@ -555,7 +555,7 @@ const serversData = [
                 operator: '분홍꽃',
                 description: `오늘도 즐거운 분홍끄투!
 
-분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버에요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.`,
+분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버예요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.`,
                 relatedLinks: []
             }
         ]
@@ -575,7 +575,7 @@ const serversData = [
                 startYear: 2020,
                 endYear: 2024.5,
                 operator: 'yeokyoomin',
-                description: 'yeokyoomin님이 2020년부터 2024년 5월경까지 운영했던 끄투 프리서버에요.',
+                description: 'yeokyoomin님이 2020년부터 2024년 5월경까지 운영했던 끄투 프리서버예요.',
                 relatedLinks: []
             }
         ]
@@ -597,7 +597,7 @@ const serversData = [
                 operator: '문창영',
                 description: `글자로 놀자! 끄투블루
 
-끄투블루는 2020년 8월 23일 서비스를 시작한 끄투 프리 서버에요. 게임물관리위원회에서 전체이용가 등듭 판정을 받았던 정식 심의 서버이기도 하답니다. 2023년 6월 3일에 아쉽게도 서비스를 종료했어요. 지금은 메인페이지는 연결되지만 접속이 안돼요.`,
+끄투블루는 2020년 8월 23일 서비스를 시작한 끄투 프리 서버예요. 게임물관리위원회에서 전체이용가 등듭 판정을 받았던 정식 심의 서버이기도 하답니다. 2023년 6월 3일에 아쉽게도 서비스를 종료했어요. 지금은 메인페이지는 연결되지만 접속이 안돼요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.gg/Twnrnhf' },
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/channel/UCz0G1bvJ_0PAkFl0uN50DkA' }
@@ -620,7 +620,7 @@ const serversData = [
                 startYear: 2020.5,
                 endYear: 2021,
                 operator: '도토리',
-                description: '도토리님이 2020년부터 운영하신 끄투 서버에요. 도토리 디자인을 사용해서 디자인이 원조 끄투와 상당히 다르며, 원신이나 블루 아카이브 같은 게임 관련 주제의 단어가 매우 많았던 것이 특징이에요.',
+                description: '도토리님이 2020년부터 운영하신 끄투 서버예요. 도토리 디자인을 사용해서 디자인이 원조 끄투와 상당히 다르며, 원신이나 블루 아카이브 같은 게임 관련 주제의 단어가 매우 많았던 것이 특징이에요.',
                 relatedLinks: []
             },
             {
@@ -634,7 +634,7 @@ const serversData = [
                 operator: '도토리',
                 description: `글자에 즐거움을 더하다, 끄투닷플러스
 
-도토리님이 도토리끄투에 이어 2021년부터 2024년까지 운영하신 사이트에요. '도토리 디자인'이 확립된 끄투 서버기도 해요.`,
+도토리님이 도토리끄투에 이어 2021년부터 2024년까지 운영하신 사이트예요. '도토리 디자인'이 확립된 끄투 서버기도 해요.`,
                 relatedLinks: []
             }
         ]
@@ -654,7 +654,7 @@ const serversData = [
                 startYear: 2021,
                 endYear: 2021.5,
                 operator: 'watts011',
-                description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버에요.',
+                description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버예요.',
                 relatedLinks: []
             },
             {
@@ -665,7 +665,7 @@ const serversData = [
                 startYear: 2021.6,
                 endYear: 2023.5,
                 operator: 'watts011',
-                description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버에요.',
+                description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버예요.',
                 relatedLinks: []
             },
             {
@@ -677,7 +677,7 @@ const serversData = [
                 startYear: 2023.5,
                 endYear: 2024.5,
                 operator: 'watts011',
-                description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버에요.',
+                description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버예요.',
                 relatedLinks: []
             },
             /*
@@ -690,7 +690,7 @@ const serversData = [
                 startYear: 9999,
                 endYear: null,
                 operator: 'watts011',
-                description: 'watts011님이 준비 중인 새로운 끄투 서버에요. 현재 오픈 준비 중이지만 학업으로 인해 개발이 늦어지고 있어요.',
+                description: 'watts011님이 준비 중인 새로운 끄투 서버예요. 현재 오픈 준비 중이지만 학업으로 인해 개발이 늦어지고 있어요.',
                 relatedLinks: []
             }
             */
@@ -722,7 +722,7 @@ const serversData = [
                 startYear: 2022,
                 endYear: 2025,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버에요.',
+                description: '"제 2의 끄투"라는 분이 운영하던 프리서버고, 2022년 후반기부터 2025년 초반까지 운영했던 프리 서버예요.',
                 relatedLinks: []
             },
             {
@@ -734,7 +734,7 @@ const serversData = [
                 startYear: 2026,
                 endYear: 2026.5,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영했던 프리서버에요. 최근에 잠시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
+                description: '"제 2의 끄투"라는 분이 운영했던 프리서버예요. 최근에 잠시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
                 relatedLinks: []
             }
         ]
@@ -754,7 +754,7 @@ const serversData = [
                 operator: '키뮤',
                 description: `끄투에서 한 걸음 더 나아가면 트꾸!
 
-키뮤님이 만드신 끄투 프리서버로, 독특한 디자인과 컨텐츠, 다양한 단어가 있었던 서버에요. 2021년 전반기에 서버가 생겼지만 같은 해 10월부터 서비를 연 기록이 없어요..`,
+키뮤님이 만드신 끄투 프리서버로, 독특한 디자인과 컨텐츠, 다양한 단어가 있었던 서버예요. 2021년 전반기에 서버가 생겼지만 같은 해 10월부터 서비를 연 기록이 없어요..`,
                 relatedLinks: []
             }
         ]
@@ -790,7 +790,7 @@ const serversData = [
                 startYear: 2021.5,
                 endYear: 2022.5,
                 operator: '정희정',
-                description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버에요.',
+                description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버예요.',
                 relatedLinks: []
             },
             {
@@ -807,7 +807,7 @@ const serversData = [
                 operator: '정희정',
                 description: `글자로 놀자! 레전드끄투
 
-오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버에요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었지만, 컴퓨터 초기화 중 데이터베이스가 소실되어서 복구 불능 상태가 되었어요.`,
+오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버예요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었지만, 컴퓨터 초기화 중 데이터베이스가 소실되어서 복구 불능 상태가 되었어요.`,
                 relatedLinks: [
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
                     { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }
@@ -830,7 +830,7 @@ const serversData = [
                 operator: '성재현',
                 description: `음악과 글자로 놀자, 음악끄투!
 
-성재현님이 운영하셨던 프리서버에요. 루크님도 서버 운영에 참여하셨어요. 2021년 후반기에 서비스를 시작해서 2024년 전반기에 서비스를 종료했어요.`,
+성재현님이 운영하셨던 프리서버예요. 루크님도 서버 운영에 참여하셨어요. 2021년 후반기에 서비스를 시작해서 2024년 전반기에 서비스를 종료했어요.`,
                 relatedLinks: [
                     { name: '카재 게임즈(읽기전용)', url: 'https://discord.com/invite/GTU5mEpwRG' }
                 ]
@@ -854,7 +854,7 @@ const serversData = [
                 operator: '마한',
                 description: `글자로 놀자! 마한끄투
 
-마한님이 운영하셨던 끄투 프리서버에요. 23년 상반기에 운영을 시작해서 같은 해 하반기에 운영을 종료했다가, 다시 24년부터 운영을 시작했어요.`,
+마한님이 운영하셨던 끄투 프리서버예요. 23년 상반기에 운영을 시작해서 같은 해 하반기에 운영을 종료했다가, 다시 24년부터 운영을 시작했어요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }
@@ -873,7 +873,7 @@ const serversData = [
                 operator: '마한',
                 description: `글자로 놀자! 마한끄투
 
-마한님이 운영 중인 끄투 프리서버에요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.`,
+마한님이 운영 중인 끄투 프리서버예요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }
@@ -918,7 +918,7 @@ const serversData = [
                 operator: '모렘미',
                 description: `모든 것이 플러스, 플러스끄투!
 
-모렘미님이 운영하신 끄투 프리서버에요. 2023년 11월경 오픈 베타를 거쳐 2024년 2월 23일에 정식 출시되었어요. 다른 끄투와 전혀 다른, 세련된 UI와 시스템을 가지고 있었으며, 2025년 5월 6일에 서비스 종료되어 끄투리오와 통합되었어요.`,
+모렘미님이 운영하신 끄투 프리서버예요. 2023년 11월경 오픈 베타를 거쳐 2024년 2월 23일에 정식 출시되었어요. 다른 끄투와 전혀 다른, 세련된 UI와 시스템을 가지고 있었으며, 2025년 5월 6일에 서비스 종료되어 끄투리오와 통합되었어요.`,
                 relatedLinks: []
             }
         ]
@@ -935,7 +935,7 @@ const serversData = [
                 url2: '#',
                 startYear: 2023.5,
                 endYear: 2024,
-                description: 'ZEP오목(현 오목랜드)에서 이용할 수 있던 끄투 서버에요. 2023년 여름에서 2024년까지 서비스했어요.',
+                description: 'ZEP오목(현 오목랜드)에서 이용할 수 있던 끄투 서버예요. 2023년 여름에서 2024년까지 서비스했어요.',
                 relatedLinks: []
             }
         ]
@@ -974,7 +974,7 @@ const serversData = [
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
-아이앤트님이 운영 중이신 끄투 프리서버에요. 이전 서버에서 개편 후 재오픈되었어요.`,
+아이앤트님이 운영 중이신 끄투 프리서버예요. 이전 서버에서 개편 후 재오픈되었어요.`,
                 relatedLinks: [
                     { name: '개발자 블로그', url: 'https://blog.naver.com/vio08' }
                 ]
@@ -994,7 +994,7 @@ const serversData = [
                 startYear: 2024,
                 endYear: 2024.5,
                 operator: 'AHE',
-                description: 'AHE님이 운영하셨던 끄투 프리서버에요. 2023년 12월 30일에 오픈했었으며 2024년 7월 1일에 서비스를 종료했어요.',
+                description: 'AHE님이 운영하셨던 끄투 프리서버예요. 2023년 12월 30일에 오픈했었으며 2024년 7월 1일에 서비스를 종료했어요.',
                 relatedLinks: []
             }
         ]
@@ -1014,7 +1014,7 @@ const serversData = [
                 operator: '고구마',
                 description: `세상의 끄투, 월드끄투!
 
-고구마님이 운영하신 끄투 프리서버에요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.`,
+고구마님이 운영하신 끄투 프리서버예요. 2024년 3월 19일부터 2025년 1월 20일까지 운영되었어요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/wordkkutu' },
                     { name: '공식 유튜브', url: 'https://www.youtube.com/watch?v=cvYzv-6rCTc' },
@@ -1042,7 +1042,7 @@ const serversData = [
                 endYear: null,
                 description: `글자로 놀자! 끄투엔
 
-야옹이님이 운영하시는 끄투 프리서버에요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
+야옹이님이 운영하시는 끄투 프리서버예요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' }
                 ]
@@ -1090,7 +1090,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026,
                 endYear: 2026.5,
                 operator: '차누',
-                description: '차누님이 운영하셨던 서버에요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
+                description: '차누님이 운영하셨던 서버예요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
                 relatedLinks: []
             },
              {
@@ -1105,7 +1105,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: null,
                 operator: '차누',
-                description: '차누님이 이전의 서버가 랜섬웨어로 인해 종료된 이후 새로 운영을 시작하신 서버에요. 레전드끄투 기반으로 만든 서버에요.',
+                description: '차누님이 이전의 서버가 랜섬웨어로 인해 종료된 이후 새로 운영을 시작하신 서버예요. 레전드끄투 기반으로 만든 서버예요.',
                 relatedLinks: []
             }
         ]
@@ -1126,7 +1126,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026,
                 endYear: null,
                 operator: '티에프지이',
-                description: '티에프지이님이 운영을 시작한 서버에요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
+                description: '티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
                 relatedLinks: []
             }
         ]
@@ -1144,7 +1144,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: null,
                 operator: '지우개',
-                description: '지우개님이 운영 중인 끄투 프리서버에요. 최근에 운영을 시작했어요.',
+                description: '지우개님이 운영 중인 끄투 프리서버예요. 최근에 운영을 시작했어요.',
                 relatedLinks: []
             }
         ]

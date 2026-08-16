@@ -13,7 +13,7 @@ window.utilities = [
         url: 'https://engine.ikki.app/?rule=%EA%B5%AC%EC%97%9C%EB%A3%B0',
         startYear: 2025,
         endYear: null,
-        description: '단어들을 분석해서 끝말잇기에 어떤 단어가 유리한지를 알려주는 유용한 사이트에요.',
+        description: '단어들을 분석해서 끝말잇기에 어떤 단어가 유리한지를 알려주는 유용한 사이트예요.',
         tags: ['유틸리티', '검색'],
         color: '#0DA2E7'
     },
