@@ -1042,7 +1042,7 @@ const serversData = [
                 endYear: null,
                 description: `글자로 놀자! 끄투엔
 
-야옹이님이 운영하시는 끄투 프리서버예요. 30개나 되는 게임 모드와 거의 60개에 달하는 압도적인 양의 특수규칙이 있어요.`,
+야옹이님이 운영하시는 끄투 프리서버예요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' }
                 ]
@@ -1100,8 +1100,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                     '뜻추가',
                     '우리말샘'
                 ],
-                url: 'http://chankkutu.kro.kr/',
-                url2: 'http://chanukkutu.kro.kr/',
+                url: 'http://chanukkutu.kro.kr/',
+                url2: 'http://chankkutu.kro.kr/',
                 startYear: 2026.5,
                 endYear: null,
                 operator: '차누',
