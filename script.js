@@ -468,6 +468,19 @@ function renderServers(sortType = 'default') {
         return bEvent - aEvent;
     });
 
+    // 기본 보기에서는 대표 서버(끄투코리아, 끄투리오, 끄투 온라인)를 이벤트 진행 서버보다도 앞에 고정
+    if (sortType === 'default') {
+        const pinnedIds = ['kkutukorea', 'kkutuiokdh', 'kkutuonline'];
+        sortedServers.sort((a, b) => {
+            const aPinned = pinnedIds.indexOf(a.id);
+            const bPinned = pinnedIds.indexOf(b.id);
+            if (aPinned !== -1 && bPinned !== -1) return aPinned - bPinned;
+            if (aPinned !== -1) return -1;
+            if (bPinned !== -1) return 1;
+            return 0;
+        });
+    }
+
     sortedServers.forEach(server => {
         const card = document.createElement('div');
         card.className = 'card';
