@@ -1142,7 +1142,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'http://eraserkkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2026.5,
                 operator: '지우개',
                 description: '지우개님이 운영 중인 끄투 프리서버예요. 최근에 운영을 시작했어요.',
                 relatedLinks: []
