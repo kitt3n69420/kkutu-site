@@ -141,7 +141,7 @@ const serversData = [
                 startYear: 2024,
                 endYear: null,
                 operator: '김도훈',
-                description: `글자로 놀자! 끄투치오\n\n김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버예요.
+                description: `글자로 놀자! 끄투리오\n\n김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버예요.
 `,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
