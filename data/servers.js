@@ -356,7 +356,9 @@ const serversData = [
                 endYear: 2021.5,
                 operator: '코코냐',
                 description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/XXkuYNG' }
+                ]
             }
         ]
     },
