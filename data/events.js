@@ -9,6 +9,12 @@ window.events = {
             startDate: '2026-07-01',
             endDate:   '2026-07-31',
             link: 'https://kkutu.kr/event/1st-anniversary'
+        },
+        {
+            title: '순위전 베타 시즌',
+            startDate: '2026-09-04',
+            endDate:   '2026-11-27',
+            link: 'https://game.naver.com/lounge/kkutu/board/detail/8107902'
         }
     ],
     'kkutuiokdh': [
