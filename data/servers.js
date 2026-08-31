@@ -12,7 +12,7 @@ const serversData = [
                 ],
                 url: '#',
                 url2: '#',
-                startYear: 2014,
+                startYear: 2014.5,
                 endYear: 2017,
                 operator: '쪼리핑',
                 description: `글자로 놀자, 끄투 온라인!
@@ -460,7 +460,9 @@ const serversData = [
                 endYear: 2020,
                 operator: '볕뉘',
                 description: '볕뉘님이 개발 및 운영하신 2018년에 오픈한 서버로, 끄투에 그림퀴즈 모드 PR을 올린 서버이기도 해요. 이후 2020년 끄투닷넷으로 통합되었어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '당시 디스코드(구)', url: 'https://discord.gg/PHVPE9s' }
+                ]
             }
         ]
     },
@@ -495,7 +497,7 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2018,
-                endYear: 2024,
+                endYear: 2023.5,
                 description: `새로운 끄투의 시작
 
 매우 다양한 기능을 가지고 있었고, 상당히 인원이 많았던 프리서버였어요. 클랜 시스템 및 내부 대회도 자주 있었어요.`,
@@ -552,7 +554,7 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2020,
-                endYear: 2024.5,
+                endYear: 2024,
                 operator: '분홍꽃',
                 description: `오늘도 즐거운 분홍끄투!
 
@@ -618,7 +620,7 @@ const serversData = [
                 ],
                 url: '#',
                 url2: '#',
-                startYear: 2020.5,
+                startYear: 2020,
                 endYear: 2021,
                 operator: '도토리',
                 description: '도토리님이 2020년부터 운영하신 끄투 서버예요. 도토리 디자인을 사용해서 디자인이 원조 끄투와 상당히 다르며, 원신이나 블루 아카이브 같은 게임 관련 주제의 단어가 매우 많았던 것이 특징이에요.',
@@ -653,7 +655,7 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2021,
-                endYear: 2021.5,
+                endYear: 2021,
                 operator: 'watts011',
                 description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버예요.',
                 relatedLinks: []
@@ -915,7 +917,7 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2023.5,
-                endYear: 2025.5,
+                endYear: 2025,
                 operator: '모렘미',
                 description: `모든 것이 플러스, 플러스끄투!
 
@@ -1051,6 +1053,23 @@ const serversData = [
         ]
     },
     {
+        name: '요거트끄투',
+        color: '#fff2b2',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'yogurtkkutu',
+                tags: [],
+                url: '#',
+                url2: '#',
+                startYear: 2025.5,
+                endYear: 2026,
+                description: '2025년 말에 오픈했던 것으로 알려진 끄투 프리서버예요. 2026년 초에 서비스가 종료되었어요.',
+                relatedLinks: []
+            }
+        ]
+    },
+    {
         name: 'DE LZB 끄투',
         color: '#ffdd8a',
         textColor: '#1a1a1a',
@@ -1143,7 +1162,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'http://eraserkkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: 2026.5,
+                endYear: null,
                 operator: '지우개',
                 description: '지우개님이 운영 중인 끄투 프리서버예요. 최근에 운영을 시작했어요.',
                 relatedLinks: []
