@@ -1168,6 +1168,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 relatedLinks: []
             }
         ]
+    },
+    {
+        name: '김치끄투',
+        color: '#ff8b25',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'kimchikkutu',
+                tags: [],
+                url: 'http://kimchik.kro.kr/',
+                url2: '#',
+                startYear: 2026.5,
+                endYear: null,
+                operator: 'jplth1124',
+                description: 'jplth1124님이 2026년 후반부터 운영 중인 끄투 프리서버예요.',
+                relatedLinks: []
+            }
+        ]
     }
 ];
 
