@@ -419,6 +419,14 @@ h1 {
     color: var(--text-color);
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --card-accent-1: var(--accent-1-normal);
+    --card-accent-2: var(--accent-2-normal);
+}
+
+/* 모두 보기(언젠가) 모드: 자체 색이 없는 옛 인스턴스는 hue를 살짝 튼 색을 사용해 구별 */
+body.someday-filter .card {
+    --card-accent-1: var(--accent-1-someday, var(--accent-1-normal));
+    --card-accent-2: var(--accent-2-someday, var(--accent-2-normal));
 }
 
 .card::before {

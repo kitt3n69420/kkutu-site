@@ -315,13 +315,17 @@ function updateThemeButton(theme) {
 let currentMaxYear = 2026;
 let somedayValue;
 
+function isSomedayModeActive() {
+    return somedayValue !== undefined && parseFloat(timeMachineSlider.value) >= somedayValue;
+}
+
 function updateTimeMachineDisplay() {
     const val = timeMachineSlider.value;
     const num = parseFloat(val);
 
     let formatted = '타임머신';
     if (num >= somedayValue) {
-        formatted = '언젠가';
+        formatted = '모두 보기';
     } else if (num < currentMaxYear) {
         const year = Math.floor(num);
         const shortYear = year.toString().slice(-2);
@@ -352,15 +356,30 @@ function updateTimeMachineCards(isInit = false) {
     const timeValue = parseFloat(val);
     const isSomedayMode = timeValue >= somedayValue;
     const allItems = document.querySelectorAll('.card, .utility-card');
+
     allItems.forEach(item => {
         const startStr = item.dataset.start;
         const endStr = item.dataset.end;
         const start = startStr && startStr !== 'null' ? parseFloat(startStr) : -Infinity;
         const end = endStr && endStr !== 'null' ? parseFloat(endStr) : Infinity;
 
-        const effectiveTime = isSomedayMode ? 9999 : timeValue;
-        const shouldShow = (effectiveTime >= start && effectiveTime < end);
+        // 언젠가 모드: 서버 카드는 연도와 상관없이 모두 보여줌(같은 서버의 여러 인스턴스도
+        // 전부 표시하되, 이름에 붙는 구별용 라벨은 data/servers.js에서 계산됨).
+        // 유틸리티/게임 카드는 그룹 개념이 없으므로 종료일이 없는 것만 계속 보여줌.
+        const shouldShow = isSomedayMode
+            ? (item.dataset.group ? true : (end === Infinity))
+            : (timeValue >= start && timeValue < end);
         const isShown = item.style.display !== 'none' && !item.classList.contains('animating-out');
+
+        // 모두 보기 모드가 아니면 구별용 라벨 없는 원래 이름을 사용
+        if (item.dataset.group) {
+            const titleEl = item.querySelector('.card-title');
+            if (titleEl) {
+                titleEl.textContent = isSomedayMode
+                    ? (item.dataset.somedayName || item.dataset.plainName)
+                    : item.dataset.plainName;
+            }
+        }
 
         if (shouldShow && !isShown) {
             item.style.display = '';
@@ -424,7 +443,12 @@ function initTimeMachine() {
 
     timeMachineSlider.addEventListener('input', updateTimeMachineDisplay);
     timeMachineSlider.addEventListener('change', () => {
-        updateTimeMachineCards(false);
+        // 무지개(hue) 정렬 중 모두 보기 진입/이탈 시, 실제 표시 색 기준으로 다시 정렬
+        if (serverSort && serverSort.value === 'hue') {
+            renderServers('hue');
+        } else {
+            updateTimeMachineCards(false);
+        }
         if (window.UniverseView && window.UniverseView.isOpen()) window.UniverseView.refresh();
     });
 }
@@ -451,8 +475,13 @@ function renderServers(sortType = 'default') {
             return countB - countA; // Descending
         });
     } else if (sortType === 'hue') {
+        // 모두 보기(언젠가) 모드에서는 실제로 보이는 색(somedayColor)을 기준으로 정렬해야
+        // 무지개 순서가 화면에 보이는 색과 어긋나지 않음
+        const isSomedayNow = somedayValue !== undefined && parseFloat(timeMachineSlider.value) >= somedayValue;
         sortedServers.sort((a, b) => {
-            return getHueFromHex(a.color) - getHueFromHex(b.color);
+            const colorA = isSomedayNow ? (a.somedayColor || a.color) : a.color;
+            const colorB = isSomedayNow ? (b.somedayColor || b.color) : b.color;
+            return getHueFromHex(colorA) - getHueFromHex(colorB);
         });
     } else if (sortType === 'name') {
         sortedServers.sort((a, b) => a.name > b.name ? 1 : -1);
@@ -487,18 +516,26 @@ function renderServers(sortType = 'default') {
         card.dataset.id = server.id;
         card.dataset.start = server.startYear;
         card.dataset.end = server.endYear;
+        card.dataset.group = server.groupName;
+        card.dataset.plainName = server.name;
+        card.dataset.somedayName = server.displayName || server.name;
 
         // OKLCH로 정규화된 그라데이션 색상 적용
         const { color1, color2 } = getGradientColors(server.color);
-        card.style.setProperty('--card-accent-1', color1);
-        card.style.setProperty('--card-accent-2', color2);
+        card.style.setProperty('--accent-1-normal', color1);
+        card.style.setProperty('--accent-2-normal', color2);
+
+        // 모두 보기(언젠가) 모드 전용: 자체 색이 없는 옛 인스턴스는 hue가 살짝 다른 색을 사용
+        const someday = getGradientColors(server.somedayColor || server.color);
+        card.style.setProperty('--accent-1-someday', someday.color1);
+        card.style.setProperty('--accent-2-someday', someday.color2);
 
         const header = document.createElement('div');
         header.className = 'card-header';
 
         const title = document.createElement('div');
         title.className = 'card-title';
-        title.textContent = server.name;
+        title.textContent = isSomedayModeActive() ? (server.displayName || server.name) : server.name;
 
         const playerCount = document.createElement('div');
         playerCount.className = 'player-count';
@@ -773,7 +810,7 @@ function openDetail(server, sourceCard) {
     activeCardId = server.id;
 
     // Populate Content
-    detailTitle.textContent = server.name;
+    detailTitle.textContent = isSomedayModeActive() ? (server.displayName || server.name) : server.name;
     detailDesc.textContent = server.description;
     
     const targetHref = server.activeUrl || (server.url !== '#' ? server.url : server.url2) || '#';

@@ -1189,15 +1189,121 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
     }
 ];
 
+// 인스턴스가 여러 개인 서버(그룹)에서, 현재 운영 중이 아닌(=최신이 아닌) 인스턴스의
+// 이름 뒤에 구별용 라벨을 붙임: 우선 연도(반기 단위)로 구별하고, 같은 그룹 내에서
+// 이름+연도까지 겹치는 경우에만 운영자 이름도 덧붙임
+function formatYearLabel(year) {
+    if (year == null) return '';
+    const y = Math.floor(year);
+    const half = year % 1 === 0 ? '전반' : '후반';
+    return `${y}년 ${half}`;
+}
+
+// 모두 보기(언젠가) 모드에서 같은 그룹의 여러 인스턴스가 동시에 보일 때, 자체 색이
+// 지정되지 않아 그룹 기본색을 그대로 쓰는 이전 인스턴스들끼리 색이 겹치지 않도록
+// hue를 살짝씩 틀어줌
+function hexToHsl(hex) {
+    const h = hex.replace('#', '');
+    const r = parseInt(h.substring(0, 2), 16) / 255;
+    const g = parseInt(h.substring(2, 4), 16) / 255;
+    const b = parseInt(h.substring(4, 6), 16) / 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    let hue, sat;
+    const light = (max + min) / 2;
+    if (max === min) {
+        hue = sat = 0;
+    } else {
+        const d = max - min;
+        sat = light > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch (max) {
+            case r: hue = (g - b) / d + (g < b ? 6 : 0); break;
+            case g: hue = (b - r) / d + 2; break;
+            default: hue = (r - g) / d + 4; break;
+        }
+        hue /= 6;
+    }
+    return { h: hue * 360, s: sat, l: light };
+}
+
+function hslToHex(h, s, l) {
+    h = ((h % 360) + 360) % 360 / 360;
+    const hue2rgb = (p, q, t) => {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1 / 6) return p + (q - p) * 6 * t;
+        if (t < 1 / 2) return q;
+        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+        return p;
+    };
+    let r, g, b;
+    if (s === 0) {
+        r = g = b = l;
+    } else {
+        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        const p = 2 * l - q;
+        r = hue2rgb(p, q, h + 1 / 3);
+        g = hue2rgb(p, q, h);
+        b = hue2rgb(p, q, h - 1 / 3);
+    }
+    const toHex = v => Math.round(v * 255).toString(16).padStart(2, '0');
+    return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
+function shiftHue(hex, degrees) {
+    const { h, s, l } = hexToHsl(hex);
+    return hslToHex(h + degrees, s, l);
+}
+
 window.servers = [];
 serversData.forEach(group => {
+    const latestInst = group.instances.find(inst => inst.endYear == null)
+        || group.instances.reduce((a, b) => (b.startYear > a.startYear ? b : a));
+
+    // 최신이 아닌 인스턴스들 중 (기본 이름 + 연도 라벨)이 겹치는 경우를 미리 집계
+    const labelCounts = {};
     group.instances.forEach(inst => {
+        if (inst === latestInst) return;
+        const key = (inst.name || group.name) + '|' + formatYearLabel(inst.startYear);
+        labelCounts[key] = (labelCounts[key] || 0) + 1;
+    });
+
+    // 자체 색이 없어 그룹 기본색을 그대로 물려받는, 최신이 아닌 인스턴스들에게만
+    // 순서대로 hue 오프셋을 배정 (자체 색을 지정한 인스턴스는 그대로 둠).
+    // 반시계 방향(파랑 -> 노랑 -> 빨강, 즉 hue 감소 방향)으로만 10도씩 틀어줌
+    const hueOffsetByInst = new Map();
+    group.instances
+        .filter(inst => inst !== latestInst && !inst.color)
+        .sort((a, b) => (b.startYear || 0) - (a.startYear || 0))
+        .forEach((inst, i) => {
+            hueOffsetByInst.set(inst, -(i + 1) * 10);
+        });
+
+    group.instances.forEach(inst => {
+        const baseName = inst.name || group.name;
+        let displayName = baseName;
+        if (inst !== latestInst) {
+            const yearLabel = formatYearLabel(inst.startYear);
+            const key = baseName + '|' + yearLabel;
+            const suffix = (labelCounts[key] > 1 && inst.operator)
+                ? `${yearLabel}, ${inst.operator}`
+                : yearLabel;
+            displayName = `${baseName} (${suffix})`;
+        }
+
+        const color = inst.color || group.color;
+        const somedayColor = hueOffsetByInst.has(inst)
+            ? shiftHue(color, hueOffsetByInst.get(inst))
+            : color;
+
         window.servers.push({
-            name: inst.name || group.name,
-            color: inst.color || group.color,
+            name: baseName,
+            displayName,
+            color,
+            somedayColor,
             textColor: inst.textColor || group.textColor,
             ...inst,
-            tags: inst.tags || []
+            tags: inst.tags || [],
+            groupName: group.name
         });
     });
 });

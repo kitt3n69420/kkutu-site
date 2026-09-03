@@ -96,9 +96,15 @@ window.UniverseView = (function () {
         });
     }
 
-    function makePlanet1(item, index, orbitRadius, existingAngles, existingAlphas) {
-        const hexColor = item.inst.color || item.group.color || '#888888';
+    function makePlanet1(item, index, orbitRadius, existingAngles, existingAlphas, somedayMode) {
         const instId = item.inst.id;
+        const serverForColor = window.servers
+            ? window.servers.find(function (s) { return s.id === instId; })
+            : null;
+        const baseHexColor = item.inst.color || item.group.color || '#888888';
+        const hexColor = (somedayMode && serverForColor && serverForColor.somedayColor)
+            ? serverForColor.somedayColor
+            : baseHexColor;
         let playerCount;
         if (instId === 'kkutuonline' && typeof serverPlayerCounts !== 'undefined') {
             const korea = serverPlayerCounts['kkutukorea'] != null ? Math.max(0, serverPlayerCounts['kkutukorea']) : 0;
@@ -123,10 +129,7 @@ window.UniverseView = (function () {
         const orbitDir = index % 2 === 0 ? 1 : -1;
         const orbitSpeed = 0.000085 / Math.sqrt(orbitRadius / minR) * speedMult * orbitDir;
 
-        const serverFlat = window.servers
-            ? window.servers.find(function (s) { return s.id === instId; })
-            : null;
-        const server = serverFlat || Object.assign({}, item.inst, {
+        const server = serverForColor || Object.assign({}, item.inst, {
             name: item.inst.name || item.group.name,
             color: hexColor,
         });
@@ -195,15 +198,29 @@ window.UniverseView = (function () {
         return isSomeday ? 9999 : timeValue;
     }
 
+    function isSomedayMode() {
+        const slider = document.getElementById('timeMachineSlider');
+        const timeValue = parseFloat(slider ? slider.value : currentMaxYear);
+        return timeValue >= somedayValue;
+    }
+
     function buildPlanets(forceFull) {
-        const effectiveTime = getEffectiveTime();
+        const somedayMode = isSomedayMode();
+        const timeValue = parseFloat(
+            document.getElementById('timeMachineSlider')
+                ? document.getElementById('timeMachineSlider').value
+                : currentMaxYear
+        );
 
         const visible = [];
+
+        // 언젠가 모드: 연도와 상관없이 모든 서버 인스턴스를 보여줌(최신이 아닌 인스턴스의
+        // 구별용 이름 라벨은 data/servers.js의 displayName에서 계산됨)
         serversData.forEach(function (group, groupIdx) {
             group.instances.forEach(function (inst, instIdx) {
                 const start = inst.startYear != null ? inst.startYear : -Infinity;
                 const end = inst.endYear != null ? inst.endYear : Infinity;
-                if (effectiveTime >= start && effectiveTime < end) {
+                if (somedayMode || (timeValue >= start && timeValue < end)) {
                     visible.push({
                         group: group,
                         inst: inst,
@@ -232,7 +249,7 @@ window.UniverseView = (function () {
                 existingAlphas[p._id] = p.alpha != null ? p.alpha : 1;
             });
             state.planets = visible.map(function (item, i) {
-                return makePlanet1(item, i, minR + step * i, existingAngles, existingAlphas);
+                return makePlanet1(item, i, minR + step * i, existingAngles, existingAlphas, somedayMode);
             });
         } else {
             // Build new orbit map
@@ -269,7 +286,7 @@ window.UniverseView = (function () {
             // Add new planets
             newOrbitMap.forEach(function (entry, id) {
                 if (!currentIds.has(id)) {
-                    const p = makePlanet1(entry.item, entry.index, entry.orbitRadius, {}, {});
+                    const p = makePlanet1(entry.item, entry.index, entry.orbitRadius, {}, {}, somedayMode);
                     state.planets.push(p);
                 }
             });
@@ -433,7 +450,7 @@ window.UniverseView = (function () {
         const srv = planet.server;
         const inst = planet.inst || {};
 
-        serverInfoName.textContent = srv.name || '';
+        serverInfoName.textContent = (isSomedayMode() ? srv.displayName : srv.name) || srv.name || '';
         serverInfoName.style.color = planet.hexColor;
 
         serverInfoTags.innerHTML = '';
@@ -673,6 +690,7 @@ window.UniverseView = (function () {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
 
+        const somedayMode = isSomedayMode();
         const allPlanets = state.planets.concat(state.planets2);
         allPlanets.forEach(function (p) {
             const { sx, sy } = worldToScreen(p.cx, p.cy);
@@ -692,7 +710,7 @@ window.UniverseView = (function () {
             ctx.shadowColor = 'rgba(0,0,0,0.9)';
             ctx.shadowBlur = 5;
             ctx.fillStyle = 'rgba(255,255,255,' + alpha + ')';
-            ctx.fillText(p.server.name, sx, labelY);
+            ctx.fillText((somedayMode ? p.server.displayName : p.server.name) || p.server.name, sx, labelY);
         });
 
         if (state.focusedPlanet) {
