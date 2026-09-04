@@ -14,7 +14,7 @@ window.events = {
             title: '순위전 베타 시즌',
             startDate: '2026-09-04',
             endDate:   '2026-11-27',
-            link: 'https://game.naver.com/lounge/kkutu/board/detail/8107902'
+            link: 'https://game.naver.com/lounge/kkutu/board/detail/8147477'
         }
     ],
     'kkutuiokdh': [
