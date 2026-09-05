@@ -176,8 +176,7 @@ const serversData = [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/JP8SNa7' },
                     { name: '끄코위키', url: 'https://kkukowiki.kr/w/%EB%8C%80%EB%AC%B8' },
-                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' },
-                    { name: '끄코 유틸리티', url: 'https://kkuko-utils.vercel.app/' }
+                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' }
                 ]
             }
         ]
@@ -860,7 +859,8 @@ const serversData = [
 마한님이 운영하셨던 끄투 프리서버예요. 23년 상반기에 운영을 시작해서 같은 해 하반기에 운영을 종료했다가, 다시 24년부터 운영을 시작했어요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/dMJqrjHWHr' },
+                    { name: '공식 카카오톡 채널', url: 'https://pf.kakao.com/_vWpLG/friend?api_ver=1.1&kakao_agent=sdk%2F2.7.4%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fmahan.kr&app_key=811e94d979044d9868baf25c49a29e51&referer=https%3A%2F%2Fmahan.kr%2F' }
                 ]
             },
             {
@@ -879,7 +879,8 @@ const serversData = [
 마한님이 운영 중인 끄투 프리서버예요. 언노운 워드 규칙으로 유명하고, 자유 모드, 모음퀴즈 모드같이 재밌는 모드가 많고 압도적인 양의 주제의 단어도 많이 추가되어 있어요.`,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/fs8f5eUZ' }
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/dMJqrjHWHr' },
+                    { name: '공식 카카오톡 채널', url: 'https://pf.kakao.com/_vWpLG/friend?api_ver=1.1&kakao_agent=sdk%2F2.7.4%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fmahan.kr&app_key=811e94d979044d9868baf25c49a29e51&referer=https%3A%2F%2Fmahan.kr%2F' }
                 ]
             }
         ]
