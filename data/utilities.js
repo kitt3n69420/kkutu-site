@@ -42,6 +42,6 @@ window.utilities = [
         endYear: null,
         description: '끄투코리아의 단어를 모아놓은 유틸리티 사이트에요. 미션 단어 및 주제 단어 모음 등이 있고, 굳이 끄투코리아랑 관련이 없어도 단어장 정리 기능, 글자 조합기 등이 있어서 유용하게 쓸 수 있어요.',
         tags: ['유틸리티'],
-        color: '#FF6B6B'
+        color: '#866bff'
     }
 ];
