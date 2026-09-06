@@ -1187,6 +1187,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 relatedLinks: []
             }
         ]
+    },
+    {
+        name: '끄투게임',
+        color: '#FFD000',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'kkutugame',
+                tags: [],
+                url: 'https://kkutugame.kro.kr/',
+                url2: '#',
+                startYear: 2026.5,
+                endYear: null,
+                operator: 'OP_Noob',
+                description: '끄투 2 기반이지만, 끄투 2의 모습을 갈아엎고, 현재 서비스 중인 끄투 3과 유사하게 UI를 만든 서버예요.',
+                relatedLinks: []
+            }
+        ]
     }
 ];
 
