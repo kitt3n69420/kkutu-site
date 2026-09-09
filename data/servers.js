@@ -1184,7 +1184,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: 'jplth1124',
                 description: 'jplth1124님이 2026년 후반부터 운영 중인 끄투 프리서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                ]
             }
         ]
     },
@@ -1201,8 +1202,10 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: null,
                 operator: 'OP_Noob',
-                description: '끄투 2 기반이지만, 끄투 2의 모습을 갈아엎고, 현재 서비스 중인 끄투 3를 따라 만든 서버예요.',
-                relatedLinks: []
+                description: '끄투 2 기반이지만, 현재 서비스 중인 끄투 3를 따라해서 만든 서버예요.',
+                relatedLinks: [
+                    {name:'공식 디스코드', url:'https://discord.gg/RFJ7uzWWZ'}
+                ]
             }
         ]
     }
