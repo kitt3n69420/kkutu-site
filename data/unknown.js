@@ -329,14 +329,14 @@ window.unknownKkutus = [
         url: '#',
         startYear: null,
         endYear: null,
-        description: '2021년 4월에 운영 중이었던 것으로 확인돼요. "끄투플러스(kkutuplus)"라는 이름으로 이어졌다는 이야기가 있으나, 정확히 어떤 서버로 이어졌는지는 확인되지 않았어요.',
+        description: '2021년 4월에 운영 중이었던 것으로 확인돼요. kkutuplus에서 이어진 서버에요.',
         tags: [],
         relatedLinks: [
             { name: '깃허브 저장소', url: 'https://github.com/hyusan30/KKuTu' }
         ]
     },
     {
-        name: '끄투플러스 (2019, Saeharae)',
+        name: 'kkutuplus',
         url: '#',
         startYear: 2019.5,
         endYear: null,
@@ -364,7 +364,7 @@ window.unknownKkutus = [
         url: '#',
         startYear: null,
         endYear: null,
-        description: '깃허브 저장소가 남아있는 끄투 서버예요.',
+        description: '깃허브 저장소가 남아있는 끄투 서버예요. 서버 파일이 사라져서 운영을 못하게 된 것으로 알려져있어요.',
         tags: [],
         relatedLinks: [
             { name: '깃허브 저장소', url: 'https://github.com/cookedas1/EvenKKuTu' }
