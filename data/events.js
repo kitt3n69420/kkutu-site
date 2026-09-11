@@ -37,6 +37,12 @@ window.events = {
             startDate: '2026-07-15',
             endDate:   '2026-08-31',
             link: 'https://kkutu-n.xyz/event/events_26summer.html'
+        },
+        {
+            title: '끄투엔 추석 이벤트',
+            startDate: '2026-09-15',
+            endDate:   '2026-10-15',
+            link: 'https://kkutu-n.xyz/event/events_chuseok.html'
         }
     ],
 };
