@@ -1121,7 +1121,7 @@ const serversData = [
                 endYear: null,
                 description: `글자로 놀자! 끄투엔
 
-야옹이님이 운영하시는 끄투 프리서버예요.`,
+야옹이님이 운영하시는 끄투 프리서버예요. 현재 끄투 프리서버 중 가장 많은 게임모드와 특수규칙이 있어요.`,
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' },
                     { name: '깃허브 저장소', url: 'https://github.com/kitt3n69420/KKuTu' }
@@ -1266,7 +1266,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: 'jplth1124',
                 description: 'jplth1124님이 2026년 후반부터 운영 중인 끄투 프리서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                ]
             }
         ]
     },
@@ -1285,7 +1286,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 operator: 'OP_Noob',
                 description: '끄투 2 기반이지만, 끄투 2의 모습을 갈아엎고, 현재 서비스 중인 끄투 3과 유사하게 UI를 만든 서버예요.',
                 relatedLinks: [
-                    { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' }
+                    { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' },
+                    { name: '공식 디스코드', url: 'https://discord.gg/RFJ7uzWWZ' }
                 ]
             }
         ]
