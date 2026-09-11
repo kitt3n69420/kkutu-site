@@ -805,6 +805,79 @@ games.forEach(game => {
     gameGrid.appendChild(a);
 });
 
+// Unknown Kkutu Rendering
+// 색은 서버마다 다르게 주지 않고 전부 회색으로 통일함
+const UNKNOWN_KKUTU_GRAY = '#8a8a8a';
+
+function renderUnknownKkutuCard(entry, container) {
+    const hasValidUrl = entry.url && entry.url !== '#';
+    const el = document.createElement(hasValidUrl ? 'a' : 'div');
+    el.className = 'utility-card';
+    if (hasValidUrl) {
+        el.href = entry.url;
+        el.target = "_blank";
+    }
+    el.dataset.start = entry.startYear;
+    el.dataset.end = entry.endYear;
+    el.style.setProperty('--card-accent-1', UNKNOWN_KKUTU_GRAY);
+    el.style.setProperty('--card-accent-2', UNKNOWN_KKUTU_GRAY);
+
+    const header = document.createElement('div');
+    header.className = 'utility-header';
+
+    const name = document.createElement('div');
+    name.className = 'utility-name';
+    name.textContent = entry.name;
+    header.appendChild(name);
+
+    if (entry.tags && entry.tags.length > 0) {
+        const tags = document.createElement('div');
+        tags.className = 'card-tags';
+        entry.tags.forEach(tag => {
+            tags.appendChild(createTag(tag));
+        });
+        header.appendChild(tags);
+    }
+
+    el.appendChild(header);
+
+    const desc = document.createElement('div');
+    desc.className = 'utility-desc';
+    desc.textContent = entry.description;
+    el.appendChild(desc);
+
+    if (entry.relatedLinks && entry.relatedLinks.length > 0) {
+        const links = document.createElement('div');
+        links.className = 'unknown-links';
+        entry.relatedLinks.forEach(link => {
+            const a = document.createElement('a');
+            a.className = 'related-btn small';
+            a.href = link.url;
+            a.textContent = link.name;
+            a.target = '_blank';
+            links.appendChild(a);
+        });
+        el.appendChild(links);
+    }
+
+    container.appendChild(el);
+}
+
+// 정렬: (깃허브 등 관련 링크 + 이름이 모두 있음) -> (이름만 있음), 그 안에서는 가나다순
+const unknownGrid = document.getElementById('unknownGrid');
+const unknownKkutus = [...(window.unknownKkutus || [])].sort((a, b) => {
+    const tierA = (a.relatedLinks && a.relatedLinks.length > 0) ? 0 : 1;
+    const tierB = (b.relatedLinks && b.relatedLinks.length > 0) ? 0 : 1;
+    if (tierA !== tierB) return tierA - tierB;
+    return a.name.localeCompare(b.name, 'ko');
+});
+unknownKkutus.forEach(entry => renderUnknownKkutuCard(entry, unknownGrid));
+
+// 이름 없이 저장소만 남은 끄투: 별도 그리드, 가나다순
+const unknownRepoOnlyGrid = document.getElementById('unknownRepoOnlyGrid');
+const unknownKkutusRepoOnly = [...(window.unknownKkutusRepoOnly || [])].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+unknownKkutusRepoOnly.forEach(entry => renderUnknownKkutuCard(entry, unknownRepoOnlyGrid));
+
 // Animation Logic
 function openDetail(server, sourceCard) {
     activeCardId = server.id;
@@ -952,6 +1025,7 @@ const serversView = document.getElementById('servers-view');
 const extrasView = document.getElementById('extras-view');
 const utilitySection = document.querySelector('.utility-section[data-section="utility"]');
 const gamesSection = document.querySelector('.utility-section[data-section="games"]');
+const unknownView = document.getElementById('unknown-view');
 
 let currentView = 'servers';
 
@@ -968,6 +1042,7 @@ function switchView(category) {
     extrasView.classList.remove('active');
     utilitySection.classList.remove('active');
     gamesSection.classList.remove('active');
+    unknownView.classList.remove('active');
 
     // Handle view switching based on category
     if (category === '끄투 서버') {
@@ -989,6 +1064,10 @@ function switchView(category) {
         gamesSection.classList.add('active');
         extrasView.classList.add('active');
         currentView = 'games';
+    } else if (category === '알려지지 않은 끄투') {
+        // Separate standalone page, independent of utilities/games
+        unknownView.classList.add('active');
+        currentView = 'unknown';
     }
 
     // Save preference

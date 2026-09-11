@@ -21,7 +21,8 @@ const serversData = [
                 relatedLinks: [
                     { name: '샌드박스', url: 'https://cafe.naver.com/sdbx' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/daldalso-809809541385682964' },
-                    { name: '개발자 블로그', url: 'https://m.blog.naver.com/PostList.naver?blogId=dosel1005&tab=1' }
+                    { name: '개발자 블로그', url: 'https://m.blog.naver.com/PostList.naver?blogId=dosel1005&tab=1' },
+                    { name: '깃허브 저장소', url: 'https://github.com/jjoriping/kkutu' }
                 ]
             },
             {
@@ -66,7 +67,8 @@ const serversData = [
                 operator: 'SkyLightHQ',
                 description: 'SkyLightHQ님이 운영했던 끄투 프리서버예요. 2017년 3월부터 2021년 4월 10일까지 서비스했어요.',
                 relatedLinks: [
-                    { name: '공식 디스코드', url: 'https://discord.gg/gDgWvGM' }
+                    { name: '공식 디스코드', url: 'https://discord.gg/gDgWvGM' },
+                    { name: '깃허브 저장소', url: 'https://github.com/SkyLightQP/KKuTuDotCom' }
                 ]
             }
         ]
@@ -87,7 +89,9 @@ const serversData = [
                 endYear: 2017.5,
                 operator: '이진성',
                 description: '이진성님이 2017년 2월 16일에 오픈한 초창기 끄투리오 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/ljs970624/KKuTu/tree/master/Server/lib/Web/lang' }
+                ]
             },
             {
                 id: 'kkuturio_2017_2',
@@ -113,7 +117,9 @@ const serversData = [
                 endYear: 2021,
                 operator: '호류',
                 description: '호류님이 끄투한국을 끄투리오로 이름을 바꾸어 2019년 9월 8일에 오픈한 서버예요. 2021년 김도훈님의 끄투리오로 통합되었어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/pink-flower/KKuTu/tree/production' }
+                ]
             },
             {
                 id: 'kkuturio_2021',
@@ -126,7 +132,9 @@ const serversData = [
                 endYear: 2024,
                 operator: '김도훈',
                 description: '김도훈님이 2021년 4월 24일에 다양한 서버들(끄투닷넷, 프로젝트 끄투 등)을 통합하여 오픈한 끄투리오 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/kdhkr/KKuTu' }
+                ]
             },
             {
                 id: 'kkutuiokdh',
@@ -176,7 +184,8 @@ const serversData = [
                     { name: '공식 라운지', url: 'https://game.naver.com/lounge/KKuTu_Korea/home' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/JP8SNa7' },
                     { name: '끄코위키', url: 'https://kkukowiki.kr/w/%EB%8C%80%EB%AC%B8' },
-                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' }
+                    { name: '단어 검색 사이트', url: 'https://kkutu.info/' },
+                    { name: '깃허브 저장소', url: 'https://github.com/RevelabsKR' }
                 ]
             }
         ]
@@ -334,7 +343,9 @@ const serversData = [
                 endYear: 2020,
                 operator: '정현수',
                 description: '정현수님이 운영했던 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/wjdgustn/KKuTu' }
+                ]
             }
         ]
     },
@@ -355,7 +366,8 @@ const serversData = [
                 operator: '코코냐',
                 description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버예요.',
                 relatedLinks: [
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/XXkuYNG' }
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/XXkuYNG' },
+                    { name: '깃허브 저장소', url: 'https://github.com/PrjKKuTu/KKuTu' }
                 ]
             }
         ]
@@ -373,7 +385,9 @@ const serversData = [
                 startYear: 2017.5,
                 endYear: 2017.9,
                 description: '2017년 7월경 오픈한 서버로, 2017년 11월에 끄투닷넷으로 명칭을 변경했어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/hatty163/KKuTu' }
+                ]
             }
         ]
     },
@@ -423,7 +437,9 @@ const serversData = [
                 description: `내 작은 글자 놀이터, 끄투닷넷!
 
 김도훈님이 2020년에 오픈한 끄투닷넷 서버예요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.`,
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/KKuTuDotNet/KKuTu' }
+                ]
             }
         ]
     },
@@ -517,7 +533,8 @@ const serversData = [
 
 매우 다양한 기능을 가지고 있었고, 전성기 때에는 상당히 인원이 많았던 프리서버였어요. 한국어 끄투 같은 특이한 모드도 있었죠. 하지만 안타깝게도 서버의 소스코드가 날아가면서 지금은 겨우 이름만 남은 상태예요. 현재의 BF끄투는 소스코드를 아예 새로 작성한 것이랍니다.`,
                 relatedLinks: [
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' }
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/scPVHcE' },
+                    { name: '깃허브 저장소', url: 'https://github.com/bfkkutu/KKuTu' }
                 ]
             }
         ]
@@ -535,7 +552,10 @@ const serversData = [
                 startYear: 2019,
                 endYear: 2020,
                 description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버예요. 이후 2020년에 김도훈님이 운영하는 끄투닷넷으로 통합되었어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소(2019, 올드)', url: 'https://github.com/AlphaKKuTu-old/main' },
+                    { name: '깃허브 저장소(2020)', url: 'https://github.com/lubudack/KKuTu' }
+                ]
             }
         ]
     },
@@ -558,7 +578,9 @@ const serversData = [
                 description: `오늘도 즐거운 분홍끄투!
 
 분홍꽃님이 2020년부터 2024년 4월 20일까지 운영하신 웹 게임 끄투 프리서버예요. DB가 굉장히 넓었으며 서비스 종료 전에는 한국어 자유 끝말잇기, 한국어 자유 등의 게임모드들이 인기가 많았어요. 최대 400명까지 수용 가능한 규모였답니다.`,
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/pinkleaves/KKuTu' }
+                ]
             }
         ]
     },
@@ -587,6 +609,20 @@ const serversData = [
         color: '#0070c0',
         textColor: '#ffffff',
         instances: [
+            {
+                id: 'kainnykkutu',
+                name: '케이니끄투',
+                tags: [],
+                url: '#',
+                url2: '#',
+                startYear: 2020.4,
+                endYear: 2020.5,
+                operator: 'KAINNY5669',
+                description: 'KAINNY5669님이 2020년 8월에 오픈한 끄투블루의 전작이에요. 곧 같은 해 9월쯤 끄투블루로 이름이 바뀌었어요.',
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/KAINNY5669/KKuTu' }
+                ]
+            },
             {
                 id: 'kkutublue',
                 tags: [
@@ -623,7 +659,9 @@ const serversData = [
                 endYear: 2021,
                 operator: '도토리',
                 description: '도토리님이 2020년부터 운영하신 끄투 서버예요. 도토리 디자인을 사용해서 디자인이 원조 끄투와 상당히 다르며, 원신이나 블루 아카이브 같은 게임 관련 주제의 단어가 매우 많았던 것이 특징이에요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/DotoriKKuTu/KKuTu' }
+                ]
             },
             {
                 id: 'kkutudotplus',
@@ -637,7 +675,9 @@ const serversData = [
                 description: `글자에 즐거움을 더하다, 끄투닷플러스
 
 도토리님이 도토리끄투에 이어 2021년부터 2024년까지 운영하신 사이트예요. '도토리 디자인'이 확립된 끄투 서버기도 해요.`,
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소(올드)', url: 'https://github.com/KKuTuDotPlus-old/KKuTu' }
+                ]
             }
         ]
     },
@@ -656,8 +696,10 @@ const serversData = [
                 startYear: 2021,
                 endYear: 2021,
                 operator: 'watts011',
-                description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버예요.',
-                relatedLinks: []
+                description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버예요. (깃허브 저장소상의 소유자는 sky-kiwi로 표기되어 있어요.)',
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/sky-kiwi/KKuTu' }
+                ]
             },
             {
                 id: 'kkutuclub_watts011',
@@ -680,7 +722,9 @@ const serversData = [
                 endYear: 2024.5,
                 operator: 'watts011',
                 description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/kkutube/KKuTu' }
+                ]
             },
             /*
             {
@@ -757,7 +801,9 @@ const serversData = [
                 description: `끄투에서 한 걸음 더 나아가면 트꾸!
 
 키뮤님이 만드신 끄투 프리서버로, 독특한 디자인과 컨텐츠, 다양한 단어가 있었던 서버예요. 2021년 전반기에 서버가 생겼지만 같은 해 10월부터 서비를 연 기록이 없어요..`,
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/Kimu-Nowchira/TuKKu-Public' }
+                ]
             }
         ]
     },
@@ -780,6 +826,26 @@ const serversData = [
         ]
     },
     {
+        name: '물개끄투',
+        color: '#6699cc',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'otterkkutu',
+                tags: [],
+                url: '#',
+                url2: '#',
+                startYear: 2022.5,
+                endYear: 2023,
+                operator: 'ganada9',
+                description: 'ganada9님이 운영한 것으로 추정되는 끄투 프리서버예요. 2022년 하반기부터 2023년 상반기까지 운영한 것으로 추정돼요.',
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/ganada9/KKuTu' }
+                ]
+            }
+        ]
+    },
+    {
         name: '레전드끄투',
         color: '#52E6F2',
         textColor: '#ffffff',
@@ -793,7 +859,9 @@ const serversData = [
                 endYear: 2022.5,
                 operator: '정희정',
                 description: '2021년 8월 10일에 최초로 오픈했던 초기 레전드끄투 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/legendkkutu/KKuTu' }
+                ]
             },
             {
                 id: 'legendkkutu',
@@ -812,7 +880,8 @@ const serversData = [
 오랫동안 자고 있다가 최근에 다시 운영을 시작했던 서버예요. 다양한 게임모드와 넓은 단어 범위를 가지고 있었지만, 컴퓨터 초기화 중 데이터베이스가 소실되어서 복구 불능 상태가 되었어요.`,
                 relatedLinks: [
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
-                    { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' }
+                    { name: '단어장', url: 'https://legendkkutu.kr/wordsearch' },
+                    { name: '깃허브 저장소', url: 'https://github.com/jhj1228/KKuTu' }
                 ]
             }
         ]
@@ -834,7 +903,8 @@ const serversData = [
 
 성재현님이 운영하셨던 프리서버예요. 루크님도 서버 운영에 참여하셨어요. 2021년 후반기에 서비스를 시작해서 2024년 전반기에 서비스를 종료했어요.`,
                 relatedLinks: [
-                    { name: '카재 게임즈(읽기전용)', url: 'https://discord.com/invite/GTU5mEpwRG' }
+                    { name: '카재 게임즈(읽기전용)', url: 'https://discord.com/invite/GTU5mEpwRG' },
+                    { name: '깃허브 저장소', url: 'https://github.com/kartjaehyun/KKuTu' }
                 ]
             }
         ]
@@ -880,7 +950,8 @@ const serversData = [
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/mahankkutu' },
                     { name: '공식 디스코드', url: 'https://discord.com/invite/dMJqrjHWHr' },
-                    { name: '공식 카카오톡 채널', url: 'https://pf.kakao.com/_vWpLG/friend?api_ver=1.1&kakao_agent=sdk%2F2.7.4%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fmahan.kr&app_key=811e94d979044d9868baf25c49a29e51&referer=https%3A%2F%2Fmahan.kr%2F' }
+                    { name: '공식 카카오톡 채널', url: 'https://pf.kakao.com/_vWpLG/friend?api_ver=1.1&kakao_agent=sdk%2F2.7.4%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fmahan.kr&app_key=811e94d979044d9868baf25c49a29e51&referer=https%3A%2F%2Fmahan.kr%2F' },
+                    { name: '깃허브 저장소', url: 'https://github.com/githubmahan/KKuTu' }
                 ]
             }
         ]
@@ -901,7 +972,9 @@ const serversData = [
                 description: `교통으로 즐기는 철팽끄투!
 
 철팽끄투는 철팽님이 운영하셨던 끄투로, 교통 중심의 단어가 매우 많았어요. 현재는 마한끄투에 통합되었어요.`,
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/CheolPang/KKuTu' }
+                ]
             }
         ]
     },
@@ -999,7 +1072,9 @@ const serversData = [
                 endYear: 2024.5,
                 operator: 'AHE',
                 description: 'AHE님이 운영하셨던 끄투 프리서버예요. 2023년 12월 30일에 오픈했었으며 2024년 7월 1일에 서비스를 종료했어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/aslhanball/KKuTu' }
+                ]
             }
         ]
     },
@@ -1048,7 +1123,8 @@ const serversData = [
 
 야옹이님이 운영하시는 끄투 프리서버예요.`,
                 relatedLinks: [
-                    { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' }
+                    { name: '공식 디스코드', url: 'https://discord.com/invite/aEAVmrtU4w' },
+                    { name: '깃허브 저장소', url: 'https://github.com/kitt3n69420/KKuTu' }
                 ]
             }
         ]
@@ -1112,7 +1188,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: 2026.5,
                 operator: '차누',
                 description: '차누님이 운영하셨던 서버예요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
-                relatedLinks: []
+                relatedLinks: [
+                    
+                ]
             },
              {
                 id: 'chankkutunew',
@@ -1127,7 +1205,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: '차누',
                 description: '차누님이 이전의 서버가 랜섬웨어로 인해 종료된 이후 새로 운영을 시작하신 서버예요. 레전드끄투 기반으로 만든 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/Chanhooyoo1/ChanuKKuTu' }
+                ]
             }
         ]
     },
@@ -1148,7 +1228,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: '티에프지이',
                 description: '티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/tgfwgeg1111111/KKuTu' }
+                ]
             }
         ]
     },
@@ -1202,7 +1284,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: 'OP_Noob',
                 description: '끄투 2 기반이지만, 끄투 2의 모습을 갈아엎고, 현재 서비스 중인 끄투 3과 유사하게 UI를 만든 서버예요.',
-                relatedLinks: []
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' }
+                ]
             }
         ]
     }

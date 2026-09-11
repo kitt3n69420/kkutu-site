@@ -1,16 +1,8 @@
-추가할 것: 끄투 게임모드 및 특수규칙 위키
-추가 유틸리티: 끄투미- 훈도가 운영, 2025년 말에만 있었음, 개발자가 잠적할 때 같이 서비스 종료됨
-모바일은 오른쪽으로 스와이프하면, 데탑은 왼쪽에 서브메뉴
-
 아래 끄투 프리 서버에 관해서 알고 있는 분은 연락 바랍니다
 연락 방법:
 1, 끄투닷사이트 공식 디스코드 서버
-2, discord @f_catus 로 DM
+2, discord @ay8930 로 DM
 3, 이메일 kitt3n6974@gmail.com 로 연락
-
-추가할 것: 끄투 게임모드 및 특수규칙 위키
-추가 유틸리티: 끄투미- 훈도가 운영, 2025년 말에만 있었음, 개발자가 잠적할 때 같이 서비스 종료됨
-모바일은 오른쪽으로 스와이프하면, 데탑은 왼쪽에 서브메뉴
 
 갤럭시끄투
 그레이끄투 - 온새미로님이 운영, 디코링크 https://discord.com/invite/yefTc77tK7
@@ -22,41 +14,115 @@
 네투온라인
 다람이가 - 다람님이 운영
 단어끄투
-도리끄투 - 럽코끄투 - 카카오끄투
+도리끄투 -> 럽코끄투 -> 카카오끄투
 뜨투
 디보이끄투
 라이프끄투
-레츠고끄투 - 제로끄투
+레츠고끄투 -> 제로끄투
 로투
 몬박끄투 - 디스코드 @monbox님이 운영
-미투 - 치투
+미투 -> 치투
 밤의별 끄투
 사츠메가네 끄투 - 사츠메가네가 운영했을듯
 성해끄투
-소시미끄투- 소시미님이 운영했을지는 몰루
+소시미끄투- 소시미님이 운영했을 가능성 높음
+씨앗끄투
 야채끄투
 오투
 원투
 웨인끄투
 유노윤호 끄투
-은찬끄투 - 은찬님이 운영했을지는 몰루
+은찬끄투 - 은찬님이 운영했을 가능성 높음
 이하끄투 - 이하(현 라이니)님이 운영
-재미끄투
+자유끄투
+재미끄투 (Fun KKuTu랑 동일 서버인지는 불명)
 잼투
-저런끄투 - 개발자블로그는 https://daldal.so/w/%EB%8B%AC%EC%97%90%EA%B0%84%EC%86%8C
+저런끄투 - 개발자 블로그는 https://daldal.so/w/%EB%8B%AC%EC%97%90%EA%B0%84%EC%86%8C, 디스코드는 https://discord.gg/pjqERaRj6q
 지빵끄투 - 지빵님이 운영
-쯔투 - 뉴쯔투 - 뜨투
+쯔투 -> 뉴쯔투 -> 뜨투
 체리끄투 - 체리보린님이 운영
 케이니끄투 - 끄투블루 전작
-태풍끄튬 - VelTu
+태풍끄튬 -> VelTu
 투데이끄투
-파키끄투 - 파파키님이 운영
+파파키끄투 - 파파키님이 운영
 프룬끄투
 하루온라인
 하루끄투
 하오끄투
-휴산끄투 - kkutuplus
-KKuTu Korea (현재의 끄투코리아와는 별개 서버, KKutu-korea.kro.kr, 17초)
+휴산끄투 -> kkutuplus
+KKuTu Korea (현재의 끄투코리아와는 별개 서버, KKutu-korea.kro.kr, 17초에 운영 시작)
 RHKKuTu
 RSKKUTU - 성재현이 운영, 24시간, 2022년 전반에 운영 시작
 StarKKuTu
+
+깃허브 레포지토리 정리
+끄투2 https://github.com/jjoriping/kkutu
+끄투코리아 https://github.com/RevelabsKR
+트꾸 https://github.com/Kimu-Nowchira/TuKKu-Public
+이진성 끄투리오 https://github.com/ljs970624/KKuTu/tree/master/Server/lib/Web/lang
+모두끄투 https://github.com/godmoonl/KKuTu
+씨앗끄투 https://github.com/seedkkutu/seedkkutu
+프로젝트끄투 https://github.com/PrjKKuTu/KKuTu
+G-Remi님의 레포지토리 https://github.com/G-remi/KKuTu/
+2020년 알파끄투 https://github.com/lubudack/KKuTu
+다람이가 끄투 https://github.com/JJoriping/KKuTu/compare/master...daramkkutu:KKuTu:master - 2021년 후반부터 운영 시작
+MRSR 끄투 https://github.com/JWCT/KKuTu (원작자 : 애푸르스박#3562 op@jwct.ml, 개발지원 : Danas)
+케이니끄투/끄투블루 https://github.com/KAINNY5669/KKuTu , 20년 8월에 시작됨, 20년 9월쯤에는 끄투블루로 바뀌었던 것 같음
+철팽끄투 https://github.com/CheolPang/KKuTu
+저런끄투 https://github.com/kmsimproject/KKuTu - 21년 5월에 확실히 운영 중이었음
+올드 김도훈 끄투리오 https://github.com/kdhkr/KKuTu
+BF끄투 https://github.com/bfkkutu/KKuTu
+체리끄투 https://github.com/ljoljo9959/KKuTu
+이름없는끄투 https://github.com/wjdgustn/KKuTu
+분홍끄투 https://github.com/pinkleaves/KKuTu/
+NuKKuTu -  Nucleus Team이 운영, https://github.com/Nukkutu/Nukkutu - 최소 2022년 9월 30~10월 18에 운영했음. (이후에 운영햇을지는 모름) 소시미라는 사람이 만들었고 언노운워드가 있었음
+호류 끄투리오 - https://github.com/pink-flower/KKuTu/tree/production
+모레미끄투 - https://github.com/MoremiKKuTu/KKuTu - 파라곤과 쿠크다스가 만든듯, https://github.com/Cookie-Platform/Moremi-kkutu 이것도 쿠크다스가 만들었는데 뭔지 모름
+끄투원 - https://github.com/limyejoon/KKuTu - 햇살나무님이 운영, 2019년 3월에 운영 시작
+올드 레전드끄투 - https://github.com/legendkkutu/KKuTu
+급식끄투 - https://github.com/lee-jiwan/KKuTu
+오투 (오아시스끄투) - https://github.com/KRBlue/KKuTu - http://www.otu.kr/
+전학컴 끄투(JHKKuTu) - https://github.com/zzstudio-dev/KKuTu
+KKuTuLaw - https://github.com/YTlaw80/KKuTu
+태풍끄튬/VelTu - https://github.com/TyphoonDANAS/VelTu - 여기도 언노운 워드 있었음
+티에프끄투 - https://github.com/tgfwgeg1111111/KKuTu
+마스터끄투 - https://github.com/swoo5571/KKuTu - 19년 말 ~ 20년 초 이상 운영했는듯(이후에 운영햇을지는 모름) 
+SkyLightQP 끄투닷컴 - https://github.com/SkyLightQP/KKuTuDotCom
+스카이끄투 (운영자 sky-kiwi) - https://github.com/sky-kiwi/KKuTu - 21년 4월에 운영 중이었음
+끄투플러스 - https://github.com/Saeharae/KKuTu - 2019년 8월부터 2020년 1월에는 확실히 운영, 그 뒤로는 불확실
+휴산끄투 - https://github.com/hyusan30/KKuTu - 21년 4월에는 확실히 운영
+물개끄투 - https://github.com/ganada9/KKuTu 22년 말부터 23년 초까지 운영한 걸로 추정
+Fun KKuTu - https://github.com/funkkutu/KKuTuunkkutu - 운영자는 heonseongn
+도토리끄투 - https://github.com/DotoriKKuTu/KKuTu
+이븐끄투 - https://github.com/cookedas1/EvenKKuTu
+젠투 온라인 - https://github.com/CommandCloud/KKuTu
+차누끄투 - https://github.com/Chanhooyoo1/ChanuKKuTu
+북유럽끄투 - https://github.com/aslhanball/KKuTu
+올드 알파끄투 - https://github.com/AlphaKKuTu-old/main - 해티랑 연관되어있음
+올드 끄투닷플러스 - https://github.com/KKuTuDotPlus-old/KKuTu
+최신 끄투닷넷 - https://github.com/KKuTuDotNet/KKuTu
+끄튜브 - https://github.com/kkutube/KKuTu
+바나나끄투 - https://github.com/KIWIMING-cyber/BananaKKuTu - 쿠키야미님이 운영, 24년 9월에 운영 시작
+끄투엔 - https://github.com/kitt3n69420/KKuTu
+음악끄투 - https://github.com/kartjaehyun/KKuTu
+사츠메가네 끄투 - https://github.com/JuyoungK1m/KKuTu - 2018년 전반에 운영 시작, 후반까지는 확실히 운영, 그 후는 모름
+슬라임끄투 - https://github.com/jusnorare/SlimeKKUTU - 2021년 후반에 확실히 운영 중
+단어끄투 (다이크로뮴산소다) - https://github.com/june2007/KKuTu-1
+최신 레전드끄투 - https://github.com/jhj1228/KKuTu
+알파끄투 (해티) - https://github.com/hatty163/KKuTu
+아워끄투 - https://github.com/greatflex/KKuTu
+하이파타 끄투 - https://github.com/Hyfata/Hyfata-KKuTu-Latest - 나조안님이 운영, 정확한 운영일자는 알수 없음
+마한끄투 - https://github.com/githubmahan/KKuTu
+끄투게임 - https://github.com/sksjskdke9293/kkutu-game
+
+레포지토리만 남고 정보는 없음
+https://github.com/return0927/KKuTu/
+https://github.com/phonicsangel/KKuTu - 서버 뜻풀이가 우리말샘이었고 브금이 겨울임. 자세한건 도토리 끄투사전을 찾아봐야 할지도
+https://github.com/Moomination/KKuTu
+https://github.com/SichiKim/KKuTu
+https://github.com/foxof4545/KKuTu
+https://github.com/bucket12345/KKuTu
+https://github.com/banana9152/KKuTu
+https://github.com/isulbi/KKuTu/
+https://github.com/houlday/KKuTu - 호울데이님의 끄투 서버
+https://github.com/happy-cloudy2/KKuTu - Happy Cloudy님의 끄투 서버

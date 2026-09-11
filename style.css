@@ -700,6 +700,20 @@ body.someday-filter .card {
     transform: translateY(-1px);
 }
 
+.unknown-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.related-btn.small {
+    display: inline-block;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+}
+
 .btn {
     padding: 12px 24px;
     font-size: 1.1rem;
@@ -852,6 +866,28 @@ body.someday-filter .card {
     font-size: 1.5rem;
     margin-bottom: 12px;
     text-align: center;
+}
+
+.unknown-kkutu-notice {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto 16px;
+    max-width: 480px;
+}
+
+.unknown-kkutu-subheading {
+    font-size: 1.15rem;
+    text-align: center;
+    margin: 36px 0 12px;
+    color: var(--text-muted);
+}
+
+/* 알려지지 않은 끄투 카드는 유틸리티/추천 게임과 같은 카드 크기를 쓰도록,
+   페이지 전체 너비에서 자동으로 여러 열로 배치함 */
+#unknown-view .utility-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .utility-grid {
