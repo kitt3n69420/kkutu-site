@@ -1229,7 +1229,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 operator: '티에프지이',
                 description: '티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
                 relatedLinks: [
-                    { name: '깃허브 저장소', url: 'https://github.com/tgfwgeg1111111/KKuTu' }
+                    { name: '깃허브 저장소', url: 'https://github.com/tgfwgeg/TFKKuTu' }
                 ]
             }
         ]
