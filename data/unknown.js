@@ -212,7 +212,7 @@ window.unknownKkutus = [
         startYear: null,
         endYear: null,
         operator: '제 2의 끄투',
-        description: '2021년 5월에 운영 중이었던 것으로 확인돼요. "바로끄투"의 운영자 "제 2의 끄투"님과 관련이 있을 가능성이 있어요.',
+        description: '2021년 5월에 운영 중이었던 것으로 확인돼요. 안전게임즈에서 운영을 한 것으로 확인돼요.',
         tags: [],
         relatedLinks: [
             { name: '개발자 블로그', url: 'https://daldal.so/w/%EB%8B%AC%EC%97%90%EA%B0%84%EC%86%8C' },
