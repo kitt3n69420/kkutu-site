@@ -192,7 +192,7 @@ window.unknownKkutus = [
         description: '다람님이 2021년 하반기부터 운영을 시작한 것으로 확인돼요.',
         tags: [],
         relatedLinks: [
-            { name: '깃허브 저장소', url: 'https://github.com/JJoriping/KKuTu/compare/master...daramkkutu:KKuTu:master' }
+            { name: '깃허브 저장소', url: 'https://github.com/daramkkutu/KKuTu' }
         ]
     },
     {
