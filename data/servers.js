@@ -1217,7 +1217,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 tags: [
                     '24시간',
                     '뜻추가',
-                    '우리말샘'
+                    '우리말샘',
+                    '언노운워드'
                 ],
                 url: 'http://chanukkutu.kro.kr/',
                 url2: 'http://chankkutu.kro.kr/',
