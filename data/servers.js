@@ -1311,15 +1311,15 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         ]
     },
     {
-        name: '끄투게임',
+        name: '끄투게임즈코리아',
         color: '#FFD000',
         textColor: '#1a1a1a',
         instances: [
             {
                 id: 'kkutugame',
                 tags: ['우리말샘','24시간'],
-                url: 'https://kkutugame.kro.kr/',
-                url2: '#',
+                url: 'https://kkutugame.kr/',
+                url2: 'https://kkutugame.kro.kr/',
                 startYear: 2026.5,
                 endYear: null,
                 operator: 'OP_Noob',

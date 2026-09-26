@@ -112,7 +112,7 @@ Fun KKuTu - https://github.com/funkkutu/KKuTuunkkutu - 운영자는 heonseongn
 아워끄투 - https://github.com/greatflex/KKuTu
 하이파타 끄투 - https://github.com/Hyfata/Hyfata-KKuTu-Latest - 나조안님이 운영, 정확한 운영일자는 알수 없음
 마한끄투 - https://github.com/githubmahan/KKuTu
-끄투게임 - https://github.com/sksjskdke9293/kkutu-game
+끄투게임즈코리아 (구. 끄투게임) - https://github.com/sksjskdke9293/kkutu-game
 
 레포지토리만 남고 정보는 없음
 https://github.com/return0927/KKuTu/
