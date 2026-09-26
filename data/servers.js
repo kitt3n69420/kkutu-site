@@ -1312,7 +1312,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
     },
     {
         name: '끄투게임즈코리아',
-        color: '#FFD000',
+        color: '#ffa200',
         textColor: '#1a1a1a',
         instances: [
             {
