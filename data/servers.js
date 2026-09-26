@@ -1213,7 +1213,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
     },
     {
         name: '차누끄투',
-        color: '#bc23f3',
+        color: '#9d33fa',
         textColor: '#ffffff',
         instances: [
             {
