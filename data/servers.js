@@ -540,6 +540,24 @@ const serversData = [
         ]
     },
     {
+        name: '몬박끄투',
+        color: '#c2a679',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'monbakkkutu',
+                tags: [],
+                url: '#',
+                url2: '#',
+                startYear: 2018.5,
+                endYear: 2019,
+                operator: 'monbox',
+                description: '디스코드 @monbox님이 운영하신 끄투 프리서버예요. 주소는 kkutumb.ml였고, 2018년 8월에 운영을 시작했어요. 2019년 1월 25일에 소스 코드가 유실되어 서비스를 폐쇄했어요.',
+                relatedLinks: []
+            }
+        ]
+    },
+    {
         name: '알파끄투',
         color: '#ffcc99',
         textColor: '#1a1a1a',

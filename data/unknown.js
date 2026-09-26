@@ -66,15 +66,6 @@ window.unknownKkutus = [
         tags: []
     },
     {
-        name: '몬박끄투',
-        url: '#',
-        startYear: 2018.5,
-        endYear: null,
-        operator: 'monbox',
-        description: '디스코드 @monbox님이 운영한 것으로 추정돼요. 주소는 kkutumb.ml였고, 2018년 하반기(8월 13일)에 등록된 것으로 확인돼요.',
-        tags: []
-    },
-    {
         name: '로투 (LOTU)',
         url: '#',
         startYear: 2018.5,
