@@ -2,21 +2,29 @@ const servers = window.servers;
 
 // ========== Event Helpers ==========
 
-function getActiveEvent(serverId) {
+// 진행 중인 이벤트 전체를 종료일이 빠른 순으로 반환
+function getActiveEvents(serverId) {
     const events = window.events && window.events[serverId];
-    if (!events) return null;
+    if (!events) return [];
     // 배열이 아닌 단일 이벤트 객체(구 형식)도 지원
     const eventList = Array.isArray(events) ? events : [events];
     // ISO 날짜 문자열(YYYY-MM-DD)을 UTC가 아닌 로컬 시간 기준으로 파싱
     const parseLocal = str => { const [y, m, d] = str.split('-').map(Number); return new Date(y, m - 1, d); };
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return eventList.find(event => {
-        const start = parseLocal(event.startDate);
-        const end = parseLocal(event.endDate);
-        end.setHours(23, 59, 59, 999);
-        return today >= start && today <= end;
-    }) || null;
+    return eventList
+        .filter(event => {
+            const start = parseLocal(event.startDate);
+            const end = parseLocal(event.endDate);
+            end.setHours(23, 59, 59, 999);
+            return today >= start && today <= end;
+        })
+        .sort((a, b) => parseLocal(a.endDate) - parseLocal(b.endDate));
+}
+
+// 가장 먼저 끝나는 진행 중 이벤트
+function getActiveEvent(serverId) {
+    return getActiveEvents(serverId)[0] || null;
 }
 
 // ========== OKLCH Color Normalization ==========
@@ -564,12 +572,14 @@ function renderServers(sortType = 'default') {
         card.appendChild(header);
         card.appendChild(tags);
 
-        const activeEvent = getActiveEvent(server.id);
+        const activeEvents = getActiveEvents(server.id);
+        const activeEvent = activeEvents[0];
         if (activeEvent) {
             card.classList.add('event-active');
             const badge = document.createElement('a');
             badge.className = 'event-badge';
-            badge.textContent = activeEvent.title || '이벤트 중';
+            const extra = activeEvents.length - 1;
+            badge.textContent = (activeEvent.title || '이벤트 중') + (extra > 0 ? ` +${extra}` : '');
             badge.href = activeEvent.link;
             badge.target = '_blank';
             badge.addEventListener('click', e => e.stopPropagation());
@@ -907,16 +917,20 @@ function openDetail(server, sourceCard) {
     detailRelatedLinks.innerHTML = '';
 
     // 이벤트 공지 버튼: 관련 사이트 버튼과 같은 그리드의 맨 윗줄을 통째로 차지
-    const activeDetailEvent = getActiveEvent(server.id);
-    if (activeDetailEvent) {
+    // 이벤트가 2개 이상이면 다른 링크처럼 2열, 홀수 개일 때 마지막 하나는 전체 너비
+    const activeDetailEvents = getActiveEvents(server.id);
+    activeDetailEvents.forEach((ev, i) => {
         const eventBtn = document.createElement('a');
-        eventBtn.id = 'detail-event-btn';
         eventBtn.className = 'related-btn event-announcement-btn';
-        eventBtn.href = activeDetailEvent.link;
+        if (activeDetailEvents.length === 1 ||
+            (i === activeDetailEvents.length - 1 && activeDetailEvents.length % 2 === 1)) {
+            eventBtn.classList.add('full');
+        }
+        eventBtn.href = ev.link;
         eventBtn.target = '_blank';
-        eventBtn.textContent = `🎉 ${activeDetailEvent.title || '이벤트 공지 보기'}`;
+        eventBtn.textContent = `🎉 ${ev.title || '이벤트 공지 보기'}`;
         detailRelatedLinks.appendChild(eventBtn);
-    }
+    });
 
     if (server.relatedLinks && server.relatedLinks.length > 0) {
         server.relatedLinks.forEach(link => {

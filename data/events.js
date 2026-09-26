@@ -11,6 +11,12 @@ window.events = {
             link: 'https://kkutu.kr/event/1st-anniversary'
         },
         {
+            title: '한가위 이벤트',
+            startDate: '2026-09-22',
+            endDate:   '2026-10-11',
+            link: 'https://game.naver.com/lounge/kkutu/board/detail/8221816'
+        },
+        {
             title: '순위전 베타 시즌',
             startDate: '2026-09-04',
             endDate:   '2026-11-27',

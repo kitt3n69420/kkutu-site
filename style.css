@@ -512,8 +512,10 @@ body.someday-filter .card {
 .event-badge:hover { opacity: 0.8; }
 
 /* 상세 패널 이벤트 공지 버튼: 관련 사이트 버튼과 같은 줄(맨 윗줄 전체)을 차지 */
-.related-btn.event-announcement-btn {
+.related-btn.event-announcement-btn.full {
     grid-column: 1 / -1;
+}
+.related-btn.event-announcement-btn {
     color: var(--card-accent-1, var(--accent-primary));
     font-weight: 800;
 }
