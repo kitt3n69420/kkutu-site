@@ -798,7 +798,7 @@ const serversData = [
                 startYear: 2026,
                 endYear: 2026.5,
                 operator: '제 2의 끄투',
-                description: '"제 2의 끄투"라는 분이 운영했던 프리서버예요. 최근에 잠시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
+                description: '새로 시작한 우리들의 끄투\n\n"제 2의 끄투"라는 분이 운영했던 프리서버예요. 최근에 잠시 문을 열었었고, 일반 끄투와 디자인이 조금 달랐어요.',
                 relatedLinks: []
             }
         ]
@@ -1266,7 +1266,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026,
                 endYear: null,
                 operator: '티에프지이',
-                description: '티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
+                description: '이카리 신지! 티에프끄투\n\n티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
                 relatedLinks: [
                     { name: '깃허브 저장소', url: 'https://github.com/tgfwgeg/TFKKuTu' }
                 ]
@@ -1328,6 +1328,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                     { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' },
                     { name: '공식 디스코드', url: 'https://discord.gg/RFJ7uzWWZ' }
                 ]
+            }
+        ]
+    },
+    {
+        name: '파얼끄투',
+        color: '#679847',
+        textColor: '#ffffff',
+        instances: [
+            {
+                id: 'parkeolrukkutu',
+                tags: ['24시간', '언노운워드'],
+                url: 'https://kkutu.parkeolru.com/',
+                url2: '#',
+                startYear: 2026.5,
+                endYear: null,
+                operator: '박얼루',
+                description: '박얼루님이 운영 중인 끄투 프리서버예요. 로비 브금을 마음대로 정할 수 있어요.',
+                relatedLinks: []
             }
         ]
     }
