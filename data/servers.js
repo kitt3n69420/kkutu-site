@@ -906,7 +906,6 @@ const serversData = [
                 id: 'legendkkutu_26',
                 tags: [
                     '뜻추가',
-                    '언노운워드',
                     '우리말샘'
                 ],
                 url: 'https://legendkkutu.kr/',
@@ -916,7 +915,7 @@ const serversData = [
                 operator: '정희정',
                 description: `글자로 놀자! 레전드끄투
 
-정희정님이 이전에 운영하던 레전드끄투의 소스 코드를 복구하여 운영중인 서버에요. DB 소실로 인해 어인정 주제는 없지만, 표준국어대사전, 한국어기초사전, 그리고 우리말샘 중 단어장을 고를 수 있어요.`,
+정희정님이 이전에 운영하던 레전드끄투의 소스 코드를 복구하여 운영중인 서버에요. 다양한 게임모드와 넓은 단어 범위를 가지고 있어요.`,
                 relatedLinks: [
                     { name: '개발자 유튜브', url: 'https://www.youtube.com/@%EC%A0%95%ED%9D%AC%EC%A0%95-p6o' },
                     { name: '깃허브 저장소', url: 'https://github.com/jhj1228/KKuTu' }
