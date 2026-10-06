@@ -48,7 +48,7 @@ window.utilities = [
         name: '끄투커넥트',
         url:'https://site.kkutugame.kr/',
         startYear: 2026.5,
-        endyear: null,
+        endYear: null,
         description: '끄투게임에서 운영 중인 프리 서버 목록이에요.',
         tags: ['정보'],
         color: '#ff8e6b'
@@ -58,7 +58,7 @@ window.utilities = [
         name: '끄투미',
         url:'https://kkutu.me/',
         startYear: 2025.5,
-        endyear: 2026,
+        endYear: 2026,
         description: '김도훈님이 잠시 운영하신 끄투 프리서버 목록이었어요. 2026년 2월 이후로 접속이 되고 있지 않아요.',
         tags: ['정보'],
         color: '#000d71'
