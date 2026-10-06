@@ -43,5 +43,14 @@ window.utilities = [
         description: '끄투코리아의 단어 및 각종 도구를 모아놓은 유틸리티 사이트에요. 끄투코리아랑 관련이 없이도 단어장 정리 기능, 글자 조합기 등이 있어서 유용하게 쓸 수 있어요.',
         tags: ['유틸리티'],
         color: '#866bff'
+    },
+    {
+        name: '끄투커넥트',
+        url:'https://site.kkutugame.kr/',
+        startYear: 2026.5,
+        endyear: null,
+        description: '끄투게임에서 운영 중인 프리 서버 목록이에요.',
+        tags: ['정보'],
+        color: '#ff8e6b'
     }
 ];
