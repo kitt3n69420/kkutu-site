@@ -1226,7 +1226,8 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 operator: '차누',
                 description: '차누님이 운영하셨던 서버예요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
                 relatedLinks: [
-                    
+                    { name: '공식 디스코드 서버', url: 'https://discord.gg/n4rtX7ytuY' },
+                    {name: '공식 카페', url: "https://cafe.naver.com/chanukkutu"}
                 ]
             },
              {

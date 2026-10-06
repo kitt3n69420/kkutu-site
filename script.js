@@ -613,7 +613,9 @@ function renderServers(sortType = 'default') {
 
                     const targetUrl = (server.name === '끄투코리아' || server.id === 'kkutukorea')
                         ? new URL('/o/servers', urlToCheck).href
-                        : new URL('/servers', urlToCheck).href;
+                        : server.id === 'kkutugame'
+                            ? new URL('/api/online', urlToCheck).href
+                            : new URL('/servers', urlToCheck).href;
 
                     const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
 
@@ -627,8 +629,12 @@ function renderServers(sortType = 'default') {
                         })
                         .then(data => {
                             clearTimeout(timeoutId);
-                            if (data && data.list) {
-                                const total = data.list.reduce((acc, val) => acc + (val || 0), 0);
+                            // 끄투게임: {"online":0,"servers":[0,0],"updatedAt":...}
+                            const list = data && (data.list || (typeof data.online !== 'number' ? data.servers : null));
+                            if (data && (list || typeof data.online === 'number')) {
+                                const total = typeof data.online === 'number'
+                                    ? data.online
+                                    : list.reduce((acc, val) => acc + (val || 0), 0);
                                 serverPlayerCounts[server.id] = total;
                                 playerCount.textContent = `${total}명`;
                                 if (!window.activeServers.includes(server)) {
