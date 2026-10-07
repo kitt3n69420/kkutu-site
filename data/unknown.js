@@ -86,8 +86,12 @@ window.unknownKkutus = [
         url: '#',
         startYear: 2018.5,
         endYear: null,
-        description: '2018년 하반기(10월 24일)에 등록된 것으로 확인돼요.',
-        tags: []
+        operator: '코코냐',
+        description: '2018년 하반기(10월 24일)에 등록된 것으로 확인돼요. 프로젝트 끄투와 운영자가 같지만 별개로 연 서버로, 프로젝트 끄투와 같은 깃허브 저장소에 다른 브랜치로 소스가 남아있어요.',
+        tags: [],
+        relatedLinks: [
+            { name: '깃허브 저장소 (프로젝트 끄투와 공유)', url: 'https://github.com/PrjKKuTu/KKuTu/tree/NaengE' }
+        ]
     },
     {
         name: 'STKTonline (사츠메가네 끄투)',

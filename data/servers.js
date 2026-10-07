@@ -364,7 +364,7 @@ const serversData = [
                 startYear: 2017.5,
                 endYear: 2021.5,
                 operator: '코코냐',
-                description: '코코냐님이 2017년 8월에 오픈한 서버로, 2021년 4월 24일 끄투리오에 통합되었어요. 언노운워드가 처음 만들어진 서버예요.',
+                description: '코코냐님이 2017년 8월에 오픈한 서버로, 데이터베이스 오류로 인해 운영이 종료되었어요. 언노운워드가 처음 만들어진 서버예요.',
                 relatedLinks: [
                     { name: '공식 디스코드', url: 'https://discord.com/invite/XXkuYNG' },
                     { name: '깃허브 저장소', url: 'https://github.com/PrjKKuTu/KKuTu' }
