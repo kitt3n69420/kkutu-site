@@ -129,12 +129,10 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2021,
-                endYear: 2024,
+                endYear: 2022,
                 operator: '김도훈',
-                description: '김도훈님이 2021년 4월 24일에 다양한 서버들(끄투닷넷, 프로젝트 끄투 등)을 통합하여 오픈한 끄투리오 서버예요.',
-                relatedLinks: [
-                    { name: '깃허브 저장소', url: 'https://github.com/kdhkr/KKuTu' }
-                ]
+                description: '김도훈님이 2021년 4월 24일에 오픈한 끄투리오 서버예요. 2021년 12월 6일에 끄투닷넷과 통합되었으며, 2022년 5월 25일에 대표자가 변경되었어요.',
+                relatedLinks: []
             },
             {
                 id: 'kkutuiokdh',
@@ -146,10 +144,10 @@ const serversData = [
                 ],
                 url: 'https://kkutu.io/',
                 url2: '#',
-                startYear: 2024,
+                startYear: 2022,
                 endYear: null,
                 operator: '김도훈',
-                description: `글자로 놀자! 끄투리오\n\n김도훈님이 2024년부터 운영하신 서버로, 끄투코리아 다음으로 많이 들어오는 서버예요.
+                description: `글자로 놀자! 끄투리오\n\n2022년 5월 25일 대표가 김도훈님이 된 이후로 운영되고 있는 서버로, 끄투코리아 다음으로 많이 들어오는 서버예요.
 `,
                 relatedLinks: [
                     { name: '공식 카페', url: 'https://cafe.naver.com/kkutuio' },
@@ -436,10 +434,8 @@ const serversData = [
                 operator: '김도훈',
                 description: `내 작은 글자 놀이터, 끄투닷넷!
 
-김도훈님이 2020년에 오픈한 끄투닷넷 서버예요. 알파끄투, 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 마지막으로 끄투리오에 통합되었어요.`,
-                relatedLinks: [
-                    { name: '깃허브 저장소', url: 'https://github.com/KKuTuDotNet/KKuTu' }
-                ]
+2020년에 알파끄투에서 끄투닷넷으로 이름이 바뀌게 되었는데, 당시 공동 대표 4분이 서비스 운영을 접은 뒤, 끄투닷넷으로 이름이 바뀐 거에요. 가루끄투, 모리끄투가 이곳으로 합쳐졌으며 이후 2021년 12월 6일 끄투리오에 통합되었어요.`,
+                relatedLinks: []
             }
         ]
     },
@@ -569,10 +565,9 @@ const serversData = [
                 url2: '#',
                 startYear: 2019,
                 endYear: 2020,
-                description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버예요. 이후 2020년에 김도훈님이 운영하는 끄투닷넷으로 통합되었어요.',
+                description: '2019년에 라이트끄투와 끄투닷넷이 통합되어 만들어진 서버예요. 이후 2020년에 이름이 다시 끄투닷넷으로 바뀌었어요.',
                 relatedLinks: [
-                    { name: '깃허브 저장소(2019, 올드)', url: 'https://github.com/AlphaKKuTu-old/main' },
-                    { name: '깃허브 저장소(2020)', url: 'https://github.com/lubudack/KKuTu' }
+                    { name: '깃허브 저장소(2019, 올드)', url: 'https://github.com/AlphaKKuTu-old/main' }
                 ]
             }
         ]
