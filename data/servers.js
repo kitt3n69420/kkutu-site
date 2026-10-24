@@ -1079,7 +1079,7 @@ const serversData = [
                 url: 'https://antu.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2027,
                 operator: '아이앤트',
                 description: `글자로 놀자! 개미끄투
 
@@ -1260,7 +1260,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'https://tfkkutu.site/',
                 url2: 'http://tfkkutu.kro.kr/',
                 startYear: 2026,
-                endYear: null,
+                endYear: 2027,
                 operator: '티에프지이',
                 description: '이카리 신지! 티에프끄투\n\n티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
                 relatedLinks: [
