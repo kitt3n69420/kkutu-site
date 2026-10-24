@@ -1280,7 +1280,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'http://eraserkkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2027,
                 operator: '지우개',
                 description: '지우개님이 운영 중인 끄투 프리서버예요. 최근에 운영을 시작했어요.',
                 relatedLinks: []
@@ -1298,7 +1298,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'http://kimchik.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2027,
                 operator: 'jplth1124',
                 description: 'jplth1124님이 2026년 후반부터 운영 중인 끄투 프리서버예요.',
                 relatedLinks: [
@@ -1334,13 +1334,13 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'parkeolrukkutu',
-                tags: ['24시간', '언노운워드'],
+                tags: ['24시간', '언노운워드','우리말샘'],
                 url: 'https://kkutu.parkeolru.com/',
                 url2: '#',
                 startYear: 2026.5,
                 endYear: null,
                 operator: '박얼루',
-                description: '박얼루님이 운영 중인 끄투 프리서버예요. 로비 브금을 마음대로 정할 수 있고, 끄투게임과 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능해요.',
+                description: '박얼루님이 운영 중인 끄투 프리서버예요. 효과음을 마음대로 설정할 수 있고, 끄투게임과 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능해요.',
                 relatedLinks: []
             }
         ]
