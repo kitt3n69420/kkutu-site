@@ -1344,6 +1344,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 relatedLinks: []
             }
         ]
+    },
+    {
+        name: '뭐노끄투',
+        color: '#68d76f',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'whatthekkutu',
+                tags: [],
+                url: 'http://whatthekkutu.kro.kr/',
+                url2: '#',
+                startYear: 2026.5,
+                endYear: null,
+                operator: 'juakus81',
+                description: 'juakus81님이 운영 중인 끄투 프리서버예요.',
+                relatedLinks: []
+            }
+        ]
     }
 ];
 
