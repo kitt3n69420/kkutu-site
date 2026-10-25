@@ -1352,7 +1352,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'whatthekkutu',
-                tags: [],
+                tags: ['우리말샘'],
                 url: 'http://whatthekkutu.kro.kr/',
                 url2: '#',
                 startYear: 2026.5,
