@@ -880,8 +880,8 @@ const serversData = [
                 id: 'legendkkutu_26',
                 tags: [
                     '뜻추가',
-                    '언노운워드',
-                    '우리말샘'
+                    '우리말샘',
+                    '언노운워드'
                 ],
                 url: 'https://legendkkutu.kr/',
                 url2: '#',
@@ -1187,9 +1187,9 @@ const serversData = [
                 id: 'delzb',
                 tags: [
                     '24시간',
-                    '언노운워드',
                     '뜻추가',
-                    '우리말샘'
+                    '우리말샘',
+                    '언노운워드'
                 ],
                 url: 'https://delzb.app',
                 url2: 'https://kkutu.delzb.app/',
@@ -1313,7 +1313,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'kkutugame',
-                tags: ['우리말샘','24시간'],
+                tags: ['24시간', '우리말샘'],
                 url: 'https://kkutugame.kr/',
                 url2: 'https://kkutugame.kro.kr/',
                 startYear: 2026.5,
@@ -1334,7 +1334,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'parkeolrukkutu',
-                tags: ['24시간', '언노운워드','우리말샘', '뜻추가'],
+                tags: ['24시간', '뜻추가', '우리말샘', '언노운워드'],
                 url: 'https://kkutu.parkeolru.com/',
                 url2: '#',
                 startYear: 2026.5,
