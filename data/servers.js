@@ -1334,7 +1334,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'parkeolrukkutu',
-                tags: ['24시간', '언노운워드','우리말샘'],
+                tags: ['24시간', '언노운워드','우리말샘', '뜻추가'],
                 url: 'https://kkutu.parkeolru.com/',
                 url2: '#',
                 startYear: 2026.5,
