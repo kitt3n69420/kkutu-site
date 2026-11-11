@@ -1262,7 +1262,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026,
                 endYear: 2027,
                 operator: '티에프지이',
-                description: '이카리 신지! 티에프끄투\n\n티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요.',
+                description: '이카리 신지! 티에프끄투\n\n티에프지이님이 운영을 시작한 서버예요. 운영자님이 이카리 신지를 정말 좋아하시는 모양이에요. 현재는 사실상 서버를 열지 않고 있어요.',
                 relatedLinks: [
                     { name: '깃허브 저장소', url: 'https://github.com/tgfwgeg/TFKKuTu' }
                 ]
@@ -1282,7 +1282,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: 2027,
                 operator: '지우개',
-                description: '지우개님이 운영 중인 끄투 프리서버예요. 최근에 운영을 시작했어요.',
+                description: '지우개님이 운영 중이셨던 끄투 프리서버예요. 별로 서버를 열지 않았어요.',
                 relatedLinks: []
             }
         ]
@@ -1300,7 +1300,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 startYear: 2026.5,
                 endYear: 2027,
                 operator: 'jplth1124',
-                description: 'jplth1124님이 2026년 후반부터 운영 중인 끄투 프리서버예요.',
+                description: 'jplth1124님이 2026년 후반에 운영했던 끄투 프리서버에요. 소스코드 손상으로 인해 서버를 열 수 없는 상황이 되었어요.',
                 relatedLinks: [
                 ]
             }
@@ -1317,9 +1317,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'https://kkutugame.kr/',
                 url2: 'https://kkutugame.kro.kr/',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2027,
                 operator: 'OP_Noob',
-                description: '끄투 2 기반이지만, 끄투 2의 모습을 갈아엎고, 현재 서비스 중인 끄투 3과 유사하게 UI를 만든 서버예요. 파얼끄투와 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능해요.',
+                description: 'OP_Noob님이 만든 프리서버였어요. 현재는 서비스명을 바꾸고 끄투 원본 소스코드를 활용하지 않은 채로 서비스 중이에요',
                 relatedLinks: [
                     { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' },
                     { name: '공식 디스코드', url: 'https://discord.gg/4kqdpZhzUs' }
@@ -1338,9 +1338,9 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 url: 'https://kkutu.parkeolru.com/',
                 url2: '#',
                 startYear: 2026.5,
-                endYear: null,
+                endYear: 2027,
                 operator: '박얼루',
-                description: '박얼루님이 운영 중인 끄투 프리서버예요. 효과음을 마음대로 설정할 수 있고, 끄투게임과 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능해요.',
+                description: '박얼루님이 운영하셨던 끄투 프리서버예요. 효과음을 마음대로 설정할 수 있고, 끄투게임과 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능했어요. 하지만 개발자의.개인적인 사정으로 갑작스레 서비스가 종료되었어요.',
                 relatedLinks: []
             }
         ]
