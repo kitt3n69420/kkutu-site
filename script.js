@@ -1079,7 +1079,7 @@ function switchView(category) {
         utilitySection.classList.add('active');
         extrasView.classList.add('active');
         currentView = 'utility';
-    } else if (category === '추천 게임') {
+    } else if (category === '다른 끝말잇기 웹게임') {
         // Mobile: Show only games
         gamesSection.classList.add('active');
         extrasView.classList.add('active');

@@ -49,6 +49,12 @@ window.events = {
             startDate: '2026-09-15',
             endDate:   '2026-10-15',
             link: 'https://kkutu-n.xyz/event/events_chuseok.html'
+        },
+        {
+            title: '끄투엔 1주년 이벤트',
+            startDate: '2026-11-14',
+            endDate:   '2026-12-15',
+            link: 'https://kkutu-n.xyz/event/events_1st.html'
         }
     ],
 };

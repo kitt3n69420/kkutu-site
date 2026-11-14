@@ -45,12 +45,12 @@ window.recommendedGames = [
         color: '#4ad6e5'
     },
     {
-        name: '자바!',
-        url: 'https://sorry.daldal.so/java',
-        startYear: 2021,
+        name: '구레미 온라인',
+        url: 'https://kkutugame.kr/',
+        startYear: 2026.5,
         endYear: null,
-        description: '노래의 가사에 맞춰서 키보드를 누르는 리듬 게임이에요.',
-        tags: ['리듬', '온라인'],
-        color: '#3175DC'
+        description: 'OP_Noob님이 운영하시는 끝말잇기 웹게임이에요. 예전 끄투게임이 서비스명을 바꾼 것으로, 지금은 끄투 원본 소스코드를 쓰지 않고 새로 만들어 서비스하고 있어요.',
+        tags: ['끝말잇기', '온라인'],
+        color: '#ffa200'
     }
 ];

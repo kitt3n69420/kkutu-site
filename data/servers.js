@@ -880,8 +880,8 @@ const serversData = [
                 id: 'legendkkutu_26',
                 tags: [
                     '뜻추가',
-                    '우리말샘',
-                    '언노운워드'
+                    '언노운워드',
+                    '우리말샘'
                 ],
                 url: 'https://legendkkutu.kr/',
                 url2: '#',
@@ -1187,9 +1187,9 @@ const serversData = [
                 id: 'delzb',
                 tags: [
                     '24시간',
+                    '언노운워드',
                     '뜻추가',
-                    '우리말샘',
-                    '언노운워드'
+                    '우리말샘'
                 ],
                 url: 'https://delzb.app',
                 url2: 'https://kkutu.delzb.app/',
@@ -1307,40 +1307,19 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         ]
     },
     {
-        name: '끄투게임즈코리아',
-        color: '#ffa200',
-        textColor: '#1a1a1a',
-        instances: [
-            {
-                id: 'kkutugame',
-                tags: ['24시간', '우리말샘'],
-                url: 'https://kkutugame.kr/',
-                url2: 'https://kkutugame.kro.kr/',
-                startYear: 2026.5,
-                endYear: 2027,
-                operator: 'OP_Noob',
-                description: 'OP_Noob님이 만든 프리서버였어요. 현재는 서비스명을 바꾸고 끄투 원본 소스코드를 활용하지 않은 채로 서비스 중이에요',
-                relatedLinks: [
-                    { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' },
-                    { name: '공식 디스코드', url: 'https://discord.gg/4kqdpZhzUs' }
-                ]
-            }
-        ]
-    },
-    {
         name: '파얼끄투',
         color: '#679847',
         textColor: '#ffffff',
         instances: [
             {
                 id: 'parkeolrukkutu',
-                tags: ['24시간', '뜻추가', '우리말샘', '언노운워드'],
+                tags: ['24시간', '언노운워드','우리말샘', '뜻추가'],
                 url: 'https://kkutu.parkeolru.com/',
-                url2: '#',
+                url2: 'https://testserver.kkutu.pe.kr/',
                 startYear: 2026.5,
                 endYear: 2027,
                 operator: '박얼루',
-                description: '박얼루님이 운영하셨던 끄투 프리서버예요. 효과음을 마음대로 설정할 수 있고, 끄투게임과 연동을 해서 서로 다른 프리서버에서 함께 플레이(!)가 가능했어요. 하지만 개발자의.개인적인 사정으로 갑작스레 서비스가 종료되었어요.',
+                description: '박얼루님이 운영 중이신 끄투 프리서버에요.',
                 relatedLinks: []
             }
         ]
@@ -1359,6 +1338,24 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 endYear: null,
                 operator: 'juakus81',
                 description: 'juakus81님이 운영 중인 끄투 프리서버예요.',
+                relatedLinks: []
+            }
+        ]
+    },
+    {
+        name: '제온끄투',
+        color: '#2b6cb0',
+        textColor: '#ffffff',
+        instances: [
+            {
+                id: 'zeonkkutu',
+                tags: ['러시아어', '아랍어'],
+                url: 'https://zkt.kro.kr/home',
+                url2: '#',
+                startYear: 2026.9,
+                endYear: null,
+                operator: 'lugid12431',
+                description: 'lugid12431님이 운영 중인 끄투 프리서버예요. 자체 디자인을 사용하고, 러시아어(!)와 아랍어(?!) 끝말잇기를 지원해요.',
                 relatedLinks: []
             }
         ]
