@@ -1349,7 +1349,7 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
         instances: [
             {
                 id: 'zeonkkutu',
-                tags: ['러시아어', '아랍어'],
+                tags: ['24시간'],
                 url: 'https://zkt.kro.kr/home',
                 url2: '#',
                 startYear: 2026.5,
