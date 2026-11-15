@@ -1214,12 +1214,12 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 id: 'chankkutu',
                 tags: [
                 ],
-                url: 'http://chankkutu.kro.kr/',
+                url: 'https://chanukkutu.kro.kr:13245/',
                 url2: '#',
                 startYear: 2026,
                 endYear: 2026.5,
                 operator: '차누',
-                description: '차누님이 운영하셨던 서버예요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 현재는 서비스 종료되었어요.',
+                description: '차누님이 운영하시는 서버예요. 다른 끄투와 달리 모던한 디자인을 사용하고 있었지만, 랜섬웨어로 인해 서비스가 종료되었다가, 어떤 이유로 현 차누끄투와 병행 운영 상태에요.',
                 relatedLinks: [
                    
                 ]
@@ -1302,6 +1302,27 @@ minjun1177님이 운영하시는 끄투 서버였어요. 모스부호로 입력,
                 operator: 'jplth1124',
                 description: 'jplth1124님이 2026년 후반에 운영했던 끄투 프리서버에요. 소스코드 손상으로 인해 서버를 열 수 없는 상황이 되었어요.',
                 relatedLinks: [
+                ]
+            }
+        ]
+    },
+    {
+        name: '끄투게임',
+        color: '#ffa200',
+        textColor: '#1a1a1a',
+        instances: [
+            {
+                id: 'kkutugame',
+                tags: ['24시간', '우리말샘'],
+                url: 'https://kkutugame.kr/',
+                url2: 'https://kkutugame.kro.kr/',
+                startYear: 2026.5,
+                endYear: 2027,
+                operator: 'OP_Noob',
+                description: 'OP_Noob님이 만든 프리서버였어요.',
+                relatedLinks: [
+                    { name: '깃허브 저장소', url: 'https://github.com/sksjskdke9293/kkutu-game' },
+                    { name: '공식 디스코드', url: 'https://discord.gg/4kqdpZhzUs' }
                 ]
             }
         ]

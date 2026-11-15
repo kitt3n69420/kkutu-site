@@ -9,6 +9,15 @@ window.recommendedGames = [
         color: '#d9ff00'
     },
     {
+        name: '한국 끝말잇기',
+        url: 'https://www.roblox.com/ko/games/95099570361956/unnamed',
+        startYear: 2026,
+        endYear: null,
+        description: 'Korea Games가 2026년 초에 개발한 로블록스 끝말잇기 게임이에요. 이용자가 꽤 많지만, Connect the Words라는 게임의 시스템과 맵을 배껴 왔다는 지적이 있어요. 강제종료로 패배 기록을 피해 연승을 이을 수 있는 문제도 고쳐지지 않고, 다른 개발자에게 자신의 게임 데이터를 불법으로 추출했다는 말도 안 되는 소리로 법적으로 신고하겠다고 협박을 한 적도 있어요.',
+        tags: ['끝말잇기', '온라인', '로블록스'],
+        color: '#41c735'
+    },
+    {
         name: '이끼',
         url: 'https://ikki.app',
         startYear: 2025.5,
@@ -27,6 +36,15 @@ window.recommendedGames = [
         color: '#4400ff'
     },
     {
+        name: '대국민 끝말잇기',
+        url: 'https://play.google.com/store/apps/details?id=com.mcu.game.word.online.free',
+        startYear: 2017.5,
+        endYear: null,
+        description: '피지선님이 2017년 말부터 서비스 중인 안드로이드 끝말잇기 앱이에요. 카드를 통해 아이템을 사용할 수 있어요.',
+        tags: ['끝말잇기', '온라인', '안드로이드'],
+        color: '#3ddcdc'
+    },
+    {
         name: '토스 쿵쿵따',
         url: 'https://discord.com/invite/UFnmw3U',
         startYear: 2015,
@@ -43,14 +61,5 @@ window.recommendedGames = [
         description: '넷마블에서 2002년부터 서비스 중인 장수 쿵쿵따 게임이에요. 공포의 쿵쿵따 룰을 기반으로 만들어졌어요.',
         tags: ['끝말잇기', '온라인'],
         color: '#4ad6e5'
-    },
-    {
-        name: '구레미 온라인',
-        url: 'https://kkutugame.kr/',
-        startYear: 2026.5,
-        endYear: null,
-        description: 'OP_Noob님이 운영하시는 끝말잇기 웹게임이에요. 예전 끄투게임이 서비스명을 바꾼 것으로, 지금은 끄투 원본 소스코드를 쓰지 않고 새로 만들어 서비스하고 있어요.',
-        tags: ['끝말잇기', '온라인'],
-        color: '#ffa200'
     }
 ];
