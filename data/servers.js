@@ -609,10 +609,12 @@ const serversData = [
                 ],
                 url: '#',
                 url2: '#',
-                startYear: 2020,
-                endYear: 2024.5,
+                startYear: 2019.8,
+                endYear: 2023.5,
                 operator: 'yeokyoomin',
-                description: 'yeokyoomin님이 2020년부터 2024년 5월경까지 운영했던 끄투 프리서버예요.',
+                description: `yeokyoomin님이 2019년 말부터 운영하신 끄투 프리서버예요.
+
+2022년 초중반에는 서버가 잠시 닫혀 있었고, 2023년에 끄투클럽이 행성끄투를 흡수하면서 끄튜브로 이어졌어요.`,
                 relatedLinks: []
             }
         ]
@@ -706,10 +708,10 @@ const serversData = [
                 color: '#91edff',
                 url: '#',
                 url2: '#',
-                startYear: 2021,
-                endYear: 2021,
+                startYear: 2021.2,
+                endYear: 2022.4,
                 operator: 'watts011',
-                description: 'watts011님이 2021년 3월부터 4월까지 운영하신 서버예요. (깃허브 저장소상의 소유자는 sky-kiwi로 표기되어 있어요.)',
+                description: 'watts011님이 2021년 3월에 처음 만드신 서버로, 2022년 초중반에 끄투클럽으로 이름이 바뀌었어요. (깃허브 저장소상의 소유자는 sky-kiwi로 표기되어 있어요.)',
                 relatedLinks: [
                     { name: '깃허브 저장소', url: 'https://github.com/sky-kiwi/KKuTu' }
                 ]
@@ -719,10 +721,10 @@ const serversData = [
                 tags: [],
                 url: '#',
                 url2: '#',
-                startYear: 2021.6,
+                startYear: 2022.4,
                 endYear: 2023.5,
                 operator: 'watts011',
-                description: 'watts011님이 스카이끄투에 이어 2021년 7월부터 2023년 6월경까지 운영하신 끄투클럽 서버예요.',
+                description: 'watts011님이 스카이끄투에서 이름을 바꿔 2022년 초중반부터 2023년까지 운영하신 끄투클럽 서버예요. 2023년에 행성끄투를 흡수하면서 끄튜브가 되었어요.',
                 relatedLinks: []
             },
             {
@@ -732,12 +734,26 @@ const serversData = [
                 url: '#',
                 url2: '#',
                 startYear: 2023.5,
-                endYear: 2024.5,
+                endYear: 2024.2,
                 operator: 'watts011',
-                description: 'watts011님이 끄투클럽에 이어 2023년 8월경부터 2024년 3월까지 운영하신 서버예요.',
+                description: 'watts011님이 2023년에 끄투클럽이 행성끄투를 흡수하면서 만든 서버예요. 2024년에 행성끄투로 이름이 다시 바뀌었어요.',
                 relatedLinks: [
                     { name: '깃허브 저장소', url: 'https://github.com/kkutube/KKuTu' }
                 ]
+            },
+            {
+                id: 'planetkkutu_watts011',
+                name: '행성끄투',
+                tags: [],
+                color: '#5d3fd3',
+                textColor: '#ffffff',
+                url: '#',
+                url2: '#',
+                startYear: 2024.2,
+                endYear: 2024.5,
+                operator: 'watts011',
+                description: 'watts011님이 끄튜브에서 이름을 다시 행성끄투로 바꿔 운영하셨지만, 2024년 5월경 서버가 닫혔어요.',
+                relatedLinks: []
             },
             /*
             {
