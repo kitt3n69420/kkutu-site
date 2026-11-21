@@ -468,6 +468,10 @@ window.activeServers = [];
 // Store player counts globally to persist across re-renders
 const serverPlayerCounts = {};
 
+// 인원수 조회 프록시 주소. Cloudflare 워커 배포 후 워커 주소로 바꾸면 됨
+// 예: 'https://kkutu-count.<내 서브도메인>.workers.dev/'
+const COUNT_PROXY_URL = '/api/proxy';
+
 function renderServers(sortType = 'default') {
     // Clear existing grid
     grid.innerHTML = '';
@@ -617,7 +621,7 @@ function renderServers(sortType = 'default') {
                             ? new URL('/api/online', urlToCheck).href
                             : new URL('/servers', urlToCheck).href;
 
-                    const fetchUrl = '/api/proxy?url=' + encodeURIComponent(targetUrl);
+                    const fetchUrl = COUNT_PROXY_URL + '?url=' + encodeURIComponent(targetUrl);
 
                     const controller = new AbortController();
                     const timeoutId = setTimeout(() => controller.abort(), 5000);

@@ -1,0 +1,8 @@
+name = "kkutu-count"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Workers Caching: 워커 앞단 캐시 (Wrangler 4.69.0 이상 필요)
+# 응답의 Cache-Control(max-age=60)에 따라 같은 url 요청은 60초 동안 워커 실행 없이 캐시에서 응답
+[cache]
+enabled = true
