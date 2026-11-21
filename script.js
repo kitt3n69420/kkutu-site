@@ -469,8 +469,8 @@ window.activeServers = [];
 const serverPlayerCounts = {};
 
 // 인원수 조회 프록시 주소. Cloudflare 워커 배포 후 워커 주소로 바꾸면 됨
-// 예: 'https://kkutu-count.<내 서브도메인>.workers.dev/'
-const COUNT_PROXY_URL = '/api/proxy';
+// 예: 'https://kkutu-coun  t.<내 서브도메인>.workers.dev/'
+const COUNT_PROXY_URL = 'https://kkutu-count.kitt3n6974.workers.dev/';
 
 function renderServers(sortType = 'default') {
     // Clear existing grid
